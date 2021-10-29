@@ -1,0 +1,26 @@
+version: '3'
+services:
+    php-apache:
+        build:
+            dockerfile: ./docker/phpapache.dockerfile
+            context: .
+        image: bigcouve/phpapache
+        container_name: php-apache-1
+        ports:
+            - "8888:80"
+        networks:
+            - producao
+    db:
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_PASSWORD: example
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 800:8080
+
+networks:
+    producao:
+        driver: bridge
