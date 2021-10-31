@@ -14,7 +14,7 @@ services:
             - db
     db:
         image: postgres
-        container_name: "postgresha"
+        container_name: "banco"
         environment:
             POSTGRES_USER: aba
             POSTGRES_PASSWORD: "1234"
@@ -39,5 +39,3 @@ services:
 networks:
     producao:
         driver: bridge
-volumes:
-    vol:
