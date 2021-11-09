@@ -23,12 +23,12 @@ services:
         ports:
             - "5432:5432"
         volumes:
-            - ./vol/db:/var/lib/postgresql/data
+            - /Users/douglas/cakephp/vol/db:/var/lib/postgresql/data
     pgadmin:
         image: dpage/pgadmin4
         container_name: pgadmin-container
         ports:
-            - "80:80"
+            - "81:80"
         environment:
             PGADMIN_DEFAULT_EMAIL: "a@gmail.com" 
             PGADMIN_DEFAULT_PASSWORD: "1234"
