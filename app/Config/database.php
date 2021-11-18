@@ -67,12 +67,12 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => './vol/db',
+		'datasource' => 'Database/postgres',
 		'persistent' => false,
 		'host' => 'localhost:5432',
 		'login' => 'aba',
 		'password' => '1234',
-		'database' => 'cake_php',
+		'database' => 'cake_blog',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
