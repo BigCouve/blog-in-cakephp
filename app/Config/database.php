@@ -67,7 +67,7 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => 'C:/Users/Blue World/Documents/DockerFiles/Aplication/vol/db',
+		'datasource' => './vol/db',
 		'persistent' => false,
 		'host' => 'localhost:5432',
 		'login' => 'aba',
