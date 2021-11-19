@@ -13,7 +13,7 @@ services:
         depends_on: 
             - db
     db:
-        image: postgres
+        image: postgres:12.6
         container_name: "banco"
         environment:
             POSTGRES_USER: aba

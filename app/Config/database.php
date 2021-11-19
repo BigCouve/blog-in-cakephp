@@ -67,17 +67,18 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => 'Database/postgres',
+		'datasource' => 'Database/Postgres',
 		'persistent' => false,
-		'host' => 'localhost:5432',
+		'host' => 'localhost',
+		'port' => '5432',
 		'login' => 'aba',
 		'password' => '1234',
 		'database' => 'cake_blog',
 		'prefix' => '',
-		'encoding' => 'utf8',
+		'encoding' => '',
 	);
 
-	public $test = array(
+	/*public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -86,5 +87,5 @@ class DATABASE_CONFIG {
 		'database' => 'test_database_name',
 		'prefix' => '',
 		//'encoding' => 'utf8',
-	);
+	);*/
 }
