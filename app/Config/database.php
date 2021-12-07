@@ -68,14 +68,14 @@ class DATABASE_CONFIG {
 
 	public $default = array(
 		'datasource' => 'Database/Postgres',
-		'persistent' => false,
-		'host' => 'localhost',
-		'port' => '5432',
+		'persistent' => true,
+		'host' => 'banco',
+		'port' => 5432,
 		'login' => 'aba',
 		'password' => '1234',
 		'database' => 'cake_blog',
-		'prefix' => '',
-		'encoding' => '',
+
+
 	);
 
 	/*public $test = array(
