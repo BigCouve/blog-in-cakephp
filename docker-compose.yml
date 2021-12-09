@@ -6,7 +6,7 @@ services:
             context: .
         image: bigcouve/phpapache
         container_name: php-apache-1
-        ports:
+        ports: 
             - "8888:80"
         networks:
             - producao
