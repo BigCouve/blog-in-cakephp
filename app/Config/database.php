@@ -68,7 +68,7 @@ class DATABASE_CONFIG {
 
 	public $default = array(
 		'datasource' => 'Database/Postgres',
-		'persistent' => true,
+		'persistent' => false,
 		'host' => 'banco',
 		'port' => 5432,
 		'login' => 'aba',
