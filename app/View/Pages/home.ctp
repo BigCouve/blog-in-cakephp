@@ -11,7 +11,6 @@ endif;
 
 App::uses('Debugger', 'Utility');
 ?>
-<?php echo `whoami`; ?>
 <iframe src="https://giphy.com/embed/xT9DPIGCtzjEwhbg2c" width="480" height="348" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/video-games-videogames-professorlightwav-xT9DPIGCtzjEwhbg2c">via GIPHY</a></p>
 <h2><?php echo ( 'KAWABONGA!!') . PHP_EOL ;?> </h2>
 
