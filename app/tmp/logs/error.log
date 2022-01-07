@@ -1,0 +1,13 @@
+2022-01-07 14:16:33 Error: [MissingLayoutException] Layout file "Layouts/bootstrap.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layouts/bootstrap.ctp',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(514): View->_getLayoutFileName('bootstrap')
+#1 /app/lib/Cake/View/View.php(481): View->renderLayout('', 'bootstrap')
+#2 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, 'bootstrap')
+#3 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
