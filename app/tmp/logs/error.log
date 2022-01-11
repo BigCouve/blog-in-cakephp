@@ -11,3 +11,285 @@ Stack Trace:
 #4 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #5 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2022-01-07 14:58:30 Error: [PDOException] SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type integer: "127.0.0.1"
+LINE 1: ... "public"."posts" AS "Post"   WHERE "Post"."id" = '127.0.0.1...
+                                                             ^
+Request URL: /app/webroot/index.php/posts/edit/127.0.0.1
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /app/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT "Post"."...', Array)
+#2 /app/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT "Post"."...', Array, Array)
+#3 /app/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT "Post"."...', Array)
+#4 /app/lib/Cake/Model/Model.php(3053): DboSource->read(Object(Post), Array)
+#5 /app/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#6 /app/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#7 /app/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(Post))
+#8 /app/app/Controller/PostsController.php(27): Model->__call('findById', Array)
+#9 [internal function]: PostsController->edit('127.0.0.1')
+#10 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2022-01-07 14:58:32 Error: [PDOException] SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type integer: "127.0.0.1"
+LINE 1: ... "public"."posts" AS "Post"   WHERE "Post"."id" = '127.0.0.1...
+                                                             ^
+Request URL: /app/webroot/index.php/posts/edit/127.0.0.1
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /app/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT "Post"."...', Array)
+#2 /app/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT "Post"."...', Array, Array)
+#3 /app/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT "Post"."...', Array)
+#4 /app/lib/Cake/Model/Model.php(3053): DboSource->read(Object(Post), Array)
+#5 /app/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#6 /app/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#7 /app/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(Post))
+#8 /app/app/Controller/PostsController.php(27): Model->__call('findById', Array)
+#9 [internal function]: PostsController->edit('127.0.0.1')
+#10 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2022-01-07 14:58:44 Error: [PDOException] SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type integer: "127.0.0.1"
+LINE 1: ... "public"."posts" AS "Post"   WHERE "Post"."id" = '127.0.0.1...
+                                                             ^
+Request URL: /app/webroot/index.php/posts/edit/127.0.0.1
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /app/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT "Post"."...', Array)
+#2 /app/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT "Post"."...', Array, Array)
+#3 /app/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT "Post"."...', Array)
+#4 /app/lib/Cake/Model/Model.php(3053): DboSource->read(Object(Post), Array)
+#5 /app/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#6 /app/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#7 /app/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(Post))
+#8 /app/app/Controller/PostsController.php(27): Model->__call('findById', Array)
+#9 [internal function]: PostsController->edit('127.0.0.1')
+#10 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2022-01-07 16:13:13 Error: Fatal Error (64): Access level to PostsController::$name must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:13:13 Error: [FatalErrorException] Access level to PostsController::$name must be public (as in class AppController)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:13:15 Error: Fatal Error (64): Access level to PostsController::$name must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:13:15 Error: [FatalErrorException] Access level to PostsController::$name must be public (as in class AppController)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:13:45 Error: Fatal Error (64): Access level to PostsController::$name must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:13:45 Error: [InternalErrorException] Internal Server Error
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:13:47 Error: Fatal Error (64): Access level to PostsController::$name must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:13:47 Error: [InternalErrorException] Internal Server Error
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:13:55 Error: Fatal Error (64): Access level to PostsController::$name must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:13:55 Error: [FatalErrorException] Access level to PostsController::$name must be public (as in class AppController)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:14:00 Error: Fatal Error (64): Access level to PostsController::$name must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:14:00 Error: [FatalErrorException] Access level to PostsController::$name must be public (as in class AppController)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:14:26 Error: Fatal Error (64): Access level to PostsController::$helpers must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:14:26 Error: [FatalErrorException] Access level to PostsController::$helpers must be public (as in class AppController)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:14:39 Error: Fatal Error (64): Access level to PostsController::$name must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:14:39 Error: [FatalErrorException] Access level to PostsController::$name must be public (as in class AppController)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:14:41 Error: Fatal Error (64): Access level to PostsController::$name must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:14:41 Error: [FatalErrorException] Access level to PostsController::$name must be public (as in class AppController)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:14:46 Error: Fatal Error (64): Access level to PostsController::$name must be public (as in class AppController) in [/app/app/Controller/PostsController.php, line 5]
+2022-01-07 16:14:46 Error: [FatalErrorException] Access level to PostsController::$name must be public (as in class AppController)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', '/app/app/Contro...', 5)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Access level to...', '/app/app/Contro...', 5, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-07 16:14:56 Error: [PrivateActionException] Private Action PostsController::index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:16:12 Error: [PrivateActionException] Private Action PostsController::index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:18:11 Error: [PrivateActionException] Private Action PostsController::index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:22:12 Error: [PrivateActionException] Private Action PostsController::index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:22:40 Error: [PrivateActionException] Private Action PostsController::index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:24:28 Error: [PrivateActionException] Private Action PostsController::index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:37:00 Error: [MissingActionException] Action PostsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:38:54 Error: [MissingActionException] Action PostsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:39:17 Error: [MissingActionException] Action PostsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:43:54 Error: [PrivateActionException] Private Action PostsController::_index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '_index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:44:05 Error: [PrivateActionException] Private Action PostsController::_index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '_index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-07 16:53:02 Error: [PrivateActionException] Private Action PostsController::_index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '_index',
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
