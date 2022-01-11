@@ -11,3 +11,93 @@ Stack Trace:
 #4 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #5 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2022-01-11 13:50:02 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not connect to server: Connection refused
+	Is the server running on host "banco" (172.18.0.2) and accepting
+	TCP/IP connections on port 5432?',
+  'enabled' => true,
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(278): Postgres->connect()
+#1 /app/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /app/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /app/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /app/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#5 /app/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /app/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /app/app/Controller/PostsController.php(10): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2022-01-11 13:50:08 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not translate host name "banco" to address: Name or service not known',
+  'enabled' => true,
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(278): Postgres->connect()
+#1 /app/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /app/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /app/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /app/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#5 /app/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /app/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /app/app/Controller/PostsController.php(10): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2022-01-11 13:50:09 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not translate host name "banco" to address: Name or service not known',
+  'enabled' => true,
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(278): Postgres->connect()
+#1 /app/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /app/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /app/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /app/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#5 /app/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /app/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /app/app/Controller/PostsController.php(10): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2022-01-11 13:50:10 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not translate host name "banco" to address: Name or service not known',
+  'enabled' => true,
+)
+Request URL: /app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(278): Postgres->connect()
+#1 /app/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /app/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /app/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /app/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#5 /app/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /app/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /app/app/Controller/PostsController.php(10): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
