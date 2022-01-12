@@ -2,11 +2,11 @@
 
 <h1>Blog posts</h1>
 <p><?php echo $this->Html->link("Add Post", array('action' => 'add')); ?></p>
-<table>
+<table style = "width:100%">
     <tr>
         <th>Id</th>
-        <th>Title</th>
-        <th>Action</th>
+        <th style = "width:30%">Title</th>
+        <th style = "width:10%">Action</th>
         <th>Created</th>
     </tr>
 
