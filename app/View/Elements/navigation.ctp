@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="http://localhost:8888/">Início</a></li>
-            <li><a href="http://localhost:8888/posts/post">Guias</a></li>
+            <li><a href="http://localhost:8888/posts/list">Guias</a></li>
             <li><a href="#about">Sobre nós</a></li>
             <li><a href="#contact">Contate-nos</a></li>
           </ul>

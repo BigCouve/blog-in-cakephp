@@ -9,8 +9,8 @@ class PostsController extends AppController {
     public function index(){
         
     }
-    public function post() {
-        $this->set('post', $this->Post->find('all'));
+    public function list() {
+        $this->set('list', $this->Post->find('all'));
     }
 
     public function view($id = null) {
