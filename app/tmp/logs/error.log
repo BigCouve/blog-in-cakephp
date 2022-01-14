@@ -833,3 +833,124 @@ Stack Trace:
 #10 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
 #11 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2022-01-14 18:02:59 Error: [ParseError] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /app/webroot/index.php/posts/list
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /app/app/Controller/PostsController.php(5): spl_autoload_call('AppController')
+#2 /app/lib/Cake/Core/App.php(567): include('/app/app/Contro...')
+#3 [internal function]: App::load('PostsController')
+#4 [internal function]: spl_autoload_call('PostsController')
+#5 /app/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#6 /app/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /app/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2022-01-14 18:02:59 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2022-01-14 18:02:59 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /app/webroot/index.php/posts/list
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-01-14 18:05:18 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /app/webroot/index.php/users/login
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-14 18:05:20 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /app/webroot/index.php/users/login
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-14 18:11:27 Error: [MissingViewException] View file "Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/login.ctp',
+)
+Request URL: /app/webroot/index.php/users/login
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(470): View->_getViewFileName('Users/login')
+#1 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-01-14 18:18:58 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /app/webroot/index.php/users
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(470): View->_getViewFileName('Users/index')
+#1 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-01-14 18:19:18 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/user/index
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-14 18:19:28 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /app/webroot/index.php/users/index
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(470): View->_getViewFileName('Users/index')
+#1 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-01-14 18:19:33 Error: [NotFoundException] Invalid user
+Request URL: /app/webroot/index.php/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-01-14 18:19:55 Error: [MissingActionException] Action UsersController::inde() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'inde',
+)
+Request URL: /app/webroot/index.php/users/inde
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-14 18:19:58 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /app/webroot/index.php/users/index
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(470): View->_getViewFileName('Users/index')
+#1 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
