@@ -1,4 +1,5 @@
 <?php 
+App::uses('AppController', 'Controller');
 
 // app/Controller/UsersController.php
 
@@ -29,7 +30,7 @@ class UsersController extends AppController {
             $this->User->create();
             if ($this->User->save($this->request->data)) {
                 $this->Flash->success(__('The user has been saved'));
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('controller' => 'posts', 'action' => 'index'));
                 return;
             }
             else {
@@ -45,7 +46,7 @@ class UsersController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->User->save($this->request->data)) {
                 $this->Flash->success(__('The user has been saved'));
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('controller' => 'posts', 'action' => 'index'));
             } else {
                 $this->Flash->error(__('The user could not be saved. Please, try again.'));
             }
@@ -67,12 +68,12 @@ class UsersController extends AppController {
             $this->redirect(array('action' => 'index'));
         }
         $this->Flash->error(__('User was not deleted'));
-        $this->redirect(array('action' => 'index'));
+        $this->redirect(array('controller' => 'posts', 'action' => 'index'));
     }
     
     public function login() {
         if ($this->Auth->login()) {
-            $this->redirect($this->Auth->redirect());
+            $this->redirect($this->Auth->redirectUrl());
         } else {
             $this->Flash->error(__('Invalid username or password, try again'));
         }
