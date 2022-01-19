@@ -1,22 +1,21 @@
-<?php
+<?php // app/Model/User.php
+App::uses('AppModel', 'Model');
 
-class User extends AppModel
-{
-    public $name = 'User';
+class User extends AppModel {
     public $validate = array(
         'username' => array(
-            'require' => array(
-                'rule' => array('notBlank'),
+            'required' => array(
+                'rule' => 'notBlank',
                 'message' => 'A username is required'
             )
         ),
         'password' => array(
-            'required' =>array(
-                'rule' => array ('notBlank'),
+            'required' => array(
+                'rule' => 'notBlank',
                 'message' => 'A password is required'
-                )
+            )
         ),
-        'role' => array (
+        'role' => array(
             'valid' => array(
                 'rule' => array('inList', array('admin', 'author')),
                 'message' => 'Please enter a valid role',
@@ -24,10 +23,4 @@ class User extends AppModel
             )
         )
     );
-    public function beforeSave($options = array()) {
-        if (isset($this->data[$this->alias]['password'])) {
-            $this->data[$this->alias]['password'] = Security::hash($this->data[$this->alias]['password']);
-        }
-        return true;
-    }
 }

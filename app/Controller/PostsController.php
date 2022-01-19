@@ -7,7 +7,7 @@ class PostsController extends AppController {
     public $name = 'Posts';
 
     public function index(){
-        
+        //$this->autoRender = false;
     }
     public function list() {
         $this->set('list', $this->Post->find('all'));
