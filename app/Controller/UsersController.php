@@ -4,6 +4,7 @@
 App::uses('AppController', 'Controller');
 
 class UsersController extends AppController {
+    public $name = 'Users';
 
     public function beforeFilter() {
         parent::beforeFilter();

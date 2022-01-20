@@ -2774,3 +2774,245 @@ Request URL: /app/webroot/index.php/index.php/5
 Stack Trace:
 #0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2022-01-20 14:58:45 Error: [NotFoundException] Invalid Category
+Request URL: /app/webroot/index.php/categories/view
+Stack Trace:
+#0 /app/lib/Cake/Controller/Scaffold.php(389): Scaffold->_scaffoldView(Object(CakeRequest))
+#1 /app/lib/Cake/Controller/Scaffold.php(152): Scaffold->_scaffold(Object(CakeRequest))
+#2 /app/lib/Cake/Controller/Controller.php(544): Scaffold->__construct(Object(CategoriesController), Object(CakeRequest))
+#3 /app/lib/Cake/Controller/Controller.php(503): Controller->_getScaffold(Object(CakeRequest))
+#4 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#6 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-01-20 14:59:14 Error: [NotFoundException] Invalid Category
+Request URL: /app/webroot/index.php/categories/view
+Stack Trace:
+#0 /app/lib/Cake/Controller/Scaffold.php(389): Scaffold->_scaffoldView(Object(CakeRequest))
+#1 /app/lib/Cake/Controller/Scaffold.php(152): Scaffold->_scaffold(Object(CakeRequest))
+#2 /app/lib/Cake/Controller/Controller.php(544): Scaffold->__construct(Object(CategoriesController), Object(CakeRequest))
+#3 /app/lib/Cake/Controller/Controller.php(503): Controller->_getScaffold(Object(CakeRequest))
+#4 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#6 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-01-20 15:27:20 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/5
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:27:51 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:27:57 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:28:03 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:28:26 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/users
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:28:44 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:38:37 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:38:48 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:38:58 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:39:01 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:39:03 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:39:04 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:39:05 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:39:06 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:39:09 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:39:10 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:39:11 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:39:12 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:41:19 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/users
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:41:22 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/index.php/app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-01-20 15:41:23 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/app/webroot/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:41:30 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:41:36 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 15:50:01 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/index.php/app/webroot/index.php/
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
