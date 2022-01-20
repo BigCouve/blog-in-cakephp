@@ -2641,3 +2641,136 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2022-01-20 00:55:59 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] could not translate host name "banco" to address: Temporary failure in name resolution',
+  'enabled' => true,
+)
+Request URL: /app/webroot/index.php/users/login
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(278): Postgres->connect()
+#1 /app/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /app/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /app/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /app/lib/Cake/Model/Model.php(3686): Model->setSource('users')
+#5 /app/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#6 /app/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /app/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('User', 'fields')
+#8 /app/app/View/Users/login.ctp(3): FormHelper->create('User')
+#9 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#10 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#11 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#12 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#13 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2022-01-20 01:20:23 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:20:34 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:20:36 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:20:37 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:26:08 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:26:16 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:29:08 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:29:09 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:29:10 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:29:11 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/index.php/index.php/index.php/index.php/index.php/users/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 01:29:55 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/login
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-01-20 02:14:45 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.phpController',
+  'plugin' => NULL,
+)
+Request URL: /app/webroot/index.php/index.php/5
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

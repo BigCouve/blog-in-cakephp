@@ -28,6 +28,10 @@
 	Router::connect('/', array('controller' => 'posts', 'action' => 'index'));
 	Router::connect('/1', array('controller' => 'posts', 'action' => 'list'));
 	Router::connect('/2', array('controller' => 'categories'));
+	Router::connect('/5', array('controller' => 'users', 'action' => 'login'));
+	Router::connect('/6', array('controller' => 'users', 'action' => 'logout'));
+	Router::connect('/7', array('controller' => 'users', 'action' => 'add'));
+
 
 
 

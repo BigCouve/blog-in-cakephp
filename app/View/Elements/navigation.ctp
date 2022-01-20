@@ -8,9 +8,10 @@
           </button>
 
 
-          <a class="navbar-brand" href="http://localhost:8888/">
-          <img src="/app/webroot/img/arvore2.png" width="15" height="15" class="d-inline-block align-top" alt="">
+          <a class="nav navbar-brand" href="http://localhost:8888/">
+          <img src="/app/webroot/img/arvore2.png" width="15" height="15" class="d-inline-block align-left" alt="">
           Mãe Terra</a>
+          
           
 
         </div>
@@ -21,6 +22,10 @@
             <li><a href="http://localhost:8888/2">Categorias (scaffold)</a></li>
             <li><a href="#about">Sobre nós</a></li>
             <li><a href="#contact">Contate-nos</a></li>
+            <a href="http://localhost:8888/5"><button type="button" class="btn btn-default navbar-btn">Entrar</button></a>
+            <a href="http://localhost:8888/6"><button type="button" class="btn btn-default navbar-btn">Sair</button></a>
+            <a href="http://localhost:8888/7"><button type="button" class="btn btn-default navbar-btn">Cadastrar</button></a>
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>
