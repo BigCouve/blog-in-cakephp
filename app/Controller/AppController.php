@@ -35,14 +35,14 @@ class AppController extends Controller {
 	public $components = array(
         'Flash',
         'Auth' => array(
-            'loginRedirect' => array('controller' => 'posts', 'action' => 'index'),
+            'loginRedirect' => array('controller' => 'posts', 'action' => 'list'),
             'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
             'authenticate' => array(
                 'Form' => array(
                     'passwordHasher' => 'Blowfish'
                 )
             ),
-            'authorize' => array('Controller'), // Adicionamos essa linha
+            //'authorize' => array('Controller'), // Adicionamos essa linha
         )
     );
     public function beforeFilter(){
