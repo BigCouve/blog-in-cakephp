@@ -25,7 +25,7 @@
             <a href="http://localhost:8888/5"><button type="button" class="btn btn-default navbar-btn">Entrar</button></a>
             <a href="http://localhost:8888/6"><button type="button" class="btn btn-default navbar-btn">Sair</button></a>
             <a href="http://localhost:8888/7"><button type="button" class="btn btn-default navbar-btn">Cadastrar</button></a>
-            <li><a href="#"> <?php echo $post[0][0]; ?></a></li>
+            
           </ul>
         </div><!--/.nav-collapse -->
       </div>
