@@ -3208,3 +3208,14 @@ Stack Trace:
 #10 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
 #11 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2022-01-26 14:45:14 Error: [MissingActionException] Action PostsController::post() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'post',
+)
+Request URL: /app/webroot/index.php/posts/post
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

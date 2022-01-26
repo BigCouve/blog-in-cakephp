@@ -7,25 +7,27 @@
             <span class="icon-bar"></span>
           </button>
 
-
-          <a class="nav navbar-brand" href="http://localhost:8888/">
-          <img src="/app/webroot/img/arvore2.png" width="15" height="15" class="d-inline-block align-left" alt="">
-          Mãe Terra</a>
+          <div class="container">
           
+          </div>
           
 
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav" >
+            <a class="nav navbar-brand" href="http://localhost:8888/">
+            <img src="/app/webroot/img/arvore2.png" width="30" height="30" class="img-circle">
+            Mãe Terra
+            </a>
             <li class = "active"><a href="http://localhost:8888/">Início</a></li>
             <li><a href="http://localhost:8888/1">Guias</a></li>
             <li><a href="http://localhost:8888/2">Categorias (scaffold)</a></li>
-            <li><a href="#about">Sobre nós</a></li>
-            <li><a href="#contact">Contate-nos</a></li>
+            <li role="presentation" class="disabled"><a href="#">Sobre nós</a></li>
+            <li role="presentation" class="disabled"><a href="#">Contate-nos</a></li>
             <a href="http://localhost:8888/5"><button type="button" class="btn btn-default navbar-btn">Entrar</button></a>
             <a href="http://localhost:8888/6"><button type="button" class="btn btn-default navbar-btn">Sair</button></a>
             <a href="http://localhost:8888/7"><button type="button" class="btn btn-default navbar-btn">Cadastrar</button></a>
-            
+            <p class="navbar-text navbar-right">Logado como <a href="#" class="navbar-link">User</a></p>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
