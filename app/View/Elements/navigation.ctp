@@ -17,7 +17,9 @@
           <ul class="nav navbar-nav" >
             <a class="nav navbar-brand" href="http://localhost:8888/">
             <img src="/app/webroot/img/arvore2.png" width="30" height="30" class="img-circle">
-            Mãe Terra
+              <a class="nav navbar-brand" href="http://localhost:8888/">
+              Mãe Terra
+              </a>
             </a>
             <li class = "active"><a href="http://localhost:8888/">Início</a></li>
             <li><a href="http://localhost:8888/1">Guias</a></li>

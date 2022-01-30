@@ -3219,3 +3219,37 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2022-01-30 03:33:48 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "categories_id_seq" does not exist
+CONTEXT:  unnamed portal parameter $1 = '...'
+Request URL: /app/webroot/index.php/2
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/Database/Postgres.php(322): PDO->lastInsertId('categories_id_s...')
+#1 /app/lib/Cake/Model/Datasource/DboSource.php(1134): Postgres->lastInsertId('categories', 'id')
+#2 /app/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Category), Array, Array)
+#3 /app/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#4 /app/lib/Cake/Controller/Scaffold.php(244): Model->save(Array)
+#5 /app/lib/Cake/Controller/Scaffold.php(393): Scaffold->_scaffoldSave(Object(CakeRequest), 'add')
+#6 /app/lib/Cake/Controller/Scaffold.php(152): Scaffold->_scaffold(Object(CakeRequest))
+#7 /app/lib/Cake/Controller/Controller.php(544): Scaffold->__construct(Object(CategoriesController), Object(CakeRequest))
+#8 /app/lib/Cake/Controller/Controller.php(503): Controller->_getScaffold(Object(CakeRequest))
+#9 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2022-01-30 03:35:16 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "categories_id_seq" does not exist
+CONTEXT:  unnamed portal parameter $1 = '...'
+Request URL: /app/webroot/index.php/2
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/Database/Postgres.php(322): PDO->lastInsertId('categories_id_s...')
+#1 /app/lib/Cake/Model/Datasource/DboSource.php(1134): Postgres->lastInsertId('categories', 'id')
+#2 /app/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Category), Array, Array)
+#3 /app/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#4 /app/lib/Cake/Controller/Scaffold.php(244): Model->save(Array)
+#5 /app/lib/Cake/Controller/Scaffold.php(393): Scaffold->_scaffoldSave(Object(CakeRequest), 'add')
+#6 /app/lib/Cake/Controller/Scaffold.php(152): Scaffold->_scaffold(Object(CakeRequest))
+#7 /app/lib/Cake/Controller/Controller.php(544): Scaffold->__construct(Object(CategoriesController), Object(CakeRequest))
+#8 /app/lib/Cake/Controller/Controller.php(503): Controller->_getScaffold(Object(CakeRequest))
+#9 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
