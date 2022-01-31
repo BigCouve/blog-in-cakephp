@@ -4,7 +4,7 @@
 App::uses('AppController', 'Controller');
 
 class UsersController extends AppController {
-    public $name = 'Users';
+    public $name = 'User';
 
     public function beforeFilter() {
         parent::beforeFilter();
@@ -77,11 +77,14 @@ class UsersController extends AppController {
     public function login() {
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
+                $this->set('name_user', $this->User->findById($username));
                 return $this->redirect($this->Auth->redirectUrl());
+                
             }
-            $this->Flash->error(__('Invalid username or password, try again'));
         }
+        $this->Flash->error(__('Invalid username or password, try again'));
     }
+        
     
     public function logout() {
         return $this->redirect($this->Auth->logout());

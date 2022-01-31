@@ -3253,3 +3253,37 @@ Stack Trace:
 #10 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
 #11 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2022-01-31 20:40:48 Error: [MissingTableException] Table bosts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'bosts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /app/webroot/index.php/posts/view/2
+Stack Trace:
+#0 /app/lib/Cake/Model/Model.php(3686): Model->setSource('bosts')
+#1 /app/lib/Cake/Model/Model.php(834): Model->getDataSource()
+#2 /app/app/Controller/PostsController.php(17): Model->__call('findById', Array)
+#3 [internal function]: PostsController->view('2')
+#4 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#5 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#7 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2022-01-31 20:42:51 Error: [MissingTableException] Table bosts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'bosts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /app/webroot/index.php/posts/view/2
+Stack Trace:
+#0 /app/lib/Cake/Model/Model.php(3686): Model->setSource('bosts')
+#1 /app/lib/Cake/Model/Model.php(834): Model->getDataSource()
+#2 /app/app/Controller/PostsController.php(17): Model->__call('findById', Array)
+#3 [internal function]: PostsController->view('2')
+#4 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#5 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#7 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
