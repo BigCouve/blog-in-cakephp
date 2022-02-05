@@ -34,3 +34,4 @@ as informações dos posts -->
 <?php endforeach; ?>
 
 </table>
+

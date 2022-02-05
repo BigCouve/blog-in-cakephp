@@ -33,6 +33,7 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
     
 	public $components = array(
+        'Session',
         'Flash',
         'Auth' => array(
             'loginRedirect' => array('controller' => 'posts', 'action' => 'list'),
@@ -57,4 +58,5 @@ class AppController extends Controller {
         }
         return false; // Os outros usuários não podem
     }
+    
 }

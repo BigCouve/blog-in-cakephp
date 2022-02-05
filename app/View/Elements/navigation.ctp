@@ -29,8 +29,9 @@
             <a href="http://localhost:8888/5"><button type="button" class="btn btn-default navbar-btn">Entrar</button></a>
             <a href="http://localhost:8888/6"><button type="button" class="btn btn-default navbar-btn">Sair</button></a>
             <a href="http://localhost:8888/7"><button type="button" class="btn btn-default navbar-btn">Cadastrar</button></a>
-            <p class="navbar-text navbar-right">Logado como <a href="#" class="navbar-link">User</a></p>
+            <p class="navbar-text navbar-right">Logado como <a href="#" class="navbar-link"><?php echo $this->Session->read('username') ?></a></p>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
+

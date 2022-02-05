@@ -4,7 +4,7 @@
 App::uses('AppController', 'Controller');
 
 class UsersController extends AppController {
-    public $name = 'User';
+    public $name = 'Users';
 
     public function beforeFilter() {
         parent::beforeFilter();
@@ -13,7 +13,7 @@ class UsersController extends AppController {
 
     public function index() {
         $this->User->recursive = 0;
-        $this->set('users', $this->paginate());
+        $this->set('user', $this->paginate());
     }
 
     public function view($id = null) {
@@ -77,16 +77,20 @@ class UsersController extends AppController {
     public function login() {
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
-                $this->set('name_user', $this->User->findById($username));
+                $this->Session->write('username', 'Aloha');
                 return $this->redirect($this->Auth->redirectUrl());
-                
             }
+            $this->set('error_login', $this->Flash->set('Invalid username or password, try again'));
+            
         }
-        $this->Flash->error(__('Invalid username or password, try again'));
     }
-        
+    
+
     
     public function logout() {
         return $this->redirect($this->Auth->logout());
     }
+    
+    
+
 }
