@@ -89,7 +89,7 @@ class UsersController extends AppController {
 
     
     public function logout() {
-        echo $this->Flash->set('Passou na action logout');
+        //echo $this->Flash->set('Passou na action logout');
         $this->Session->write('logged', false);
         return $this->redirect($this->Auth->logout());
     }

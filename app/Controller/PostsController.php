@@ -34,7 +34,7 @@ class PostsController extends AppController {
         } else {
             if ($this->Post->save($this->request->data)) {
                 $this->Flash->success('Seu Post foi atualizado.');
-                $this->redirect(array('action' => 'post'));
+                $this->redirect(array('action' => 'list'));
             }
         }
     }
@@ -44,7 +44,7 @@ class PostsController extends AppController {
         }
         if ($this->Post->delete($id)) {
             $this->Flash->success('O post com o id: ' . $id . ' foi excluído.');
-            $this->redirect(array('action' => 'post'));
+            $this->redirect(array('action' => 'list'));
         }
     }
 

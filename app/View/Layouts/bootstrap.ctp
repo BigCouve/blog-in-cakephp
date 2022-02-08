@@ -45,17 +45,7 @@
   
 
     <?php 
-    echo $this->Session->read('Logged') == true;
-      //echo $isLogged;
-      if($this->Session->read('Logged') == true)
-      {
-        echo $this->Element('navigation_logout'); 
-      }
-      else if ($this->Session->read('Logged')  == false)
-      {
-        echo $this->Element('navigation_login'); 
-      }
-
+      echo $this->Element('navigation');   
     ?>
 
 
