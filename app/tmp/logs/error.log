@@ -3575,3 +3575,16 @@ Stack Trace:
 #4 /app/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
 #5 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2022-02-08 01:18:47 Error: [MissingComponentException] Component class ElementComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ElementComponent',
+  'plugin' => false,
+)
+Request URL: /app/webroot/index.php/users/login
+Stack Trace:
+#0 /app/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Element', Array)
+#1 /app/lib/Cake/Controller/Controller.php(649): ComponentCollection->init(Object(UsersController))
+#2 /app/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

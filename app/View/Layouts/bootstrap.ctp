@@ -44,7 +44,19 @@
   <body>
   
 
-    <?php echo $this->Element('navigation'); ?>
+    <?php 
+      echo $isLogged;
+      if($isLogged == true)
+      {
+        echo $this->Element('navigation_logout'); 
+      }
+      else if ($isLogged == false)
+      {
+        echo $this->Element('navigation_login'); 
+      }
+
+    ?>
+
 
     <div class="container">
 
