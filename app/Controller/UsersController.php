@@ -79,7 +79,6 @@ class UsersController extends AppController {
             if ($this->Auth->login()) {
                 $this->Session->write('username', 'Aloha');
                 $this->Session->write('logged', true);
-                $this->set('isLogged', true);
                 return $this->redirect($this->Auth->redirectUrl());
             }
             $this->Flash->set('Invalid username or password, try again');
@@ -90,8 +89,8 @@ class UsersController extends AppController {
 
     
     public function logout() {
+        echo $this->Flash->set('Passou na action logout');
         $this->Session->write('logged', false);
-        $this->set('isLogged', false);
         return $this->redirect($this->Auth->logout());
     }
     

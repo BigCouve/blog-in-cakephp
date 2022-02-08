@@ -26,8 +26,17 @@
             <li><a href="http://localhost:8888/2">Categorias (scaffold)</a></li>
             <li role="presentation" class="disabled"><a href="#">Sobre nós</a></li>
             <li role="presentation" class="disabled"><a href="#">Contate-nos</a></li>
-            <a href="http://localhost:8888/6"><button type="button" class="btn btn-default navbar-btn">Sair</button></a>
-            <p class="navbar-text navbar-right">Logado como <a href="#" class="navbar-link"><?php echo $this->Session->read('username') ?></a></p>
+            <?php 
+              if ($this->Session->read('logged') == true) { ?>
+                <a href="http://localhost:8888/logout"><button type="button" class="btn btn-default navbar-btn">Sair</button></a>
+                <p class="navbar-text navbar-right">Logado como <a href="#" class="navbar-link"><?php echo $this->Session->read('username') ?></a></p>
+
+            <?php } 
+            else { ?>
+              <a href="http://localhost:8888/login"><button type="button" class="btn btn-default navbar-btn">Entrar</button></a>
+              <a href="http://localhost:8888/add"><button type="button" class="btn btn-default navbar-btn">Cadastrar</button></a>
+
+            <?php } ?>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

@@ -45,12 +45,13 @@
   
 
     <?php 
-      echo $isLogged;
-      if($isLogged == true)
+    echo $this->Session->read('Logged') == true;
+      //echo $isLogged;
+      if($this->Session->read('Logged') == true)
       {
         echo $this->Element('navigation_logout'); 
       }
-      else if ($isLogged == false)
+      else if ($this->Session->read('Logged')  == false)
       {
         echo $this->Element('navigation_login'); 
       }
