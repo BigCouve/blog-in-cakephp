@@ -46,7 +46,7 @@
     
   </head>
 
-  <body>
+  <body style="background-color:#c7fbe5;">
   
 
     <?php 
