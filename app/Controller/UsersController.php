@@ -77,7 +77,7 @@ class UsersController extends AppController {
     public function login() {
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
-                $this->Session->write('username', 'Aloha');
+                $this->Session->write('username', 22222);
                 $this->Session->write('logged', true);
                 return $this->redirect($this->Auth->redirectUrl());
             }

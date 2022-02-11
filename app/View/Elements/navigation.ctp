@@ -17,9 +17,6 @@
           </a>
       </a> 
       </div>
-
-      
-
       <div class="navbar-collapse collapse" id = "bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav" >
           <li class = "active"><a href="http://localhost:8888/">Início</a></li>
@@ -33,20 +30,18 @@
         <ul class="nav navbar-nav navbar-right ">
           <?php 
             if ($this->Session->read('logged') == true) { ?>
-              
-              <div class="navbar-text navbar-right nav-justified">Logado como <a href="#">abb</a>
+              <div class="navbar-text btn-group">Logado como
                 <a class="dropdown"> 
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <?php echo $this->Session->read('username') ?>
                   <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Meu Perfil</a></li>
+                    <li role="separator" class="divider"></li>
                     <li><a href="http://localhost:8888/logout">Sair</a></li>
                   </ul>
                 </a>
-                  
               </div>
-            
             <?php } 
             else { ?>
               <a href="http://localhost:8888/login"><button type="button" class="btn btn-default navbar-btn">Entrar</button></a>
@@ -54,6 +49,8 @@
 
           <?php } 
           ?>
+          <!-- Single button -->
+          
         </ul>
       </div>
     </div>
