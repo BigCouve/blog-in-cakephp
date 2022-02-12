@@ -3741,3 +3741,13 @@ Stack Trace:
 #5 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #6 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2022-02-11 23:30:36 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /login
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#1 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#2 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#3 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
