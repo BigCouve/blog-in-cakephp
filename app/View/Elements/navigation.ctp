@@ -1,6 +1,6 @@
 <div class="container">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+  <nav class="navbar navbar-inverse ">
+    <div class="container-fluid">
       <div class="navbar-header">
         <a href="#">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -44,8 +44,11 @@
               </div>
             <?php } 
             else { ?>
-              <a href="http://localhost:8888/login"><button type="button" class="btn btn-default navbar-btn">Entrar</button></a>
-              <a href="http://localhost:8888/add"><button type="button" class="btn btn-default navbar-btn">Cadastrar</button></a>
+              <a href="#"><button type="button" class="btn btn-primary navbar-btn">Entrar</button></a>
+              
+              <a href="http://localhost:8888/add"><button type="button" class="btn btn-secondary navbar-btn">Cadastrar</button></a>
+              <?php //$this->extend('/Users/login') ?>
+
 
           <?php } 
           ?>
@@ -54,7 +57,9 @@
         </ul>
       </div>
     </div>
+    
   </nav><!--/.nav-collapse -->
+  
 </div><!--/.container.fluid -->
 
 

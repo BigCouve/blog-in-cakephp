@@ -3,8 +3,8 @@
 
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
+  Entrar (modal)
 </button>
 
 <!-- Modal -->
@@ -12,7 +12,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="titleModalLogin">Por favor, insira seu usuário e senha</h5>
+        <h4 class="modal-title" id="titleModalLogin">Por favor, insira seu usuário e senha</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -30,9 +30,8 @@
             </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
         
-        <button type="button" class="btn btn-primary"><?php echo $this->Form->end(__('Entrar')); ?></button>
+        <button type="button" class="btn btn-primary"> Entrar <?php echo $this->Form->end('Entrar'); ?> </button>
       </div>
     </div>
   </div>
