@@ -30,8 +30,11 @@
             </div>
       </div>
       <div class="modal-footer">
-        
-        <button type="button" class="btn btn-primary"> Entrar <?php echo $this->Form->end('Entrar'); ?> </button>
+      <div class="submit">
+      <input class = "btn btn-primary" type="submit" value="Entrar" />
+      </div>
+      </form>
+      
       </div>
     </div>
   </div>
