@@ -47,7 +47,9 @@
               <a href="#"><button type="button" class="btn btn-primary navbar-btn">Entrar</button></a>
               
               <a href="http://localhost:8888/add"><button type="button" class="btn btn-secondary navbar-btn">Cadastrar</button></a>
-              <?php //$this->extend('/Users/login') ?>
+              <?php //$this->extend('/Users/login') 
+                
+              ?>
 
 
           <?php } 

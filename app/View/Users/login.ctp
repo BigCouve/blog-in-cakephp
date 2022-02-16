@@ -3,10 +3,16 @@
 
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
-  Entrar (modal)
-</button>
 
+
+<?php 
+$this->extend('/Posts/index');
+$this->start('headss'); ?>
+  <h1>ACHA, PORRA</h1>
+<?php $this->end(); ?>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
+    Entrar (modal)
+  </button>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -34,8 +40,10 @@
       <input class = "btn btn-primary" type="submit" value="Entrar" />
       </div>
       </form>
-      
+      <?php echo $this->fetch('body')?>
       </div>
     </div>
   </div>
 </div>
+
+
