@@ -6,10 +6,12 @@
 
 
 <?php 
-$this->extend('/Posts/index');
+//$this->extend('/Posts/index');
 $this->start('headss'); ?>
   <h1>ACHA, PORRA</h1>
 <?php $this->end(); ?>
+
+
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
     Entrar (modal)
   </button>
