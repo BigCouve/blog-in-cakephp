@@ -26,11 +26,11 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'users', 'action' => 'index'));
-	Router::connect('/1', array('controller' => 'posts', 'action' => 'list'));
-	Router::connect('/2', array('controller' => 'categories', 'action' => 'add'));
+	Router::connect('/guias', array('controller' => 'posts', 'action' => 'list'));
+	Router::connect('/scategorias', array('controller' => 'categories', 'action' => 'add'));
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
-	Router::connect('/add', array('controller' => 'users', 'action' => 'add'));
+	Router::connect('/adduser', array('controller' => 'users', 'action' => 'add'));
 
 
 

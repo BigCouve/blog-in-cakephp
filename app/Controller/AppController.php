@@ -49,6 +49,7 @@ class AppController extends Controller {
     public function beforeFilter(){
 		$this->layout = 'bootstrap';
 		$this->Auth->allow('index', 'view', 'list');
+
 		
 	}
     

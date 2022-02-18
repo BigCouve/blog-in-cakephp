@@ -1,21 +1,19 @@
 <!--app/View/Users/login.ctp !-->
 
 
-
-<!-- Button trigger modal -->
-
-
 <?php 
 //$this->extend('/Posts/index');
-$this->start('headss'); ?>
-  <h1>ACHA, PORRA</h1>
-<?php $this->end(); ?>
+//$this->start('headss'); ?>
+  <!--<h1>ACHA, PORRA</h1>-->
+<?php //$this->end(); ?>
 
-
+<!-- Botão que abre modal
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
     Entrar (modal)
   </button>
-<!-- Modal -->
+-->
+
+<!-- Modal 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -47,5 +45,11 @@ $this->start('headss'); ?>
     </div>
   </div>
 </div>
+-->
 
-
+<?php echo $this->Flash->render('auth'); ?>
+<?php echo $this->Form->create('User'); ?>
+<?php echo $this->Form->input('username');
+  echo $this->Form->input('password');
+?>
+<?php echo $this->Form->end('Enviar');?>
