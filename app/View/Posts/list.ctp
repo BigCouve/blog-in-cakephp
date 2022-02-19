@@ -5,24 +5,27 @@
 
 
 <!-- Aqui é onde nós percorremos nossa matriz $posts, imprimindo
-as informações dos posts -->
-
-<?php 
-echo 'Antes de entrar na tabela, valor de logged: ' . $this->Session->read('logged');
-if ($this->Session->read('logged' == true)) { ?>
-    <table style = "width:100%">
-        <tr>
+as informações dos posts --> 
+<table style = "width:100%">
+    <tr>
+        <?php if ($this->Session->read('logged') === true) { ?>
             <th>Id</th>
-            <th style = "width:30%">Title</th>
-            <th style = "width:10%">Action</th>
-            <th>Created</th>
-        </tr>
-        <?php foreach ($list as $post): ?>
-            <tr>
+        <?php } ?>
+        <th style = "width:30%">Título</th>
+        <?php if ($this->Session->read('logged') === true) { ?>
+            <th style = "width:10%">Ações</th>
+        <?php } ?>
+        <th>Criado</th>
+    </tr>
+    <?php foreach ($list as $post): ?>
+        <tr>
+            <?php if ($this->Session->read('logged') === true) { ?>
                 <td><?php echo $post['Post']['id']; ?></td>
-                <td>
-                    <?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id']));?>
-                </td>
+            <?php } ?>
+            <td>
+                <?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id']));?>
+            </td>
+            <?php if ($this->Session->read('logged') === true) { ?>
                 <td>
                     <?php echo $this->Form->postLink(
                         'Delete',
@@ -31,26 +34,9 @@ if ($this->Session->read('logged' == true)) { ?>
                     )?>
                     <?php echo $this->Html->link('Edit', array('action' => 'edit', $post['Post']['id']));?>
                 </td>
-                <td><?php echo $post['Post']['created']; ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </table> 
-<?php } 
-else { ?>
-    <table style = "width:100%">
-        <tr>
-            <th style = "width:30%">Title</th>
-            <th>Created</th>
+            <?php } ?>    
+            <td><?php echo $post['Post']['created']; ?></td>
         </tr>
-        <?php foreach ($list as $post):  ?>
-            <tr>
-                <td>
-                    <?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id']));?>
-                </td>
-                <td><?php echo $post['Post']['created']; ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
-<?php } ?>
-    
+    <?php endforeach; ?>
+</table>     
 
