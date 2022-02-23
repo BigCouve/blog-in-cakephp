@@ -11,7 +11,7 @@
           </button>
         </a>     
         <a class="nav navbar-brand" href="http://localhost:8888/">
-        <img src="/app/webroot/img/arvore2.png" width="30" height="30" class="img-circle">
+        <img src="/app/webroot/img/arvore2.png" width="30" height="30" class="img-responsive">
           <a class="nav navbar-brand" href="http://localhost:8888/">
           Mãe Terra
           </a>

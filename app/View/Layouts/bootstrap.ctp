@@ -40,14 +40,19 @@
     <![endif]-->
 
     <style type="text/css">
-    	body{ padding: 70px 0px; 
-            padding-bottom: 70px;}
-      </style>
+    body{ padding: 70px 0px; 
+          padding-bottom: 70px;
+          /*background-image: url('/app/webroot/img/backgroundBlog1.png');
+          background-size: 100%;*/
+          background-color: #CDF4F0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
+
     
   </head>
 
-  <body style="background-color:#c7fbe5;">
-  
+  <body>
 
     <?php 
       echo $this->Element('navigation');   
