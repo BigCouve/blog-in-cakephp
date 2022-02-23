@@ -3807,3 +3807,39 @@ Request URL: /1
 Stack Trace:
 #0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2022-02-23 18:31:40 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /add
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-02-23 18:31:45 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /add
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-02-23 18:36:08 Error: [MissingControllerException] Controller class AdduserßController could not be found.
+Exception Attributes: array (
+  'class' => 'AdduserßController',
+  'plugin' => NULL,
+)
+Request URL: /adduser%C3%9F
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-02-23 18:36:21 Error: [MissingControllerException] Controller class AdduserßController could not be found.
+Exception Attributes: array (
+  'class' => 'AdduserßController',
+  'plugin' => NULL,
+)
+Request URL: /adduser%C3%9F
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
