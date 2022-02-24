@@ -1,55 +1,45 @@
 <!--app/View/Users/login.ctp !-->
-
-
-<?php 
-//$this->extend('/Posts/index');
-//$this->start('headss'); ?>
-  <!--<h1>ACHA, PORRA</h1>-->
-<?php //$this->end(); ?>
-
-<!-- Botão que abre modal
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
-    Entrar (modal)
-  </button>
--->
-
-<!-- Modal 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="titleModalLogin">Por favor, insira seu usuário e senha</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="users form">
-            <?php echo $this->Flash->render('auth'); ?>
-            <?php echo $this->Form->create('User'); ?>
-                <fieldset>
-                    <?php echo $this->Form->input('username');
-                    echo $this->Form->input('password');
-                ?>
-                </fieldset>
-            
-            </div>
-      </div>
-      <div class="modal-footer">
-      <div class="submit">
-      <input class = "btn btn-primary" type="submit" value="Entrar" />
-      </div>
-      </form>
-      <?php echo $this->fetch('body')?>
-      </div>
-    </div>
-  </div>
-</div>
--->
+<link rel="stylesheet" type="text/css" href="/app/webroot/css/Userslogin.css" media="screen" />
 
 <?php echo $this->Flash->render('auth'); ?>
-<?php echo $this->Form->create('User'); ?>
-<?php echo $this->Form->input('username');
-  echo $this->Form->input('password');
-?>
-<?php echo $this->Form->end('Enviar');?>
+<?php echo $this->Form->create('User');?>
+
+<div class="container jumbotron jumbotron-fluid jumbotron-fluid-hover col-md-6 col-md-offset-3 ">
+  <div class="form-group">
+    <?php
+    //echo $this->Form->input('username'); // No div, no label
+
+    echo $this->Form->input(
+      'username',
+      array(
+      'type' => 'text',
+      'class' => 'form-control',
+      'id' =>'UserLogin',
+      'placeholder' => 'Usuário',
+      )
+    );?>
+
+  </div>
+  <div class="form-group">
+    <!--<input type="password" class="form-control" id="PasswordLogin" placeholder="Senha" > -->
+    <?php
+    //echo $this->Form->input('password'); // No div, no label
+
+    echo $this->Form->input(
+      'password',
+      array(
+      'type' => 'password',
+      'class' => 'form-control',
+      'id' =>'PasswordLogin',
+      'placeholder' => 'Senha',
+      )
+    );?>
+
+  </div>
+  <div class="form-group">
+    <input class="btn" id = "ss" type="submit" value="Enviar" >
+  </div>
+</div>
+
+</form>
+

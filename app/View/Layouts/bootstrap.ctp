@@ -48,7 +48,6 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
-
     
   </head>
 

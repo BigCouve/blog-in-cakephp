@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.jumbotron-fluid{
+    background-color: #71D7CC;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.jumbotron-fluid:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+#ss {
+    background-color: orange;
+    color: orangered;
+}

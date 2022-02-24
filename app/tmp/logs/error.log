@@ -3843,3 +3843,87 @@ Request URL: /adduser%C3%9F
 Stack Trace:
 #0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2022-02-24 17:59:18 Error: [TypeError] Argument 1 passed to Hash::filter() must be of the type array, null given, called in /app/lib/Cake/View/Helper.php on line 576
+Request URL: /login
+Stack Trace:
+#0 /app/lib/Cake/View/Helper.php(576): Hash::filter(NULL)
+#1 /app/lib/Cake/View/Helper/FormHelper.php(1054): Helper->setEntity(Array)
+#2 /app/app/View/Users/login.ctp(19): FormHelper->input(Array)
+#3 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#4 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#5 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#6 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#7 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2022-02-24 17:59:38 Error: [TypeError] Argument 1 passed to Hash::filter() must be of the type array, null given, called in /app/lib/Cake/View/Helper.php on line 576
+Request URL: /login
+Stack Trace:
+#0 /app/lib/Cake/View/Helper.php(576): Hash::filter(NULL)
+#1 /app/lib/Cake/View/Helper/FormHelper.php(1054): Helper->setEntity(Array)
+#2 /app/app/View/Users/login.ctp(19): FormHelper->input(Array)
+#3 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#4 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#5 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#6 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#7 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2022-02-24 18:03:34 Error: [TypeError] Argument 1 passed to Hash::filter() must be of the type array, null given, called in /app/lib/Cake/View/Helper.php on line 576
+Request URL: /login
+Stack Trace:
+#0 /app/lib/Cake/View/Helper.php(576): Hash::filter(NULL)
+#1 /app/lib/Cake/View/Helper/FormHelper.php(1054): Helper->setEntity(Array)
+#2 /app/app/View/Users/login.ctp(19): FormHelper->input(Array)
+#3 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#4 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#5 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#6 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#7 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2022-02-24 18:12:51 Error: [TypeError] Argument 1 passed to Hash::filter() must be of the type array, null given, called in /app/lib/Cake/View/Helper.php on line 576
+Request URL: /login
+Stack Trace:
+#0 /app/lib/Cake/View/Helper.php(576): Hash::filter(NULL)
+#1 /app/lib/Cake/View/Helper/FormHelper.php(1054): Helper->setEntity(Array)
+#2 /app/app/View/Users/login.ctp(13): FormHelper->input(Array)
+#3 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#4 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#5 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#6 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#7 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2022-02-24 18:19:11 Error: [TypeError] Argument 1 passed to Hash::filter() must be of the type array, null given, called in /app/lib/Cake/View/Helper.php on line 576
+Request URL: /login
+Stack Trace:
+#0 /app/lib/Cake/View/Helper.php(576): Hash::filter(NULL)
+#1 /app/lib/Cake/View/Helper/FormHelper.php(1054): Helper->setEntity(Array)
+#2 /app/app/View/Users/login.ctp(14): FormHelper->input(Array)
+#3 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#4 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#5 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#6 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#7 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2022-02-24 18:20:41 Error: [TypeError] Argument 1 passed to Hash::filter() must be of the type array, null given, called in /app/lib/Cake/View/Helper.php on line 576
+Request URL: /login
+Stack Trace:
+#0 /app/lib/Cake/View/Helper.php(576): Hash::filter(NULL)
+#1 /app/lib/Cake/View/Helper/FormHelper.php(1054): Helper->setEntity(Array)
+#2 /app/app/View/Users/login.ctp(14): FormHelper->input(Array)
+#3 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#4 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#5 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#6 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#7 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
