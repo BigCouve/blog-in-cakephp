@@ -32,6 +32,8 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,9 +44,9 @@
     <style type="text/css">
     body{ padding: 70px 0px; 
           padding-bottom: 70px;
-          /*background-image: url('/app/webroot/img/backgroundBlog1.png');
-          background-size: 100%;*/
-          background-color: #CDF4F0;
+          background-image: url('/app/webroot/img/backgroundBlog4.jfif');
+          background-size: 100%;
+          /* background-color: #CDF4F0; */
         }
     </style>
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />

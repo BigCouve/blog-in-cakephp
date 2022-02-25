@@ -3927,3 +3927,61 @@ Stack Trace:
 #8 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #9 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2022-02-25 01:47:09 Error: [TypeError] Argument 1 passed to Hash::filter() must be of the type array, null given, called in /app/lib/Cake/View/Helper.php on line 576
+Request URL: /login
+Stack Trace:
+#0 /app/lib/Cake/View/Helper.php(576): Hash::filter(NULL)
+#1 /app/lib/Cake/View/Helper/FormHelper.php(1054): Helper->setEntity(Array)
+#2 /app/app/View/Users/login.ctp(31): FormHelper->input(Array)
+#3 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#4 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#5 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#6 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#7 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2022-02-25 03:24:39 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/backgroundBlog3.png
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-02-25 03:24:41 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/backgroundBlog3.png
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-02-25 03:24:42 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/backgroundBlog3.png
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-02-25 03:24:43 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/backgroundBlog3.png
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

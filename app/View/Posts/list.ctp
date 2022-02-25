@@ -8,7 +8,7 @@
 as informações dos posts --> 
 
 <div class="container-fluid">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-8 col-md-offset-2">
         <table class = "table table-striped table-bordered table-responsive table-hover" >
             <tr>
                 <?php if ($this->Session->read('logged') === true) { ?>

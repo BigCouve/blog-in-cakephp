@@ -4,14 +4,15 @@
 <?php echo $this->Flash->render('auth'); ?>
 <?php echo $this->Form->create('User');?>
 
-<div class="container jumbotron jumbotron-fluid jumbotron-fluid-hover col-md-6 col-md-offset-3 ">
+<div class="container jumbotron jumbotron-fluid col-md-4 col-md-offset-4 ">
   <div class="form-group">
     <?php
     //echo $this->Form->input('username'); // No div, no label
 
     echo $this->Form->input(
-      'username',
+      false,
       array(
+      'name' => 'data[User][username]',
       'type' => 'text',
       'class' => 'form-control',
       'id' =>'UserLogin',
@@ -26,18 +27,20 @@
     //echo $this->Form->input('password'); // No div, no label
 
     echo $this->Form->input(
-      'password',
+      false,
       array(
-      'type' => 'password',
-      'class' => 'form-control',
-      'id' =>'PasswordLogin',
-      'placeholder' => 'Senha',
+        'name' => "data[User][password]",
+        'type' => 'password',
+        'class' => 'form-control',
+        'id' =>'PasswordLogin',
+        'placeholder' => 'Senha',
       )
     );?>
 
   </div>
   <div class="form-group">
     <input class="btn" id = "ss" type="submit" value="Enviar" >
+    <i class="fa fa-unlock"></i>
   </div>
 </div>
 
