@@ -45,7 +45,10 @@
     body{ padding: 70px 0px; 
           padding-bottom: 70px;
           background-image: url('/app/webroot/img/backgroundBlog4.jfif');
-          background-size: 100%;
+          position: relative;
+          height: 100vh;
+          width: 100vw;
+          background-repeat: no-repeat;
           /* background-color: #CDF4F0; */
         }
     </style>

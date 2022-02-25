@@ -17,6 +17,7 @@
       'class' => 'form-control',
       'id' =>'UserLogin',
       'placeholder' => 'Usuário',
+      'value' => false,
       )
     );?>
 
@@ -34,6 +35,7 @@
         'class' => 'form-control',
         'id' =>'PasswordLogin',
         'placeholder' => 'Senha',
+        'value' => false,
       )
     );?>
 
@@ -41,7 +43,7 @@
   <div class="form-group">
     <input class="btn" id = "ss" type="submit" value="Enviar" >
     <i class="fa fa-unlock"></i>
-  </div>
+    </div>
 </div>
 
 </form>
