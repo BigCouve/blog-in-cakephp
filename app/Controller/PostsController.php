@@ -8,7 +8,7 @@ class PostsController extends AppController {
 
     public function index(){
         //$this->autoRender = false;
-        
+
 
     }
     public function list() {
@@ -33,6 +33,7 @@ class PostsController extends AppController {
             $this->request->data = $this->Post->findById($id);
         } else {
             if ($this->Post->save($this->request->data)) {
+                
                 $this->Flash->success('Seu Post foi atualizado.');
                 $this->redirect(array('action' => 'list'));
             }
@@ -58,9 +59,8 @@ class PostsController extends AppController {
         if (in_array($this->action, array('edit', 'delete'))) {
             $postId = (int) $this->request->params['pass'][0];
             if ($this->Post->isOwnedBy($postId, $user['id'])) {
-                return true;
+                return true; 
             }
-            return $this->Post->isOwnedBy($postId, $user['id']);
         }
 
         return parent::isAuthorized($user);

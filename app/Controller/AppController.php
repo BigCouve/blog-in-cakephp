@@ -62,4 +62,8 @@ class AppController extends Controller {
         return false; // Os outros usuários não podem
     }
     
+    public function mostra($algo)
+    {
+        echo $algo . PHP_EOL;
+    }
 }
