@@ -32,8 +32,9 @@ class PostsController extends AppController {
         if ($this->request->is('get')) {
             $this->request->data = $this->Post->findById($id);
         } else {
+            // echo 'Request POST on edit method';
             if ($this->Post->save($this->request->data)) {
-                
+                // echo 'Salvou a alteração com sucesso.';
                 $this->Flash->success('Seu Post foi atualizado.');
                 $this->redirect(array('action' => 'list'));
             }
@@ -58,10 +59,13 @@ class PostsController extends AppController {
         // The owner of a post can edit and delete it
         if (in_array($this->action, array('edit', 'delete'))) {
             $postId = (int) $this->request->params['pass'][0];
+            echo 'ID do post: '. $postId;
             if ($this->Post->isOwnedBy($postId, $user['id'])) {
+                echo 'ID do post: '. $postId;
                 return true; 
             }
         }
+        echo 'ID do post: '. $postId;
 
         return parent::isAuthorized($user);
     }
