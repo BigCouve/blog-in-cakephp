@@ -22,7 +22,16 @@ services:
         ports:
             - "5432:5432"
         volumes:
-            - ./vol/db:/var/lib/postgresql/data            
+            - ./vol/db:/var/lib/postgresql/data
+    php-fpm:
+        build: docker/xdebug/php-fpm
+        working_dir: /application
+        volumes:
+            - './docker/xdebug/application:/application'
+            - './docker/xdebug/php-fpm/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini'
+        environment:
+            XDEBUG_CONFIG: remote_host=localhost #docker network ip.
+            PHP_IDE_CONFIG: "serverName=xdebug-docker" #phpstorm variavel de ambiente com o nome do server configurado.
 networks:
     producao:
         driver: bridge
