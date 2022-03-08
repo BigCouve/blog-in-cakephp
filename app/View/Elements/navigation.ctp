@@ -18,7 +18,7 @@
       </a> 
       </div>
       <div class="navbar-collapse collapse" id = "bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav" >
+        <ul class="nav navbar-nav nav-pills" >
           <li class = "active"><a href="http://localhost:8888/">Início</a></li>
           <li><a href="http://localhost:8888/guias">Guias</a></li>
           <li><a href="http://localhost:8888/scategorias">Categorias (scaffold)</a></li>

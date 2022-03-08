@@ -58,7 +58,6 @@ class PostsController extends AppController {
             }
             // O dono de um post pode editá-lo e deletá-lo
             if (in_array($this->request->action, array('edit', 'delete'))) {
-                //debug($this->request->params);
                 $postId = (int) $this->request->params['pass'][0];
                 return $this->Post->isOwnedBy($postId, $user['id']);
             }

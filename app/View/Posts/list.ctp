@@ -7,7 +7,6 @@
     
 </div>
 
-
 <!-- Aqui é onde nós percorremos nossa matriz $posts, imprimindo
 as informações dos posts --> 
 
