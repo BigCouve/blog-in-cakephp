@@ -7,9 +7,7 @@ class PostsController extends AppController {
     public $name = 'Posts';
 
     public function index(){
-        //$this->autoRender = false;
-
-
+        
     }
     public function list() {
         $this->set('list', $this->Post->find('all'));
@@ -27,22 +25,21 @@ class PostsController extends AppController {
             }
         }
     }
+
     public function edit($id = null) {
+        
+        // Campo do id recebe id do post atual
         $this->Post->id = $id;
         if ($this->request->is('get')) {
-            $this->request->data = $this->Post->findById($id);
-            var_dump($this->request->data);
-
+             $this->request->data = $this->Post->findById($id);
         } else {
-            // echo 'Request POST on edit method';
-            var_dump($this->request->data);
             if ($this->Post->save($this->request->data)) {
-                // echo 'Salvou a alteração com sucesso.';
                 $this->Flash->success('Seu Post foi atualizado.');
                 $this->redirect(array('action' => 'list'));
             }
         }
     }
+
     public function delete($id) {
         if (!$this->request->is('post')) {
             throw new MethodNotAllowedException();
@@ -54,21 +51,18 @@ class PostsController extends AppController {
     }
 
     public function isAuthorized($user) {
-    // All registered users can add posts
-        if ($this->action === 'add') {
-            return true;
-        }
-
-        // The owner of a post can edit and delete it
-        if (in_array($this->action, array('edit', 'delete'))) {
-            $postId = (int) $this->request->params['pass'][0];
-            if ($this->Post->isOwnedBy($postId, $user['id'])) {
-                return true; 
+        if (parent::isAuthorized($user)){
+            // Todos os usuários registrados podem criar posts
+            if ($this->action === 'add') {
+                return true;
+            }
+            // O dono de um post pode editá-lo e deletá-lo
+            if (in_array($this->request->action, array('edit', 'delete'))) {
+                //debug($this->request->params);
+                $postId = (int) $this->request->params['pass'][0];
+                return $this->Post->isOwnedBy($postId, $user['id']);
             }
         }
-
-        return parent::isAuthorized($user);
     }
-    
 }
 ?>

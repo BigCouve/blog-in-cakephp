@@ -1,7 +1,11 @@
 <!-- File: /app/View/Posts/index.ctp  (links para edição adicionados) -->
 
-<h1>Blog posts</h1>
-<p><?php echo $this->Html->link("Add Post", array('action' => 'add')); ?></p>
+<div class="row">
+    <div class="col-md-12">
+        <h1>Posts do blog</h1>
+    </div>
+    
+</div>
 
 
 <!-- Aqui é onde nós percorremos nossa matriz $posts, imprimindo
@@ -32,11 +36,11 @@ as informações dos posts -->
                         <?php if ($this->Session->read('logged') === true) { ?>
                             <td>
                                 <?php echo $this->Form->postLink(
-                                    'Delete',
+                                    'Deletar',
                                     array('action' => 'delete', $post['Post']['id']),
                                     array('confirm' => 'Você tem certeza?')
                                 )?>
-                                <?php echo $this->Html->link('Edit', array('action' => 'edit', $post['Post']['id']));?>
+                                <?php echo $this->Html->link('Editar', array('action' => 'edit', $post['Post']['id']));?>
                             </td>
                         <?php } ?>    
                         <td><?php echo $post['Post']['created']; ?></td>
@@ -44,5 +48,13 @@ as informações dos posts -->
                 <?php endforeach; ?>
             </tbody>
         </table>
-    </div>     
+    </div>
+    
+</div>
+
+<div class="col-md-offset-8">
+    <button type="button" class="btn btn-default" aria-label="Left Align">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            <?php echo $this->Html->link("Adicionar Post", array('action' => 'add')); ?>
+    </button> 
 </div>

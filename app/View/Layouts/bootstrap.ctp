@@ -53,7 +53,7 @@
         }
     </style>
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
-    
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/Everywhere.css" media="screen" >
   </head>
 
   <body>

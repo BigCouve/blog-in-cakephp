@@ -11,17 +11,7 @@ class Post extends AppModel {
         )
     );
     public function isOwnedBy($post, $user) {
-        echo 'id do post: ';
-        var_dump($post);
-        echo 'id do user: ';
-        var_dump($user);
-        echo 'return da função Owned: ';
-        var_dump($this->field('id', array('id' => $post, 'user_id' => $user)));
-        return $this->field('id', array('id' => $post, 'user_id' => $user)) === true;
+        return $this->field('id', array('id' => $post, 'user_id' => $user)) === $post;
     }
 
-    public function testeDeField($postTitle)
-    {
-        return $this->field($postTitle);
-    }
 }
