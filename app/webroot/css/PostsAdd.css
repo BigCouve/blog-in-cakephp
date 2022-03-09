@@ -3,7 +3,7 @@
 .add_titulo {
     background-color: darkkhaki;
     width: 45vh;
-    height: 8vh;
+    height: 6vh;
     text-align: justify;
     text-indent: 1vh;
     color: #191911;
@@ -11,9 +11,16 @@
     border-radius: 1vh;
 }
 
+.add_titulo_corpo{
+    background-color: darkkhaki; 
+    width: 100vh;
+    height: 10vh;
+}
+
+
 .add_corpo {
     background-color: darkkhaki;
-    width: 30vh;
+    width: 100vh;
     height: 30vh;
 }
 

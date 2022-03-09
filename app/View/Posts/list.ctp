@@ -51,9 +51,11 @@ as informações dos posts -->
     
 </div>
 
-<div class="col-md-offset-8">
-    <button type="button" class="btn btn-default" aria-label="Left Align">
-        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-            <?php echo $this->Html->link("Adicionar Post", array('action' => 'add')); ?>
-    </button> 
-</div>
+<?php if ($this->Session->read('logged') === true) { ?>
+    <div class="col-md-offset-8">
+        <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                <?php echo $this->Html->link("Adicionar Post", array('action' => 'add')); ?>
+        </button> 
+    </div>
+<?php } ?>

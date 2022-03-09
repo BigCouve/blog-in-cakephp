@@ -14,12 +14,8 @@
 }
 
 #ss {
-    /* background-color: orange; */
-    /* color: orangered; */
-    /* letter-spacing: 1.0px; */
     font-weight: 700;
     color: #313333;
-    /* background: #4FD1C5; */
     background: linear-gradient(90deg, #FFF2DA 0%, #FEBC43 100%);
     border: none;
     border-radius: 10px;
