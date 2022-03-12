@@ -40,22 +40,14 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/default.css" media="screen">
 
-    <style type="text/css">
-    body{ padding: 70px 0px; 
-          padding-bottom: 70px;
-          background-image: url('/app/webroot/img/backgroundBlog4.jfif');
-          position: relative;
-          height: 100vh;
-          width: 100vw;
-          background-repeat: no-repeat;
-          /* background-color: #CDF4F0; */
-        }
-    </style>
+    
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsIndex.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/Everywhere.css" media="screen" >
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsAdd.css" media="screen" >
-
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsView.css" media="screen">
   </head>
 
   <body>

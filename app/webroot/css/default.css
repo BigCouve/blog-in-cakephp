@@ -1,0 +1,14 @@
+body { 
+    padding: 70px 0px; 
+    padding-bottom: 70px;
+    background-image: url('/app/webroot/img/backgroundBlog4.jfif');
+    position: sticky;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: center;
+
+    /* background-color: #CDFh4F0; */
+}
