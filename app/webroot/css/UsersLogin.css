@@ -7,7 +7,8 @@
     box-shadow: 0 0 20px 20px #fcb887 inset, 0 0 0 0 #fcb887;   
     -webkit-transition: all 0ms ease-in-out;
     transition: all 500ms ease-in-out;
-    margin: auto ;
+    margin-top: 13vh;
+    margin-left: 0 auto;
 }
 
 .jumbotron-fluid:hover {

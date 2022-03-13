@@ -2,11 +2,18 @@
 
 .table > tbody > tr:hover{
     background-color: #FFE8CA;
+    
+}
+
+#cabecalho th{
+    /* border: 3px outset hsl(77, 7%, 19%); */
+    border-style: outset;
+    font: sans-serif;
+    text-align: center;
 }
 
 #cabecalho{
-    /* border: 3px outset hsl(77, 7%, 19%); */
-    border-style: outset !important;
+    border-style: outset;
 }
 
 .table-striped {
@@ -14,7 +21,7 @@
 }
 
 .table-bordered > tbody > tr {
-    border-style: groove; 
+    border-style: dotted;
 }
 
 .mainTitle h1{
