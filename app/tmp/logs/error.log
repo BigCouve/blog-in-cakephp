@@ -14762,7 +14762,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 03:44:07 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:26:34 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14773,7 +14777,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 13:23:50 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:26:41 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14784,7 +14792,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 13:23:56 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:26:46 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14795,7 +14807,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 13:23:58 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:26:50 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14806,7 +14822,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:43:11 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:26:53 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14817,7 +14837,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:44:52 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:26:55 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14828,7 +14852,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:45:00 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:27:02 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14839,7 +14867,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:45:05 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:27:04 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14850,7 +14882,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:45:29 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:27:27 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14861,7 +14897,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:46:28 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:27:29 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14872,7 +14912,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:46:36 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:40:40 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14883,7 +14927,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:54:18 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:40:44 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14894,7 +14942,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:54:26 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:40:46 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14905,7 +14957,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:55:08 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:40:48 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14916,7 +14972,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:55:20 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:40:53 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14927,7 +14987,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:56:05 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:40:54 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14938,7 +15002,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:56:17 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:41:19 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14949,7 +15017,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:56:18 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:41:58 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14960,7 +15032,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:56:28 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:42:01 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14971,7 +15047,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:56:31 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:42:05 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14982,7 +15062,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:56:36 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:42:42 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -14993,7 +15077,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:58:31 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:42:44 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15004,7 +15092,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 14:58:33 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:43:48 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15015,7 +15107,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:01:51 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:44:00 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15026,7 +15122,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:07:38 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:44:03 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15037,7 +15137,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:08:06 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:44:05 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15048,7 +15152,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:13:15 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:44:07 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15059,7 +15167,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:14:13 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:45:27 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15070,7 +15182,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:14:16 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:45:33 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15081,7 +15197,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:14:22 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:46:22 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15092,7 +15212,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:14:24 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:46:24 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15103,7 +15227,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:14:24 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:47:06 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15114,7 +15242,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:14:30 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:47:18 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15125,7 +15257,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:15:01 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:51:52 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15136,7 +15272,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:15:09 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:55:51 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15147,7 +15287,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:15:17 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:55:53 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15158,7 +15302,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:15:23 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:55:54 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15169,7 +15317,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:15:39 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:55:56 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15180,7 +15332,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:16:04 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:56:00 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15191,7 +15347,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:16:24 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:56:08 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15202,7 +15362,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:16:32 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 16:56:15 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15213,7 +15377,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:16:40 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 17:02:07 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15224,7 +15392,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:16:46 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 17:02:17 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15235,7 +15407,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:16:48 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 17:02:52 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15246,7 +15422,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:17:06 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 17:02:58 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15257,7 +15437,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 15:18:04 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 17:03:14 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15268,7 +15452,11 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 16:40:20 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 17:03:24 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',
@@ -15279,7 +15467,374 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+<<<<<<< HEAD
 2022-03-13 18:23:13 Error: [MissingActionException] Action AppController::webroot() could not be found.
+=======
+2022-03-14 17:03:42 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:03:53 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:12:48 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:31:37 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:31:41 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:31:45 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:32:32 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:32:34 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:36:37 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:36:41 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:36:44 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:36:47 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:36:48 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:37:28 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:37:30 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:38:50 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:38:53 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:47:34 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:53:01 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:53:03 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:53:08 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:53:10 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:53:14 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:53:21 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:53:49 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:54:14 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:54:18 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:54:19 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:54:50 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:55:49 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:56:12 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 17:57:19 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 18:00:23 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/Everywhere.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-03-14 18:00:34 Error: [MissingActionException] Action AppController::webroot() could not be found.
+>>>>>>> b5da60e54c4b0596b86e2a26466650a42b7c239f
 Exception Attributes: array (
   'controller' => 'AppController',
   'action' => 'webroot',

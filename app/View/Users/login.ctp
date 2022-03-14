@@ -2,7 +2,18 @@
 <link rel="stylesheet" type="text/css" href="/app/webroot/css/Userslogin.css" media="screen" />
 
 <?php echo $this->Flash->render('auth'); ?>
-<?php echo $this->Form->create('User');?>
+<?php echo $this->Form->create('User');
+
+if ($this->Session->read('erro')) { ?>
+  <div class="alert alert-danger text-center col-md-6 col-md-offset-3" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <b>Usuário ou senha inválido, tente novamente</b>
+  </div>
+<?php } ?>
+
+
+
+
 
 <div class="container jumbotron jumbotron-fluid col-md-4 col-md-offset-4 ">
   <div class="form-group">
@@ -41,7 +52,7 @@
 
   </div>
   <div class="form-group">
-    <input class="btn" id = "ss" type="submit" value="Enviar" >
+    <input class="btn" id = "ss" type="submit" value="Entrar" >
     <i class="fa fa-unlock"></i>
     </div>
 </div>

@@ -48,6 +48,7 @@ class AppController extends Controller {
     );
     public function beforeFilter(){
 		$this->layout = 'bootstrap';
+        // Não logados podem acessar:
 		$this->Auth->allow('index', 'view', 'list', 'login', 'logout');
 
 		
