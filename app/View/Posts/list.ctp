@@ -6,7 +6,7 @@
 as informações dos posts --> 
 
 <div class="container-fluid">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="">
         <table class = "table table-striped table-bordered table-responsive table-hover" >
             <?php if ($this->Session->read('logged') === true) { ?>
             <div id="AddPost">

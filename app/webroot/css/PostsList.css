@@ -7,13 +7,12 @@
 
 #cabecalho th{
     /* border: 3px outset hsl(77, 7%, 19%); */
-    border-style: outset;
+    border: 3px solid #BABABA;    
     font: sans-serif;
     text-align: center;
-}
-
-#cabecalho{
-    border-style: outset;
+    width: 50vh;
+    height: auto;
+    margin: auto;
 }
 
 .table-striped {
