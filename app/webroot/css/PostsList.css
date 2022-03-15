@@ -10,9 +10,12 @@
     border: 3px solid #BABABA;    
     font: sans-serif;
     text-align: center;
-    width: 50vh;
-    height: auto;
     margin: auto;
+}
+
+#dateTimePost{
+    width: 10px;
+    text-align: center;
 }
 
 .table-striped {
@@ -21,7 +24,9 @@
 
 .table-bordered > tbody > tr {
     border-style: dotted;
+    text-align: center;
 }
+
 
 .mainTitle h1{
     box-shadow: 1vh 1vh #3d2e1b;
@@ -40,5 +45,12 @@
 }
 
 #AddPost{
+    margin-left: 16vh;
     margin-bottom: 5vh;
+}
+
+.table{
+    width: 900px;
+    margin: auto;
+    border-radius: 2vh;
 }

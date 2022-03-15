@@ -20,11 +20,11 @@ as informações dos posts -->
                 <?php if ($this->Session->read('logged') === true) { ?>
                     <th>Id</th>
                 <?php } ?>
-                <th >Título</th>
+                <th id="titlePosts" >Título</th>
                 <?php if ($this->Session->read('logged') === true) { ?>
                     <th >Ações</th>
                 <?php } ?>
-                <th>Criado</th>
+                <th id = "dateTimePost">Criado em</th>
             </tr>
             <tbody>
                 <?php foreach ($list as $post): ?>

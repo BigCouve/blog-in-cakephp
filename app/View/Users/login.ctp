@@ -4,7 +4,7 @@
 <?php echo $this->Flash->render('auth'); ?>
 <?php echo $this->Form->create('User');
 
-if ($this->Session->read('erro')) { ?>
+if ($this->Session->consume('erro')) { ?>
   <div class="alert alert-danger text-center col-md-6 col-md-offset-3" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <b>Usuário ou senha inválido, tente novamente</b>
