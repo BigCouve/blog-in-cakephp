@@ -29,8 +29,11 @@
         'value' => false,
         'class' => 'form-control',
         'id' => 'titleLogin',
-        'placeholder' => 'Descrição'
+        'placeholder' => 'Descrição',
         ));
-    echo $this->Form->end('Salvar Post');
     ?>
+    <div class="submit">
+        <input type="submit" value="Enviar Post" />
+    </div>
+    </form>
 </div>  
