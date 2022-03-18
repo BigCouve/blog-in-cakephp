@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 .tituloPostView{
     margin-bottom: 3vh;
     background-color: #fff;
@@ -11,7 +9,7 @@
 }
 
 .corpoPostView{
-    background-color: #fff;
+    background-color: rgb(241, 0, 0);
     text-align: justify;
     border-radius: 5px;
     height: auto;
@@ -20,3 +18,7 @@
     padding: 5vh;
 }
 
+.footerView > p {
+    color: rebeccapurple;
+    font-size: 32px;
+}

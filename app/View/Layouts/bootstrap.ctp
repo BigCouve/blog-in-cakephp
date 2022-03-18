@@ -40,14 +40,16 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/default.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/default.css" media="screen"/>
 
     
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsIndex.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsIndex.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/Everywhere.css" media="screen" >
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsAdd.css" media="screen" >
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsView.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsAdd.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsView.css" media="screen"/>
+
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersLogin.css" media="screen"/>
+
   </head>
 
   <body>

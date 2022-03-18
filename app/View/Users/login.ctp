@@ -1,6 +1,4 @@
 <!--app/View/Users/login.ctp !-->
-<link rel="stylesheet" type="text/css" href="/app/webroot/css/Userslogin.css" media="screen" />
-
 <?php echo $this->Flash->render('auth'); ?>
 <?php echo $this->Form->create('User');
 
