@@ -9,7 +9,7 @@
 }
 
 .corpoPostView{
-    background-color: rgb(241, 0, 0);
+    background-color: #fff;
     text-align: justify;
     border-radius: 5px;
     height: auto;
@@ -18,7 +18,11 @@
     padding: 5vh;
 }
 
-.footerView > p {
+.footerView {
+    padding: 10px 5px 1px 5px;
+    width: fit-content;
+    margin-left: 47vw;
+    margin-top: 2vh;
     color: rebeccapurple;
-    font-size: 32px;
+    display: inline-block;
 }

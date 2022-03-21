@@ -11,7 +11,7 @@
 </div>
 
 
-<div class="footerView">
+<div class="footerView text-right panel-footer">
     <p>
         Criado em: <?php echo $post['Post']['created']?>
     </p>

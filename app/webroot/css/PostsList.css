@@ -10,11 +10,10 @@
     border: 3px solid #BABABA;    
     font: sans-serif;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
 }
 
 #dateTimePost{
-    width: 10px;
     text-align: center;
 }
 
@@ -22,7 +21,7 @@
     background-color: #BABABA;
 }
 
-.table-bordered > tbody > tr {
+#linePosts > td {
     border-style: dotted;
     text-align: center;
 }
@@ -31,7 +30,7 @@
 .mainTitle h1{
     box-shadow: 1vh 1vh #3d2e1b;
     text-shadow: 1px 1px#dfdfdf;
-    width: 40vh;
+    width: 40vw;
     height: auto;
     margin: auto;
     text-align: center;

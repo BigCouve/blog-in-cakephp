@@ -11,6 +11,7 @@ class PostsController extends AppController {
     }
     public function list() {
         $this->set('list', $this->Post->find('all'));
+        $this->set('listOwned', $this->Post->query('SELECT * FROM posts WHERE user_id = ' . $this->Auth->user('id')));
     }
 
     public function view($id = null) {
@@ -25,7 +26,7 @@ class PostsController extends AppController {
             }
         }
     }
-
+    
     public function edit($id = null) {
         
         // Campo do id recebe id do post atual
