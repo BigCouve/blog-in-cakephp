@@ -21,8 +21,8 @@
 .footerView {
     padding: 10px 5px 1px 5px;
     width: fit-content;
-    margin-left: 47vw;
     margin-top: 2vh;
+    margin-left: 55%;
     color: rebeccapurple;
     display: inline-block;
 }
