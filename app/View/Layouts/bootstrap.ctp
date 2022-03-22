@@ -49,6 +49,7 @@
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsView.css" media="screen"/>
 
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersLogin.css" media="screen"/>
+    <link rek="stylesheet" type="text/css" href="/app/webroot/css/UsersAdd.css" media="screen" />
 
   </head>
 

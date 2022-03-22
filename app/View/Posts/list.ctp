@@ -8,12 +8,10 @@ as informações dos posts -->
 <div class="container-fluid">
     <table class = "table table-striped table-bordered table-responsive table-hover" >
         <?php if ($this->Session->read('logged') === true) { ?>
-        <div id="AddPost">
-            <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                    <?php echo $this->Html->link("Adicionar Post", array('action' => 'add')); ?>
-            </button> 
-        </div>
+        <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">
+            <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            Adicionar Post
+        </a>
         <?php } ?>
         <tr id="cabecalho">
             <?php if ($this->Session->read('logged') === true) { ?>

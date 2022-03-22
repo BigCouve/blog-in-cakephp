@@ -43,9 +43,14 @@
     border-radius: 1vh;
 }
 
-#AddPost{
+#addPost{
     margin-left: 16vh;
     margin-bottom: 5vh;
+    color: rgb(57, 159, 255);
+}
+
+#crossAddPost{
+    color: black; 
 }
 
 .table{
