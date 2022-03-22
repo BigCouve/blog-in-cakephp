@@ -11,11 +11,6 @@ class PostsController extends AppController {
     }
     public function list() {
         $this->set('list', $this->Post->find('all'));
-        $userLogged = (int) $this->Auth->user('username');
-        debug($userLogged);
-        debug($this->Post->query("SELECT * FROM posts WHERE user_id = " . $userLogged));
-        // debug(gettype($userLogged));
-        $this->set('listOwned', $this->Post->query("SELECT * FROM posts WHERE user_id = 49" ));
     }
 
     public function view($id = null) {
@@ -55,6 +50,13 @@ class PostsController extends AppController {
         }
     }
 
+    public function listProfile(){
+        $userLogged = (int) $this->Auth->user('username');
+        debug($userLogged); 
+        debug($this->Post->query("SELECT * FROM posts WHERE user_id = " . $userLogged));
+        // debug(gettype($userLogged));
+        $this->set('listOwned', $this->Post->query("SELECT * FROM posts WHERE user_id = 49" ));
+    }
     public function isAuthorized($user) {
         // Todos os usuários registrados podem criar posts
         if ($this->action === 'add') {

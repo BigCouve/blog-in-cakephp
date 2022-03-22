@@ -2,6 +2,12 @@
 
 .bgAddUser{
     background-color: #fff;
-    width: fit-content;
-    display: inline-block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#passwordAddUser{
+    color: blueviolet;
 }
