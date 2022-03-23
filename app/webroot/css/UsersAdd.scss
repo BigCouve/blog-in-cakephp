@@ -1,0 +1,50 @@
+@import "./default";
+@import "./variables";
+    
+.bgAddUser{
+    padding: 50px 75px;
+    display: flex;
+    background-color: $bgColorModal;
+    width: auto;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 13vh;
+    form{
+        fieldset{
+            legend{
+                color: white;
+                font-size: 32px;
+            }
+            .select{
+                label{
+                    margin-right: 30px;
+                    color: $defaultGray;
+                }
+            }
+            #profileAddUser{
+                color: $defaultGray;
+                
+            }
+        }
+    }
+    
+}
+
+#usernameAddUser{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#passwordAddUser{
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}   
+
+
+
+#submitAddUser{
+    color: $defaultGray;
+    background-color: #F2D08D;
+}

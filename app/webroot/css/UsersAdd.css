@@ -1,13 +1,63 @@
-
-
-.bgAddUser{
-    background-color: #fff;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    padding: 10px;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#passwordAddUser{
-    color: blueviolet;
+body {
+  padding: 70px 0px;
+  padding-bottom: 70px;
+  background-image: url("/app/webroot/img/backgroundBlog4.jfif");
+  position: -webkit-sticky;
+  position: sticky;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  /* background-color: #CDFh4F0; */
 }
+
+.bgAddUser {
+  padding: 50px 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #71CA6C;
+  width: auto;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 13vh;
+}
+
+.bgAddUser form fieldset legend {
+  color: white;
+  font-size: 32px;
+}
+
+.bgAddUser form fieldset .select label {
+  margin-right: 30px;
+  color: gray;
+}
+
+.bgAddUser form fieldset #profileAddUser {
+  color: gray;
+}
+
+#usernameAddUser {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#passwordAddUser {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#submitAddUser {
+  color: gray;
+  background-color: #F2D08D;
+}
+/*# sourceMappingURL=UsersAdd.css.map */

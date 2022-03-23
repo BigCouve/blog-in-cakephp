@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
 
 	<?php
 		echo $this->Html->meta('icon');
@@ -40,17 +45,32 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/default.css" media="screen"/>
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/default.css" media="screen"/>
 
     
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsIndex.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsAdd.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsView.css" media="screen"/>
-
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersLogin.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersAdd.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersAdd.css" media="screen"/> -->
 
+
+    <?php
+
+    // Arquivos CSS importados
+      echo $this->Html->css(array('default'));
+
+      echo $this->Html->css(array('PostsIndex'));
+      echo $this->Html->css(array('PostsList'));
+      echo $this->Html->css(array('PostsAdd'));
+      echo $this->Html->css(array('PostsView'));
+      echo $this->Html->css(array('UsersLogin'));
+      echo $this->Html->css(array('UsersAdd'));
+
+    ?>
   </head>
 
   <body>

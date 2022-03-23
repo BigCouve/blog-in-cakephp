@@ -50,9 +50,9 @@ if ($this->Session->consume('erro')) { ?>
 
   </div>
   <div class="form-group">
-    <input class="btn" id = "ss" type="submit" value="Entrar" >
+    <input class="btn" id = "ss" type="submit" value="Entrar">
     <i class="fa fa-unlock"></i>
-    </div>
+  </div>
 </div>
 
 </form>
