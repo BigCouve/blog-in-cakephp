@@ -1,22 +1,22 @@
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
-  padding: 70px 0px;
-  padding-bottom: 70px;
+  margin: 80px 0px;
   background-image: url("/app/webroot/img/backgroundBlog4.jfif");
   position: -webkit-sticky;
   position: sticky;
-  height: 100%;
-  width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: auto;
-  /* background-color: #CDFh4F0; */
+}
+
+body nav.navbar {
+  padding: 0px 200px;
+}
+
+body nav.navbar.container-fluid.navbar-header.navbar-right ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: blue;
 }
 
 .bgAddUser {

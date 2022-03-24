@@ -1,5 +1,5 @@
-<div class="container">
-  <nav class="navbar navbar-inverse ">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <a href="#">
@@ -61,7 +61,7 @@
     
   </nav><!--/.nav-collapse -->
   
-</div><!--/.container.fluid -->
+<!--/.container.fluid -->
 
 
 <!-- Single button -->
