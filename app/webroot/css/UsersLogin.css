@@ -4,24 +4,18 @@
     background-color: #71CA6C;
     border-color: #DAE6FB;
     color: #fff;
-    box-shadow: 0 0 20px 20px #fcb887 inset, 0 0 0 0 #fcb887;   
-    -webkit-transition: all 0ms ease-in-out;
-    transition: all 500ms ease-in-out;
-    margin-top: 13vh;
-    margin-left: 0 auto;
+    margin-top: 125px;
 }
 
-.jumbotron-fluid:hover {
-    box-shadow: 0 0 10px 0 #5e1e1e inset, 0 0 10px 4px #5e1e1e;
+.container > .form-group {
+    text-align: center;
 }
-
 #ss {
-    font-weight: 700;
+    font-weight: 60px;
     color: #313333;
     background: linear-gradient(90deg, #FFF2DA 0%, #FEBC43 100%);
     border: none;
     border-radius: 10px;
-    box-shadow: 2px -2px 5px #FFE2AD;
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     outline: none;

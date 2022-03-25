@@ -8,15 +8,15 @@ body {
   background-size: auto;
 }
 
-body nav.navbar {
+body nav {
   padding: 0px 200px;
 }
 
-body nav.navbar.container-fluid.navbar-header.navbar-right ul {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: blue;
+body nav div.container-fluid div.collapse ul.navbar-right a {
+  margin-left: 10px;
+  display: inline-block;
+  color: green;
+  font-weight: bold;
 }
 
 .bgAddUser {
@@ -57,7 +57,10 @@ body nav.navbar.container-fluid.navbar-header.navbar-right ul {
 }
 
 #submitAddUser {
+  margin-top: 20px;
   color: gray;
-  background-color: #F2D08D;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#FFF2DA), to(#FEBC43));
+  background: linear-gradient(90deg, #FFF2DA 0%, #FEBC43 100%);
 }
 /*# sourceMappingURL=UsersAdd.css.map */

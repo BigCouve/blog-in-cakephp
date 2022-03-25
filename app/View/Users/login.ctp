@@ -4,7 +4,9 @@
 
 if ($this->Session->consume('erro')) { ?>
   <div class="alert alert-danger text-center col-md-6 col-md-offset-3" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
     <b>Usuário ou senha inválido, tente novamente</b>
   </div>
 <?php } ?>
@@ -51,7 +53,7 @@ if ($this->Session->consume('erro')) { ?>
   </div>
   <div class="form-group">
     <input class="btn" id = "ss" type="submit" value="Entrar">
-    <i class="fa fa-unlock"></i>
+    <i class="fa fa-lock"></i>
   </div>
 </div>
 

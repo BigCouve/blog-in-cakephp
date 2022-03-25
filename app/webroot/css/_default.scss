@@ -1,10 +1,4 @@
 
-// *{
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-// }
-
 body{
     margin: 80px 0px;
     background-image: url('/app/webroot/img/backgroundBlog4.jfif');
@@ -14,19 +8,20 @@ body{
     background-size: auto;
     
     nav{
-        &.navbar{
-            padding: 0px 200px;
-            &.container-fluid{
-                &.navbar-header{
-                    &.navbar-right{
-                        & ul{
-                            justify-content: space-between;
-                            color: blue;
-                        }
+        padding: 0px 200px;
+        div.container-fluid{
+            div.collapse{
+                ul.navbar-right{
+                    a{
+                        margin-left: 10px;
+                        display: inline-block;
+                        color: green;       
+                        font-weight: bold;                 
                     }
                 }
             }
         }
     }
 }
+
 

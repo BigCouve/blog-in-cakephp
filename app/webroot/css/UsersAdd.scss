@@ -24,7 +24,6 @@
             }
             #profileAddUser{
                 color: $defaultGray;
-                
             }
         }
     }
@@ -45,6 +44,8 @@
 
 
 #submitAddUser{
+    margin-top: 20px;
     color: $defaultGray;
-    background-color: #F2D08D;
+    border: none;
+    background: linear-gradient(90deg, #FFF2DA 0%, #FEBC43 100%);
 }
