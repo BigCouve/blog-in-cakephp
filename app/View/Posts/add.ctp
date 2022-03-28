@@ -3,8 +3,7 @@
 <div class="add_titulo">
     <h1>Adicionar um post</h1>
 </div>
-</br>
-<div class="add_titulo_corpo">
+<div class="add_titulo_corpo" >
     <?php 
     echo $this->Form->create('Post');
     echo $this->Form->input(false, array(
@@ -14,12 +13,12 @@
         'value' => false,
         'class' => 'form-control',
         'id' => 'titleLogin',
-        'placeholder' => 'Título'
+        'placeholder' => 'Título',
+        'required' => true,
         ));
     ?>
 </div>
-</br>
-<div class="add_corpo">
+<div class="add_corpo" required>
     <?php
     echo $this->Form->input(false, array(
         'rows' => '5',
@@ -30,10 +29,9 @@
         'class' => 'form-control',
         'id' => 'titleLogin',
         'placeholder' => 'Descrição',
+        'required' => true
         ));
     ?>
-    <div class="submit">
-        <input type="submit" value="Enviar Post" />
-    </div>
+    <input class="submitButton" type="submit" value="Enviar Post" />
     </form>
 </div>  

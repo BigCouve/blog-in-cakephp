@@ -27,12 +27,15 @@ class UsersController extends AppController {
     public function add() {
         if ($this->request->is('post')) {
             $this->User->create();
+            
             if ($this->User->save($this->request->data)) {
+                debug($this->User->query("SELECT username FROM users WHERE username = " . $this->request->data['User']['username']));
+                if($this->User->query("SELECT username FROM users WHERE username = $this->request->data['User']['username']")) {
+                    return $this->Session->write('erro', true);
+                };
                 $this->Flash->success(__('The user has been saved'));
                 return $this->redirect(array('action' => 'index'));
-            }
-            $this->Session->write('erro', true);
-            
+            }            
         }
     }
 

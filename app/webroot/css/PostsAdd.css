@@ -3,18 +3,20 @@
 .add_titulo {
     background-color: darkkhaki;
     width: 45vh;
-    height: 6vh;
-    text-align: justify;
-    text-indent: 1vh;
+    height: 5vh;
+    text-align: center;
     color: #191911;
     box-shadow: 3px 2px 3px darkred;
     border-radius: 1vh;
+
 }
 
 .add_titulo_corpo #titleLogin{
     background-color: darkkhaki; 
     width: 100vh;
-    height: 6vh;
+    height: 40px;
+    resize: none;
+    margin-top: 30px;
 }
 
 .add_titulo_corpo #titleLogin::placeholder{
@@ -28,6 +30,8 @@
     background-color: darkkhaki;
     width: 100vh;
     height: 30vh;
+    resize: none;
+
 }
 
 .add_corpo #titleLogin::placeholder{
@@ -35,10 +39,13 @@
     font-size: 16px;
 }
 
-.add_corpo .submit {
-    padding: 15px 32px;
-    background-color: crimson;
+.add_corpo .submitButton {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: greenyellow;
     box-shadow: 1px 1px saddlebrown;
     display: inline-block;
     border: none;
+    text-decoration: none;
+    border-radius: 5px;
 }

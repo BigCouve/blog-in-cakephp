@@ -22,6 +22,8 @@
             'name' => 'data[User][username]',
             'placeholder' => 'Insira seu usuário',
             'value' => false,
+            'required' => true,
+
         ));
         echo $this->Form->input(false, array(
             'id' => 'passwordAddUser',
@@ -30,6 +32,8 @@
             'name' => 'data[User][password]',
             'placeholder' => 'Senha',
             'value' => false,
+            'required' => true,
+
         ));
         echo $this->Form->input('Perfil', array(
             'id' => 'profileAddUser',
@@ -43,3 +47,4 @@
     </div>
     </form>
 </div>
+        
