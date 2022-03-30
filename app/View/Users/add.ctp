@@ -37,7 +37,7 @@
         ));
         echo $this->Form->input('Perfil', array(
             'id' => 'profileAddUser',
-            'value' => 'author',
+            'options' => array('author' => 'Autor'),
             'type' => 'hidden',
         ));
     ?>
