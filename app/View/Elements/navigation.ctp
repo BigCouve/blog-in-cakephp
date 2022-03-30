@@ -31,11 +31,11 @@
             if ($this->Session->read('logged') == true) { ?>
               <div class="navbar-text btn-group">Logado como
                 <a class="dropdown"> 
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <a href="#" class="dropdown-toggle" id="dropdown-menu-navbar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <?php echo $this->Session->read('username') ?>
                   <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Meu Perfil</a></li>
+                    <li><a href="#"">Meu Perfil</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="http://localhost:8888/logout">Sair</a></li>
                   </ul>

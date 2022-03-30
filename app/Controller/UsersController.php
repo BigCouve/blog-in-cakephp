@@ -26,16 +26,18 @@ class UsersController extends AppController {
 
     public function add() {
         if ($this->request->is('post')) {
-            $this->User->create();
-            
-            if ($this->User->save($this->request->data)) {
-                debug($this->User->query("SELECT username FROM users WHERE username = " . $this->request->data['User']['username']));
-                if($this->User->query("SELECT username FROM users WHERE username = $this->request->data['User']['username']")) {
-                    return $this->Session->write('erro', true);
-                };
-                $this->Flash->success(__('The user has been saved'));
-                return $this->redirect(array('action' => 'index'));
-            }            
+            $queryA = [];
+            $queryA = [
+                0 => $this->User->query("SELECT count(*) FROM users WHERE username = " . parent::exibeEmString($this->request->data['User']['username']))
+            ];
+            if($queryA[0][0][0]['count'] === 0){
+                $this->User->create();            
+                if ($this->User->save($this->request->data)) {
+                    $this->Flash->success(__('The user has been saved'));
+                    return $this->redirect(array('action' => 'index'));
+                }         
+            }
+            return $this->Session->write('erro', true);
         }
     }
 

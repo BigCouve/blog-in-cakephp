@@ -5,7 +5,7 @@
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
-    <b>Todos os campos precisam ser preenchidos, tente novamente.</b>
+    <b>Nome de usuário já em uso, tente outro.</b>
   </div>
 <?php }; ?>
 
@@ -37,7 +37,7 @@
         ));
         echo $this->Form->input('Perfil', array(
             'id' => 'profileAddUser',
-            'options' => array('author' => 'Autor'),
+            'value' => 'author',
             'type' => 'hidden',
         ));
     ?>

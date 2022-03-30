@@ -60,5 +60,9 @@ class AppController extends Controller {
         }
         return false; // Os outros usuários não podem
     }
+
+    public function exibeEmString($objeto){
+        return "'" . $objeto . "'";
+    }
     
 }

@@ -6,17 +6,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: auto;
-}
-
-body nav {
-  padding: 0px 200px;
-}
-
-body nav div.container-fluid div.collapse ul.navbar-right a {
-  margin-left: 10px;
-  display: inline-block;
-  color: green;
-  font-weight: bold;
+  color: red;
 }
 
 .bgAddUser {

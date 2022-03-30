@@ -47,22 +47,22 @@
     <![endif]-->
 
 
-    <!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/default.css" media="screen"/>
+    <!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/_default.scss" media="screen"/> -->
 
     
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsIndex.css" media="screen"/>
+    <!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsIndex.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsAdd.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsView.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersLogin.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersAdd.css" media="screen"/> -->
+    <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersAdd.css" media="screen"/>  -->
 
 
     <?php
 
     // Arquivos CSS importados
-      echo $this->Html->css(array('default'));
-
+      echo $this->Html->css(array('navigation'));
+      
       echo $this->Html->css(array('PostsIndex'));
       echo $this->Html->css(array('PostsList'));
       echo $this->Html->css(array('PostsAdd'));
