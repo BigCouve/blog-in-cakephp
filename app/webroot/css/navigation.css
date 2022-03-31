@@ -1,3 +1,14 @@
+body {
+  margin: 80px 0px;
+  background-image: url("/app/webroot/img/backgroundBlog4.jfif");
+  position: -webkit-sticky;
+  position: sticky;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  color: black;
+}
+
 #dropdown-menu-navbar ul {
   margin: 0px;
   text-align: center;

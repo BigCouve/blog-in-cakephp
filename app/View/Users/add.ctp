@@ -35,11 +35,13 @@
             'required' => true,
 
         ));
-        echo $this->Form->input('Perfil', array(
+        echo $this->Form->input('role', array(
             'id' => 'profileAddUser',
-            'options' => array('author' => 'Autor'),
-            'type' => 'hidden',
+            'options' => array('author' => 'author'),
+            'role' => 'author',
+            'type' => 'hidden'
         ));
+        debug($this->request->data);
     ?>
     </fieldset>
     <div class="form-group">
