@@ -9,6 +9,10 @@ body {
   color: black;
 }
 
+body nav {
+  padding: 0px 100px;
+}
+
 #dropdown-menu-navbar ul {
   margin: 0px;
   text-align: center;
