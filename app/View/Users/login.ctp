@@ -3,7 +3,7 @@
 <?php echo $this->Form->create('User');
 
 if ($this->Session->consume('erro')) { ?>
-  <div class="alert alert-danger text-center col-md-6 col-md-offset-3" role="alert">
+  <div class="alert alert-danger text-center col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -15,7 +15,7 @@ if ($this->Session->consume('erro')) { ?>
 
 
 
-<div class="container jumbotron jumbotron-fluid col-md-4 col-md-offset-4 ">
+<div class="container jumbotron jumbotron-fluid col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-4 ">
   <div class="form-group">
     <?php
     //echo $this->Form->input('username'); // No div, no label

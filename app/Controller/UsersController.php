@@ -28,7 +28,7 @@ class UsersController extends AppController {
         if ($this->request->is('post')) {
             $queryA = [];
             $queryA = [
-                0 => $this->User->query("SELECT count(*) FROM users WHERE username = " . parent::exibeEmString($this->request->data['User']['username']))
+                0 => $this->User->query("SELECT count(*) FROM users WHERE username = " . parent::exibeEmString($this->request->data['User']['username'])),
             ];
             if($queryA[0][0][0]['count'] === 0){
                 $this->User->create();            

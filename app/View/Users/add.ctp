@@ -37,11 +37,13 @@
         ));
         echo $this->Form->input('role', array(
             'id' => 'profileAddUser',
-            'options' => array('author' => 'author'),
-            'role' => 'author',
-            'type' => 'hidden'
+            // 'options' => array('author' => 'author'),
+            'type' => 'hidden',
+            'label' => false,
+            'value' => 'author',
+
         ));
-        debug($this->request->data);
+        
     ?>
     </fieldset>
     <div class="form-group">
@@ -49,4 +51,5 @@
     </div>
     </form>
 </div>
-        
+<?php 
+?>

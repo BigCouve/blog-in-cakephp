@@ -27616,3 +27616,30 @@ Request URL: /css/default.css
 Stack Trace:
 #0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2022-04-04 11:26:43 Error: [MissingControllerException] Controller class Wherever.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Wherever.phpController',
+  'plugin' => NULL,
+)
+Request URL: /wherever.php
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-04-04 11:27:01 Error: [MissingControllerException] Controller class Wherever.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Wherever.phpController',
+  'plugin' => NULL,
+)
+Request URL: /wherever.php
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-04-04 11:27:55 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /index
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
