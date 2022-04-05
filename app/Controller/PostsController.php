@@ -38,6 +38,8 @@ class PostsController extends AppController {
                 $this->redirect(array('action' => 'list'));
             }
         }
+        debug($this->Post->find('first'));
+
     }
 
     public function delete($id) {
