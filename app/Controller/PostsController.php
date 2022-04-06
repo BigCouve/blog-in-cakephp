@@ -10,7 +10,9 @@ class PostsController extends AppController {
         
     }
     public function list() {
-        $this->set('list', $this->Post->find('all'));
+        // debug($this->Post->find('all'));
+        $this->set('list', $this->Post->find('all', array('order' => 'Post.id ASC')));
+            
     }
 
     public function view($id = null) {
@@ -72,7 +74,6 @@ class PostsController extends AppController {
                 return $this->Post->isOwnedBy($postId, $user['id']);
             }
         }
-        $this->Session->write('pertenceAoUsuario', false);
     }
 }
 ?>
