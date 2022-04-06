@@ -38,7 +38,6 @@ class PostsController extends AppController {
                 $this->redirect(array('action' => 'list'));
             }
         }
-        debug($this->Post->find('first'));
 
     }
 
@@ -61,7 +60,7 @@ class PostsController extends AppController {
     }
     public function isAuthorized($user) {
         // Todos os usuários registrados podem criar posts
-        if ($this->action === 'add') {
+        if ($this->action === 'add' || $user['role'] === 'admin') {
             return true;
         }
         if (parent::isAuthorized($user)){
