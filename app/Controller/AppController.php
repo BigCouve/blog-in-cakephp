@@ -55,7 +55,10 @@ class AppController extends Controller {
 	}
 
     public function isAuthorized($user) {
+        // debug('isAuthorizedPai \n \n');
+        // debug($user);
         if (isset($user['role']) && $user['role'] === 'admin') {
+            debug('Está autorizado');
             return true; // Admin pode acessar todas actions
         }
         return false; // Os outros usuários não podem
