@@ -12,8 +12,10 @@ class PostsController extends AppController {
     public function list() {
         // debug($this->Post->find('all'));
         $this->set('list', $this->Post->find('all', array('order' => 'Post.id ASC')));
-            
+        $this->set('userId', $this->Auth->user('id'));
+        $this->set('userRole', $this->Auth->user('role'));
     }
+                
 
     public function view($id = null) {
         $this->set('post', $this->Post->findById($id));
@@ -62,7 +64,7 @@ class PostsController extends AppController {
     }
 
     public function isAuthorized($user) {
-        // Todos os usuários registrados podem criar posts
+        // Todos os usuários registrados podem criar posts e edita-los/deleta-los
         if ($this->action === 'add' || $user['role'] === 'admin') {
             return true;
         }

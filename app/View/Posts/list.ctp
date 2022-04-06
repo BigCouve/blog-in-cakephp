@@ -25,7 +25,7 @@ as informações dos posts -->
         </tr>
         <tbody>
             <?php
-                foreach ($list as $post): ?>
+            foreach ($list as $post):   ?>
                 <tr id = "linePosts">
                     <?php if ($this->Session->read('logged') === true) { ?>
                         <td><?php echo $post['Post']['id']; ?></td>
@@ -33,7 +33,7 @@ as informações dos posts -->
                     <td>
                         <?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id']));?>
                     </td>
-                    <?php if (($this->Session->read('logged') === true)) { ?>
+                    <?php if (($this->Session->read('logged') === true) && ($userId === $post['Post']['user_id'] || $userRole === 'admin')) { ?>
                         <td>
                             <?php echo $this->Form->postLink(
                                 'Deletar',
@@ -43,7 +43,7 @@ as informações dos posts -->
                             <?php echo $this->Html->link('Editar', array('action' => 'edit', $post['Post']['id']));?>
                         </td>
                     <?php } ?>    
-                    <td><?php echo $post['Post']['created']; ?></td>
+                    <td><?php echo date($post['Post']['created']);  ?></td>
                 </tr>
             <?php endforeach;
             ?>
