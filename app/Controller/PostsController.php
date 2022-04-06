@@ -59,18 +59,21 @@ class PostsController extends AppController {
         // debug(gettype($userLogged));
         $this->set('listOwned', $this->Post->query("SELECT * FROM posts WHERE user_id = 49" ));
     }
+
     public function isAuthorized($user) {
         // Todos os usuários registrados podem criar posts
         if ($this->action === 'add') {
             return true;
         }
         if (parent::isAuthorized($user)){
+            
             // O dono de um post pode editá-lo e deletá-lo
             if (in_array($this->request->action, array('edit', 'delete'))) {
                 $postId = (int) $this->request->params['pass'][0];
                 return $this->Post->isOwnedBy($postId, $user['id']);
             }
         }
+        $this->Session->write('pertenceAoUsuario', false);
     }
 }
 ?>

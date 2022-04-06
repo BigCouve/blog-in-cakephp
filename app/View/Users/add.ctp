@@ -13,7 +13,7 @@
 <div class="bgAddUser col-md-4 col-md-offset-4">
 <?php echo $this->Form->create('User');?>
     <fieldset>
-        <legend><?php echo __('Cadastar usuário'); ?></legend>
+        <legend><?php echo __('Cadastrar usuário'); ?></legend>
         <?php 
         echo $this->Form->input(false, array(
             'id' => 'usernameAddUser',
