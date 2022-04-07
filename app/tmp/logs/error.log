@@ -27815,3 +27815,15 @@ Stack Trace:
 #5 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #6 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2022-04-07 09:46:18 Error: [ArgumentCountError] Too few arguments to function CakeRequest::data(), 0 passed in /app/app/View/Posts/list.ctp on line 7 and exactly 1 expected
+Request URL: /guias
+Stack Trace:
+#0 /app/app/View/Posts/list.ctp(7): CakeRequest->data()
+#1 /app/lib/Cake/View/View.php(971): include('/app/app/View/P...')
+#2 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/P...', Array)
+#3 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/P...')
+#4 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#5 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#6 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#7 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

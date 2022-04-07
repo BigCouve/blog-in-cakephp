@@ -38,7 +38,7 @@ class PostsController extends AppController {
              $this->request->data = $this->Post->findById($id);
         } else {
             if ($this->Post->save($this->request->data)) {
-                $this->Flash->success('Seu Post foi atualizado.');
+                $this->Session->write('postAtualizado', true);
                 $this->redirect(array('action' => 'list'));
             }
         }
@@ -65,17 +65,22 @@ class PostsController extends AppController {
 
     public function isAuthorized($user) {
         // Todos os usuários registrados podem criar posts e edita-los/deleta-los
+
         if ($this->action === 'add' || $user['role'] === 'admin') {
             return true;
         }
-        if (parent::isAuthorized($user)){
-            
+        if (!(parent::isAuthorized($user))){
+            // debug('entrou o authorized filho'); 
             // O dono de um post pode editá-lo e deletá-lo
             if (in_array($this->request->action, array('edit', 'delete'))) {
                 $postId = (int) $this->request->params['pass'][0];
                 return $this->Post->isOwnedBy($postId, $user['id']);
             }
+            $this->Session->write('erroNaoEditar', true);
+
         }
+       debug('não passou no authorize');
+
     }
 }
 ?>
