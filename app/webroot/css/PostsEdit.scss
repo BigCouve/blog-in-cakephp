@@ -1,0 +1,35 @@
+
+h1{
+    background-color: #FFFFFF;
+    display: inline-block;
+    padding: 8px 130px 8px 16px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+
+}
+
+.container{
+
+    #tituloEdit {
+      resize: none;
+      margin-bottom: 20px;
+      width: 700px;
+
+    }
+  
+    #corpoEdit {
+      resize: none;
+      margin-bottom: 20px;
+      width: 700px;
+      min-height: 300px;
+    }
+
+    #endButton{
+        border: none;
+        padding: 8px 14px;
+        background-color: chartreuse;
+        text-align: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+}

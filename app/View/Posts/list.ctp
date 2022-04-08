@@ -16,7 +16,7 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span area-hidden = "true">&times;</span>
             </button>
-            <b>Seu post foi atualizado com sucesso.</b>
+            <b>O post foi atualizado com sucesso.</b>
         </div>
     <?php }  ?>
 
@@ -72,10 +72,12 @@ as informações dos posts -->
                             <?php echo $this->Html->link('Editar', array('action' => 'edit', $post['Post']['id']));?>
                         </td>
                     <?php }
-                    else{ ?>
+                    else if (($this->Session->read('logged') === true)){ ?>
                         <td>-</td>
                     <?php } ?>    
-                    <td><?php echo date($post['Post']['created']);  ?></td>
+                    <td><?php
+                    $date = date_create($post['Post']['created']);
+                    echo date_format($date, 'd/m/Y H:i:s');  ?></td>
                 </tr>
             <?php endforeach;
             ?>

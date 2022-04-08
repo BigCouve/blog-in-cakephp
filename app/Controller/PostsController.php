@@ -33,6 +33,15 @@ class PostsController extends AppController {
     public function edit($id = null) {
         
         // Campo do id recebe id do post atual
+
+        //variáveis
+        $this->set('optionsEndButton', array(
+            'id' => 'endButton',
+            'type' => 'button',
+            'label' => 'Salvar Post',
+        ));
+        
+
         $this->Post->id = $id;
         if ($this->request->is('get')) {
              $this->request->data = $this->Post->findById($id);
