@@ -1,7 +1,7 @@
 <!-- File: /app/View/Posts/add.ctp -->
 
-<!-- Arquivo CSS importados -->
-<? echo $this->Html->css(array('PostsAdd ')); ?>
+<!-- Arquivos CSS importados -->
+<link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsAdd.css" media="screen" />
 
 
 <div class="add_titulo">

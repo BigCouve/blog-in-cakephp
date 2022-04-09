@@ -1,7 +1,12 @@
 <!-- File: /app/View/Posts/index.ctp  (links para edição adicionados) -->
+
 <div class="mainTitle">
     <h1>Posts do Mãe Terra</h1>
 </div>
+
+<!-- Arquivos CSS importados -->
+<link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersList.css" media="screen" />
+
 <!-- Aqui é onde nós percorremos nossa matriz $posts, imprimindo
 as informações dos posts --> 
 

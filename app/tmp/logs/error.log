@@ -27898,3 +27898,105 @@ Stack Trace:
 #11 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #12 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2022-04-09 12:28:42 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/UsersIndex.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-04-09 12:28:44 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/UsersIndex.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-04-09 12:28:57 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/UsersIndex.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-04-09 12:29:34 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/UsersIndex.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-04-09 12:29:58 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/UsersIndex.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-04-09 12:33:14 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/UsersIndex.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-04-09 12:36:44 Error: Fatal Error (64): Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in [/app/app/View/Users/index.ctp, line 7]
+2022-04-09 12:36:44 Error: [FatalErrorException] Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+Request URL: /
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use isse...', '/app/app/View/U...', 7)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot use isse...', '/app/app/View/U...', 7, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-04-09 12:37:09 Error: Fatal Error (64): Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in [/app/app/View/Users/index.ctp, line 7]
+2022-04-09 12:37:09 Error: [FatalErrorException] Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+Request URL: /
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use isse...', '/app/app/View/U...', 7)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot use isse...', '/app/app/View/U...', 7, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-04-09 12:39:10 Error: Fatal Error (64): Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in [/app/app/View/Users/index.ctp, line 7]
+2022-04-09 12:39:10 Error: [FatalErrorException] Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+Request URL: /
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use isse...', '/app/app/View/U...', 7)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot use isse...', '/app/app/View/U...', 7, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-04-09 12:39:14 Error: Fatal Error (64): Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in [/app/app/View/Users/index.ctp, line 7]
+2022-04-09 12:39:14 Error: [FatalErrorException] Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+Request URL: /
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use isse...', '/app/app/View/U...', 7)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot use isse...', '/app/app/View/U...', 7, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}

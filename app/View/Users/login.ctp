@@ -1,9 +1,9 @@
 <!--app/View/Users/login.ctp !-->
-<?php
 
-// Arquivo CSS importados
-echo $this->Html->css(array('UsersLogin'));
+<!-- Arquivos CSS importados -->
+<link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersLogin.css" media="screen" />
 
+<?php 
 
 echo $this->Flash->render('auth');
 echo $this->Form->create('User');

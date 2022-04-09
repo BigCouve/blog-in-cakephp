@@ -35,7 +35,7 @@
                   <?php echo $this->Session->read('username') ?>
                   <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#"">Meu Perfil</a></li>
+                    <li><a href="#">Meu Perfil</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="http://localhost:8888/logout">Sair</a></li>
                   </ul>
@@ -45,9 +45,9 @@
             else { ?>
             
               <a href="http://localhost:8888/login">
-              <button type="button" class="btn btn-primary navbar-btn">
-                Entrar
-              </button>
+                <button type="button" class="btn btn-primary navbar-btn">
+                  Entrar
+                </button>
               </a>
               
               <a href="http://localhost:8888/adduser">

@@ -1,6 +1,7 @@
 <!-- File: /app/View/Posts/edit.ctp -->
 
-<?php echo $this->Html->css(array('PostsEdit')) ?>
+<!-- Arquivos CSS importados -->
+<link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsEdit.css" media="screen" />
 
 <h1>Editar o Post</h1>
 

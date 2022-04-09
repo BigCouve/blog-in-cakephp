@@ -1,9 +1,9 @@
 <!-- app/View/Users/add.ctp -->
+
+<!-- Arquivos CSS importados -->
+<link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersAdd.css" media="screen" />
+
 <?php 
-
-// Arquivo CSS importados
-echo $this->Html->css(array('UsersAdd'));
-
 if($this->Session->consume('erro')){ ?>
     <div class="alert alert-danger text-center" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">

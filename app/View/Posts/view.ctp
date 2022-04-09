@@ -1,7 +1,7 @@
 <!-- File: /app/View/Posts/view.ctp -->
 
-<!-- Arquivo CSS importados -->
-<? echo $this->Html->css(array('PostsView')); ?>
+<!-- Arquivos CSS importados -->
+<link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsView.css" media="screen" />
 
 
 

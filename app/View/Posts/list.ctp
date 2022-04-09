@@ -1,8 +1,7 @@
-<? echo $this->Html->css(array('PostsList')); ?>
-
-
-
 <!-- File: /app/View/Posts/index.ctp  (links para edição adicionados) -->
+
+<!-- Arquivos CSS importados -->
+<link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
 
 <div class="noticia">
     <?php 

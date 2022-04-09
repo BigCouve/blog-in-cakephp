@@ -49,14 +49,6 @@
 
     <!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/_default.scss" media="screen"/> -->
 
-    
-    <!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsIndex.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsAdd.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsView.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersLogin.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersAdd.css" media="screen"/>  -->
-
 
     <?php
 
