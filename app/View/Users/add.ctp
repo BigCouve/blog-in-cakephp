@@ -1,6 +1,10 @@
 <!-- app/View/Users/add.ctp -->
+<?php 
 
-<?php if($this->Session->consume('erro')){ ?>
+// Arquivo CSS importados
+echo $this->Html->css(array('UsersAdd'));
+
+if($this->Session->consume('erro')){ ?>
     <div class="alert alert-danger text-center col-md-6 col-md-offset-3" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>

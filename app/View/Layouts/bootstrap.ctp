@@ -62,13 +62,6 @@
 
     // Arquivos CSS importados
       echo $this->Html->css(array('navigation'));
-      
-      echo $this->Html->css(array('PostsIndex'));
-      echo $this->Html->css(array('PostsList'));
-      echo $this->Html->css(array('PostsAdd'));
-      echo $this->Html->css(array('PostsView'));
-      echo $this->Html->css(array('UsersLogin'));
-      echo $this->Html->css(array('UsersAdd'));
 
     ?>
   </head>

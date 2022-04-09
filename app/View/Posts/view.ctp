@@ -1,5 +1,10 @@
 <!-- File: /app/View/Posts/view.ctp -->
 
+<!-- Arquivo CSS importados -->
+<? echo $this->Html->css(array('PostsView')); ?>
+
+
+
 <div class="tituloPostView">
     <h1><?php echo $post['Post']['title']?></h1>
 </div>

@@ -1,5 +1,9 @@
 <!-- File: /app/View/Posts/add.ctp -->
 
+<!-- Arquivo CSS importados -->
+<? echo $this->Html->css(array('PostsAdd ')); ?>
+
+
 <div class="add_titulo">
     <h1>Adicionar um post</h1>
 </div>

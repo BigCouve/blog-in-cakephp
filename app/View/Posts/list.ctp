@@ -1,3 +1,7 @@
+<? echo $this->Html->css(array('PostsList')); ?>
+
+
+
 <!-- File: /app/View/Posts/index.ctp  (links para edição adicionados) -->
 <div class="mainTitle">
     <h1>Posts do Mãe Terra</h1>
