@@ -3,9 +3,38 @@
 
 
 <!-- File: /app/View/Posts/index.ctp  (links para edição adicionados) -->
+
+<div class="noticia">
+    <?php 
+    
+    if ($this->Session->consume('erroNaoEditar') === true) {  ?>
+        <div class="alert alert-danger text-center" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span area-hidden="true">&times;</span>
+            </button>
+            <b>Não é possível editar um post que não é de sua autoria.</b>
+        </div>
+    <?php } 
+    else if ($this->Session->consume('postAtualizado') === true){  ?>
+        <div class="alert alert-success text-center" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span area-hidden = "true">&times;</span>
+            </button>
+            <b>O post foi atualizado com sucesso.</b>
+        </div>
+    <?php }  ?>
+
+</div>
+
+
 <div class="mainTitle">
     <h1>Posts do Mãe Terra</h1>
 </div>
+
+
+
+
+
 <!-- Aqui é onde nós percorremos nossa matriz $posts, imprimindo
 as informações dos posts --> 
 
@@ -18,7 +47,7 @@ as informações dos posts -->
         </a>
         <?php } ?>
         <tr id="cabecalho">
-            <?php if ($this->Session->read('logged') === true) { ?>
+            <?php if ($this->Session->read('logged') === true && $userRole === 'admin') { ?>
                 <th>Id</th>
             <?php } ?>
             <th id="titlePosts" >Título</th>
@@ -31,7 +60,7 @@ as informações dos posts -->
             <?php
             foreach ($list as $post):   ?>
                 <tr id = "linePosts">
-                    <?php if ($this->Session->read('logged') === true) { ?>
+                    <?php if ($this->Session->read('logged') === true && $userRole === 'admin') { ?>
                         <td><?php echo $post['Post']['id']; ?></td>
                     <?php } ?>
                     <td>
@@ -46,12 +75,18 @@ as informações dos posts -->
                             )?>
                             <?php echo $this->Html->link('Editar', array('action' => 'edit', $post['Post']['id']));?>
                         </td>
+                    <?php }
+                    else if (($this->Session->read('logged') === true)){ ?>
+                        <td>-</td>
                     <?php } ?>    
-                    <td><?php echo date($post['Post']['created']);  ?></td>
+                    <td><?php
+                    $date = date_create($post['Post']['created']);
+                    echo date_format($date, 'd/m/Y H:i:s');  ?></td>
                 </tr>
             <?php endforeach;
             ?>
         </tbody>
     </table>
 </div>
+
 

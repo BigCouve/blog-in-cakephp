@@ -5,7 +5,7 @@
 echo $this->Html->css(array('UsersAdd'));
 
 if($this->Session->consume('erro')){ ?>
-    <div class="alert alert-danger text-center col-md-6 col-md-offset-3" role="alert">
+    <div class="alert alert-danger text-center" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
