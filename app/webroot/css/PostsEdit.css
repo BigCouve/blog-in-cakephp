@@ -1,9 +1,14 @@
-h1 {
+.container h1 {
   background-color: #FFFFFF;
+  -webkit-box-shadow: 5px 5px black;
+          box-shadow: 5px 5px black;
+  color: #666666;
   display: inline-block;
-  padding: 8px 130px 8px 16px;
+  width: auto;
+  padding: 8px 16px;
   border-radius: 4px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .container #tituloEdit {
@@ -24,9 +29,7 @@ h1 {
   padding: 8px 14px;
   background-color: chartreuse;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 4px;
+  display: inline-block;
 }
 /*# sourceMappingURL=PostsEdit.css.map */

@@ -3,9 +3,9 @@
 <!-- Arquivos CSS importados -->
 <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsEdit.css" media="screen" />
 
-<h1>Editar o Post</h1>
 
 <div class="container">
+<h1>Editar o Post</h1>
 
     <?php
         echo $this->Form->create('Post');
@@ -32,8 +32,8 @@
             ));
 
         echo $this->Form->input('id', array('type' => 'hidden'));
-        
-        echo $this->Form->end($optionsEndButton);
-    ?>
+        ?>
+        <input id = "endButton" type="submit" value="Enviar Post" />
+        </form>
 
 </div>

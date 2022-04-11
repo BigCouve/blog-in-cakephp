@@ -11,7 +11,6 @@
 as informações dos posts --> 
 
 <div class="container-fluid">
-    <div class="">
         <table class = "table table-striped table-bordered table-responsive table-hover" >
             <?php if ($this->Session->read('logged') === true) { ?>
             <div id="AddPost">
@@ -55,6 +54,5 @@ as informações dos posts -->
                 <?php endforeach; ?>
             </tbody>
         </table>
-    </div>
 </div>
 

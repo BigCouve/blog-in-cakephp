@@ -35,11 +35,7 @@ class PostsController extends AppController {
         // Campo do id recebe id do post atual
 
         //variáveis
-        $this->set('optionsEndButton', array(
-            'id' => 'endButton',
-            'type' => 'button',
-            'label' => 'Salvar Post',
-        ));
+        $this->set('optionsEndButton', 'Salvar Post');
         
 
         $this->Post->id = $id;
@@ -64,22 +60,23 @@ class PostsController extends AppController {
         }
     }
 
-    public function listProfile(){
-        $userLogged = (int) $this->Auth->user('username');
-        debug($userLogged); 
-        debug($this->Post->query("SELECT * FROM posts WHERE user_id = " . $userLogged));
+    public function myList(){
+        $this->Session->write('userId', $this->Auth->user('id')); 
+        $this->set('listPostsOwned', $this->Post->query("SELECT * FROM posts WHERE user_id = " .  parent::exibeEmString($this->Session->read('userId')). " ORDER BY 1"));
         // debug(gettype($userLogged));
-        $this->set('listOwned', $this->Post->query("SELECT * FROM posts WHERE user_id = 49" ));
+        // $this->set('postsOwned', $this->Post->query("SELECT * FROM posts WHERE username = " . $this->Session->read('username')));
     }
+
+
 
     public function isAuthorized($user) {
         // Todos os usuários registrados podem criar posts e edita-los/deleta-los
 
-        if ($this->action === 'add' || $user['role'] === 'admin') {
+        if ($this->action === 'add'|| $this->action === 'myList' || $user['role'] === 'admin') {
             return true;
         }
-        if (!(parent::isAuthorized($user))){
-            // debug('entrou o authorized filho'); 
+        if (!(parent::isAuthorized($user) ||  $user['role'] === 'admin' )){
+            debug('entrou o authorized filho'); 
             // O dono de um post pode editá-lo e deletá-lo
             if (in_array($this->request->action, array('edit', 'delete'))) {
                 $postId = (int) $this->request->params['pass'][0];

@@ -32,6 +32,7 @@
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
 	Router::connect('/adduser', array('controller' => 'users', 'action' => 'add'));
+	Router::connect('/meusPosts', array('controller' => 'posts', 'action' => 'myList'));
 
 
 
