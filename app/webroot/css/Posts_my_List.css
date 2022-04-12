@@ -1,0 +1,57 @@
+.table > tbody > tr:hover {
+  background-color: #FFE8CA;
+}
+
+#cabecalho th {
+  /* border: 3px outset hsl(77, 7%, 19%); */
+  border: 3px solid #BABABA;
+  font: sans-serif;
+  text-align: center;
+  /* margin: auto; */
+}
+
+#dateTimePost {
+  text-align: center;
+}
+
+.table-striped {
+  background-color: #BABABA;
+}
+
+#linePosts > td {
+  border-style: dotted;
+  text-align: center;
+}
+
+.mainTitle h1 {
+  -webkit-box-shadow: 1vh 1vh #3d2e1b;
+          box-shadow: 1vh 1vh #3d2e1b;
+  text-shadow: 1px 1px #dfdfdf;
+  width: 40vw;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  display: block;
+  color: #3d2e1b;
+  background-color: #f4ba7b;
+  opacity: 0.8;
+  margin-top: 9vh;
+  margin-bottom: 10vh;
+  border-radius: 1vh;
+}
+
+#addPost {
+  margin-left: 16px;
+  margin-bottom: 5vh;
+  color: #399fff;
+}
+
+#crossAddPost {
+  color: black;
+}
+
+.table {
+  width: 900px;
+  margin: auto;
+}
+/*# sourceMappingURL=Posts_my_List.css.map */

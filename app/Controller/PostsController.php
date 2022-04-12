@@ -5,6 +5,7 @@ App::uses('AppController', 'Controller');
 class PostsController extends AppController {
     public $helpers = array ('Html','Form');
     public $name = 'Posts';
+    
 
     public function index(){
         
@@ -14,6 +15,7 @@ class PostsController extends AppController {
         $this->set('list', $this->Post->find('all', array('order' => 'Post.id ASC')));
         $this->set('userId', $this->Auth->user('id'));
         $this->set('userRole', $this->Auth->user('role'));
+
     }
                 
 
@@ -63,6 +65,8 @@ class PostsController extends AppController {
     public function myList(){
         $this->Session->write('userId', $this->Auth->user('id')); 
         $this->set('listPostsOwned', $this->Post->query("SELECT * FROM posts WHERE user_id = " .  parent::exibeEmString($this->Session->read('userId')). " ORDER BY 1"));
+        $this->set('userRole', $this->Auth->user('role'));
+        
         // debug(gettype($userLogged));
         // $this->set('postsOwned', $this->Post->query("SELECT * FROM posts WHERE username = " . $this->Session->read('username')));
     }
@@ -76,7 +80,7 @@ class PostsController extends AppController {
             return true;
         }
         if (!(parent::isAuthorized($user) ||  $user['role'] === 'admin' )){
-            debug('entrou o authorized filho'); 
+            //debug('entrou o authorized filho'); 
             // O dono de um post pode editá-lo e deletá-lo
             if (in_array($this->request->action, array('edit', 'delete'))) {
                 $postId = (int) $this->request->params['pass'][0];
@@ -85,7 +89,7 @@ class PostsController extends AppController {
             $this->Session->write('erroNaoEditar', true);
 
         }
-       debug('não passou no authorize');
+       //debug('não passou no authorize');
 
     }
 }

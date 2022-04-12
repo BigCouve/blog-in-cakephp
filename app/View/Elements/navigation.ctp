@@ -35,7 +35,7 @@
                   <?php echo $this->Session->read('username') ?>
                   <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="http://localhost:8888/meusPosts">Meu Perfil</a></li>
+                    <li><a href="http://localhost:8888/meusPosts">Meus Posts</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="http://localhost:8888/logout">Sair</a></li>
                   </ul>
