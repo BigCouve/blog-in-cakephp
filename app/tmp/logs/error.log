@@ -28306,3 +28306,14 @@ Stack Trace:
 #5 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #6 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2022-04-12 14:48:00 Error: [MissingActionException] Action UsersController::posts() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'posts',
+)
+Request URL: /users/posts/1
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

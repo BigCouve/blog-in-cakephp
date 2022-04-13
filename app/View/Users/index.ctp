@@ -3,9 +3,9 @@
 
 <div class="welcome">
     <h1 class="jumpLine">
-        Bem vindo,<b><?php 
+        Bem vindo<b><?php 
         if ($this->Session->read('logged') === true) {
-            echo " " . $this->Session->read('username');
+            echo ", " . $this->Session->read('username');
         }
         ?></b>!
     </h1>

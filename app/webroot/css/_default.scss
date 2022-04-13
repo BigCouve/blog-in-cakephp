@@ -1,14 +1,22 @@
 
 body{
     margin: 80px 0px;
-    background-image: url('/app/webroot/img/backgroundBlog4.jfif');
+    background-color: brown;
+    // background-image: url('/app/webroot/img/backgroundBlog4.jfif');
     position: sticky;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: auto;
-    color: black;
+    //color: black;
     nav{
         padding: 0px 100px;   
+    }
+    .subBackground{
+        margin: 120px 0px;
+        width: 80vw;
+        height: 80vh;
+        background-color: brown;
+        background-repeat: no-repeat;
     }
 }
 

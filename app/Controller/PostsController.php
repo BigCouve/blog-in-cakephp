@@ -89,7 +89,7 @@ class PostsController extends AppController {
             $this->Session->write('erroNaoEditar', true);
 
         }
-       //debug('não passou no authorize');
+        return $this->redirect(array('controller' => 'users', 'action' => 'logout'));
 
     }
 }
