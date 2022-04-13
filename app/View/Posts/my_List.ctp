@@ -11,6 +11,10 @@
         </div>
     <?php }  ?>
 
+<div class="mainTitle">
+    <h1>Meus Posts</h1>
+</div>
+
 <div class="conteiner-fluid"> 
     <table class="table table-striped table-bordered table-responsive text-center">
         <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">

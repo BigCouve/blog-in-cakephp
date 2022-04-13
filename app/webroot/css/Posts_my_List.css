@@ -23,25 +23,39 @@
   text-align: center;
 }
 
+.mainTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  height: 20vh;
+}
+
 .mainTitle h1 {
-  -webkit-box-shadow: 1vh 1vh #3d2e1b;
-          box-shadow: 1vh 1vh #3d2e1b;
+  margin: 0px;
+  -webkit-box-shadow: 1vh 1vh 5px #3d2e1b;
+          box-shadow: 1vh 1vh 5px #3d2e1b;
   text-shadow: 1px 1px #dfdfdf;
-  width: 40vw;
-  height: auto;
-  margin: auto;
+  width: 18vw;
   text-align: center;
-  display: block;
   color: #3d2e1b;
   background-color: #f4ba7b;
   opacity: 0.8;
-  margin-top: 9vh;
-  margin-bottom: 10vh;
   border-radius: 1vh;
 }
 
 #addPost {
-  margin-left: 16px;
+  margin-left: 120px;
   margin-bottom: 5vh;
   color: #399fff;
 }

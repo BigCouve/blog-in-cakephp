@@ -27,24 +27,32 @@
 }
 
 
-.mainTitle h1{
-    box-shadow: 1vh 1vh #3d2e1b;
-    text-shadow: 1px 1px #dfdfdf;
-    width: 40vw;
-    height: auto;
-    margin: auto;
-    text-align: center;
-    display: block;
-    color: #3d2e1b;
-    background-color: #f4ba7b;
-    opacity: 0.8;
-    margin-top:9vh;
-    margin-bottom: 10vh;
-    border-radius: 1vh;
+.mainTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 20vh;
+
+    h1{
+        margin: 0px;
+
+        box-shadow: 1vh 1vh 5px #3d2e1b;
+        text-shadow: 1px 1px #dfdfdf;
+        width: 18vw;
+        text-align: center;
+        color: #3d2e1b;
+        background-color: #f4ba7b;
+        opacity: 0.8;
+        // margin-top: 19vh;
+        // margin-bottom: 10vh;
+        border-radius: 1vh;
+    }
 }
 
 #addPost{
-    margin-left: 16px;
+    margin-left: 120px;
     margin-bottom: 5vh;
     color: rgb(57, 159, 255);
 }
