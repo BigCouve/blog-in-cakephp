@@ -75,7 +75,7 @@ class PostsController extends AppController {
 
     public function isAuthorized($user) {
         // Todos os usuários registrados podem criar posts e edita-los/deleta-los
-
+        debug( 'teste de authorized posts');
         if ($this->action === 'add'|| $this->action === 'myList' || $user['role'] === 'admin') {
             return true;
         }

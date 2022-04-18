@@ -28317,3 +28317,36 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2022-04-17 20:40:06 Error: [ParseError] syntax error, unexpected 'return' (T_RETURN)
+Request URL: /login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /app/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /app/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /app/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-04-17 23:26:41 Error: [MissingTableException] Table aros_acos for model Permission was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aros_acos',
+  'class' => 'Permission',
+  'ds' => 'default',
+)
+Request URL: /posts/edit/1
+Stack Trace:
+#0 /app/lib/Cake/Model/Model.php(3686): Model->setSource('aros_acos')
+#1 /app/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /app/lib/Cake/Model/Permission.php(79): Model->schema()
+#3 /app/lib/Cake/Controller/Component/Acl/DbAcl.php(73): Permission->check(Array, 'controllers/Pos...', '*')
+#4 /app/lib/Cake/Controller/Component/AclComponent.php(110): DbAcl->check(Array, 'controllers/Pos...', '*')
+#5 /app/lib/Cake/Controller/Component/Auth/ActionsAuthorize.php(38): AclComponent->check(Array, 'controllers/Pos...')
+#6 /app/lib/Cake/Controller/Component/AuthComponent.php(470): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#7 /app/lib/Cake/Controller/Component/AuthComponent.php(311): AuthComponent->isAuthorized(Array)
+#8 /app/lib/Cake/Utility/ObjectCollection.php(129): AuthComponent->startup(Object(PostsController))
+#9 /app/lib/Cake/Event/CakeEventManager.php(244): ObjectCollection->trigger('startup')
+#10 /app/lib/Cake/Controller/Controller.php(683): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /app/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#12 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
