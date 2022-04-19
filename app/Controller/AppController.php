@@ -43,18 +43,13 @@ class AppController extends Controller {
                     'passwordHasher' => 'Blowfish'
                 )
             ),
+            'authorize' => array('Controller'),
         )
     );
     public function beforeFilter(){
 		$this->layout = 'bootstrap';
         // Não logados podem acessar:
-		$this->Auth->allow('index', 'view', 'list', 'logout');
-        // Pass settings in using 'all'
-        $this->Auth->authorize = array(
-            AuthComponent::ALL =>
-            'Actions',
-            'Controller'
-);
+		$this->Auth->allow('index', 'view', 'list', 'logout', 'add');
 		
 	}
 

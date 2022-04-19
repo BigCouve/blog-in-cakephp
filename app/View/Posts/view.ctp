@@ -18,7 +18,11 @@
 
 <div class="footerView text-right panel-footer">
     <p>
-        Criado em: <?php echo $post['Post']['created']?>
+        Criado em: <?php $date = date_create($post['Post']['created']);
+                    echo date_format($date, 'd/m/Y' );
+                    echo ', às ';
+                    echo date_format($date, 'H:i:s' );
+                    ?>
     </p>
 </div>
 

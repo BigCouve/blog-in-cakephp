@@ -6,11 +6,6 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
     public $name = 'Users';
 
-    public function beforeFilter() {
-        parent::beforeFilter();
-        $this->Auth->allow('add', 'login', 'list');
-    }
-
     public function index() {
         $this->User->recursive = 0;
         $this->set('user', $this->paginate());
@@ -89,20 +84,24 @@ class UsersController extends AppController {
         }
     }
     
-
-    
     public function logout() {
         $this->Session->write('logged', false);
         return $this->redirect($this->Auth->logout());
     }
     
-    // não é chamada, mesmo existindo, necessário investigar.
+    public function list()
+    {
+        # code...
+    }
+
+
+
     public function isAuthorized($user)
     {
-        debug('teste');
-        // if ($this->Session->read('logged') && $this->action === 'login') {
-        //     $this->Auth->deny('login');
-        // }
+
+        //debug($this->action === 'login');
+        if ($this->Session->read('logged') && $this->action === 'login') {
+            return $this->Auth->deny('login');
+        }
     }
-    
 }

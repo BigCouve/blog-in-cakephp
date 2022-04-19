@@ -74,22 +74,22 @@ class PostsController extends AppController {
 
 
     public function isAuthorized($user) {
+
+        debug("passou no authorized POST");
         // Todos os usuários registrados podem criar posts e edita-los/deleta-los
-        debug( 'teste de authorized posts');
         if ($this->action === 'add'|| $this->action === 'myList' || $user['role'] === 'admin') {
             return true;
         }
-        if (!(parent::isAuthorized($user) ||  $user['role'] === 'admin' )){
-            //debug('entrou o authorized filho'); 
-            // O dono de um post pode editá-lo e deletá-lo
-            if (in_array($this->request->action, array('edit', 'delete'))) {
-                $postId = (int) $this->request->params['pass'][0];
-                return $this->Post->isOwnedBy($postId, $user['id']);
-            }
-            $this->Session->write('erroNaoEditar', true);
-
+        //debug('entrou o authorized filho'); 
+        // O dono de um post pode editá-lo e deletá-lo
+        if (in_array($this->request->action, array('edit', 'delete'))) {
+            $postId = (int) $this->request->params['pass'][0];
+            return $this->Post->isOwnedBy($postId, $user['id']);
         }
-        return $this->redirect(array('controller' => 'users', 'action' => 'logout'));
+        $this->Session->write('erroNaoEditar', true);
+
+        return parent::isAuthorized($user);
+
 
     }
 }

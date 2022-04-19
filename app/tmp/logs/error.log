@@ -28350,3 +28350,66 @@ Stack Trace:
 #12 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #13 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2022-04-19 18:52:02 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /guias
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 /app/app/Controller/PostsController.php(5): spl_autoload_call('AppController')
+#2 /app/lib/Cake/Core/App.php(567): include('/app/app/Contro...')
+#3 [internal function]: App::load('PostsController')
+#4 [internal function]: spl_autoload_call('PostsController')
+#5 /app/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#6 /app/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 /app/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2022-04-19 18:52:02 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2022-04-19 18:52:02 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /guias
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-04-19 19:29:08 Error: [ParseError] syntax error, unexpected 'if' (T_IF)
+Request URL: /posts/index
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /app/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /app/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /app/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-04-19 19:30:50 Error: [MissingControllerException] Controller class LogioutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogioutController',
+  'plugin' => NULL,
+)
+Request URL: /logiout
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-04-19 19:32:25 Error: [MissingActionException] Action UsersController::list() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'list',
+)
+Request URL: /users/list
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-04-19 19:33:06 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/css/UsersList.css
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
