@@ -74,14 +74,17 @@ class UsersController extends AppController {
     }
 
     public function login() {
-        if ($this->request->is('post')) {
+        //  debug($this->Session->read('logged') );
+        //if ($this->request->is('post')) {
             if ($this->Auth->login()) {
                 $this->Session->write('username', $this->Auth->user('username'));
                 $this->Session->write('logged', true);
                 return $this->redirect($this->Auth->redirectUrl());
+                debug('redirectUrl é o problema');
             }
-            $this->Session->write('erro', true);
-        }
+            return $this->Session->write('erro', true);
+        //}
+
     }
     
     public function logout() {
@@ -98,11 +101,18 @@ class UsersController extends AppController {
 
     public function isAuthorized($user)
     {
-
-        debug(Router::connect('/login', array('controller' => 'users', 'action' => 'login')));
-
-        if ($this->Session->read('logged') && $this->action === 'login') {
+        
+        //echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium amet fugiat repellat sit id inventore numquam odio quis. Hic cumque dolorem perferendis quibusdam. Officiis, quidem neque eligendi ratione explicabo eos.';
+        if ($this->Session->read('logged') && ($this->action === 'login' || $this->action === 'add')) {
             $this->Auth->deny('login');
+            $this->Auth->deny('add');
+
+        echo 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium amet fugiat repellat sit id inventore numquam odio quis. Hic cumque dolorem perferendis quibusdam. Officiis, quidem neque eligendi ratione explicabo eos.';
+
+
+        }
+        else {
+            debug('não passou no authorized filho users');
         }
     }
 }

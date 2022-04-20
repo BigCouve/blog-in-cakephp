@@ -58,6 +58,7 @@ class AppController extends Controller {
         if (isset($user['role']) && $user['role'] === 'admin') {
             return true; // Admin pode acessar todas actions
         }
+        debug('não passou no authorized pai');
         return false; // Os outros usuários não podem
         
     }
