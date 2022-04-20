@@ -99,9 +99,10 @@ class UsersController extends AppController {
     public function isAuthorized($user)
     {
 
-        //debug($this->action === 'login');
+        debug(Router::connect('/login', array('controller' => 'users', 'action' => 'login')));
+
         if ($this->Session->read('logged') && $this->action === 'login') {
-            return $this->Auth->deny('login');
+            $this->Auth->deny('login');
         }
     }
 }
