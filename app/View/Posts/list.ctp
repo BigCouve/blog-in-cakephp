@@ -2,6 +2,8 @@
 
 <!-- Arquivos CSS importados -->
 <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
+<!-- Arquivos JS importados -->
+<script src="app\webroot\js\orderTable.js"></script>
 
 <div class="noticia">
     <?php 
