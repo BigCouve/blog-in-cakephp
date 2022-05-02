@@ -16,6 +16,10 @@ class PostsController extends AppController {
         $this->set('userId', $this->Auth->user('id'));
         $this->set('userRole', $this->Auth->user('role'));
 
+        //variavel que armazena a quantidade de cabeçalhos
+        $this->set('qtd_th', qtd_th);
+
+
     }
                 
 

@@ -2,8 +2,7 @@
 
 <!-- Arquivos CSS importados -->
 <link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
-<!-- Arquivos JS importados -->
-<script src="app\webroot\js\orderTable.js"></script>
+
 
 <div class="noticia">
     <?php 
@@ -41,14 +40,20 @@ as informações dos posts -->
 
 <div class="container-fluid">
     <table class = "table table-striped table-bordered table-responsive table-hover" id="table">
-        <?php if ($this->Session->read('logged') === true) { ?>
+        <?php
+       
+        if ($this->Session->read('logged') === true) { ?>
         <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">
             <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="true"></span>
             Adicionar Post
         </a>
         <?php } ?>
         <tr id="cabecalho">
-            <?php if ($this->Session->read('logged') === true && $userRole === 'admin') { ?>
+            <?php 
+            foreach ($variable as $key => $value) {
+                # code...
+            }
+            if ($this->Session->read('logged') === true && $userRole === 'admin') { ?>
                 <th onclick="sortTable(0)">Id</th>
             <?php } ?>
             <th id="titlePosts" onclick="sortTable(1)">Título</th>
@@ -90,4 +95,7 @@ as informações dos posts -->
     </table>
 </div>
 
+
+<!-- Arquivos JS importados -->
+<script src="app\webroot\js\orderTable.js"></script>
 

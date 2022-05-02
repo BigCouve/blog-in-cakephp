@@ -65,3 +65,7 @@ function sortTable(n) {
     }
   }
 }
+
+var qtd_th = $("th");
+console.log(qtd_th);
+
