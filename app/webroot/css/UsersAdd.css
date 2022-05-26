@@ -18,6 +18,7 @@ body {
   padding: 30px 50px 30px;
   background-color: #A674F2;
   max-width: 30vw;
+  min-width: 250px;
   text-align: center;
   border-radius: 5px;
   margin: auto;

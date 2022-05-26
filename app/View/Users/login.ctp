@@ -24,7 +24,6 @@ if ($this->Session->consume('erro')) { ?>
 <div class="container jumbotron jumbotron-fluid">
   <div class="form-group">
     <?php
-    //echo $this->Form->input('username'); // No div, no label
 
     echo $this->Form->input(
       false,

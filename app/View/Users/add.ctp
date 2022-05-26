@@ -24,7 +24,7 @@ if($this->Session->consume('erro')){ ?>
             'type' => 'text',
             'class' => 'form-control',
             'name' => 'data[User][username]',
-            'placeholder' => 'Insira o usuário desejado',
+            'placeholder' => 'Insira o usuário',
             'value' => false,
             'required' => true,
 
