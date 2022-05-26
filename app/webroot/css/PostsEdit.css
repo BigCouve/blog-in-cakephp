@@ -1,8 +1,8 @@
 .container h1 {
-  background-color: #FFFFFF;
+  background-color: #F2F2F0;
   -webkit-box-shadow: 5px 5px black;
           box-shadow: 5px 5px black;
-  color: #666666;
+  color: #262014;
   display: inline-block;
   width: auto;
   padding: 8px 16px;
@@ -12,12 +12,16 @@
 }
 
 .container #tituloEdit {
+  background-color: #F2F2F0;
+  color: #262014;
   resize: none;
   margin-bottom: 20px;
   width: 700px;
 }
 
 .container #corpoEdit {
+  background-color: #F2F2F0;
+  color: #262014;
   resize: none;
   margin-bottom: 20px;
   width: 700px;
@@ -27,7 +31,9 @@
 .container #endButton {
   border: none;
   padding: 8px 14px;
-  background-color: chartreuse;
+  color: #F2F2F0;
+  font-weight: bold;
+  background-color: #73503C;
   text-align: center;
   border-radius: 4px;
   display: inline-block;

@@ -1,25 +1,41 @@
-@charset "utf-8";
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-.jumbotron-fluid{
-    background-color: #71CA6C;
-    border-color: #DAE6FB;
-    color: #fff;
-    margin-top: 125px;
+.jumbotron-fluid {
+  background-color: #A674F2;
+  border-color: #DAE6FB;
+  color: #F2F2F0;
+  max-width: 25vw;
 }
 
 .container > .form-group {
-    text-align: center;
+  text-align: center;
 }
 
-#ss {
-    font-weight: 60px;
-    color: #313333;
-    background: linear-gradient(90deg, #FFF2DA 0%, #FEBC43 100%);
-    border: none;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-    padding: 10px;
+#botaoEnviar {
+  font-weight: 60px;
+  color: #313333;
+  background: #A5F2B6;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
 }
+/*# sourceMappingURL=UsersLogin.css.map */

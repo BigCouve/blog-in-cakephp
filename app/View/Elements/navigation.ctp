@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -11,11 +10,11 @@
         </button>
       </a>     
       <a class="nav navbar-brand" href="http://localhost:8888/">
-      <img src="/app/webroot/img/arvore2.png" width="30" height="30" class="img-responsive">
+        <img src="/app/webroot/img/arvore2.png" width="30" height="30" class="img-responsive">
         <a class="nav navbar-brand" href="http://localhost:8888/">
-        Mãe Terra
+          Mãe Terra
         </a>
-    </a> 
+      </a> 
     </div>
     <div class="navbar-collapse collapse" id = "bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav nav-pills" >
@@ -52,7 +51,7 @@
             
             <a href="http://localhost:8888/adduser">
               <button type="button" class="btn btn-secondary navbar-btn">
-                Inscreva-se
+                Cadastre-se
               </button>
             </a>
 
@@ -64,7 +63,3 @@
     </div>
   </div>
 </nav><!--/.nav-collapse -->
-
-<div class="subbackground">
-  
-</div>

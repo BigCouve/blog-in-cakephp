@@ -1,6 +1,5 @@
 <!-- Arquivos CSS importados -->
 <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersIndex.css" media="screen" />
-
 <div class="welcome">
     <h1 class="jumpLine">
         Bem vindo<b><?php 
@@ -11,4 +10,3 @@
     </h1>
     <h4>Por favor, clique em algum dos campos acima.</h4>
 </div>
-

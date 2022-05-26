@@ -14,7 +14,7 @@ if($this->Session->consume('erro')){ ?>
 <?php }; ?>
 
 
-<div class="bgAddUser col-md-4 col-md-offset-4">
+<div class="bgAddUser">
 <?php echo $this->Form->create('User');?>
     <fieldset>
         <legend><?php echo __('Cadastrar usuário'); ?></legend>
@@ -24,7 +24,7 @@ if($this->Session->consume('erro')){ ?>
             'type' => 'text',
             'class' => 'form-control',
             'name' => 'data[User][username]',
-            'placeholder' => 'Insira seu usuário',
+            'placeholder' => 'Insira o usuário desejado',
             'value' => false,
             'required' => true,
 
@@ -34,7 +34,7 @@ if($this->Session->consume('erro')){ ?>
             'type' => 'password',
             'class' => 'form-control',
             'name' => 'data[User][password]',
-            'placeholder' => 'Senha',
+            'placeholder' => 'Insira a senha',
             'value' => false,
             'required' => true,
 

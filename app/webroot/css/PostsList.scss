@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import 'variables';
+
 
 .table > tbody > tr:hover{
     background-color: #FFE8CA;
@@ -6,11 +8,9 @@
 }
 
 #cabecalho th{
-    /* border: 3px outset hsl(77, 7%, 19%); */
     border: 3px solid #BABABA;    
     font: sans-serif;
     text-align: center;
-    /* margin: auto; */
 }
 
 #dateTimePost{
@@ -37,16 +37,12 @@
 
     h1{
         margin: 0px;
-
         box-shadow: 1vh 1vh 5px #3d2e1b;
         text-shadow: 1px 1px #dfdfdf;
         width: 25vw;
         text-align: center;
         color: #3d2e1b;
-        background-color: #f4ba7b;
-        opacity: 0.8;
-        // margin-top: 19vh;
-        // margin-bottom: 10vh;
+        background-color: $quarta;
         border-radius: 1vh;
     }
 }

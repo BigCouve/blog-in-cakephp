@@ -21,7 +21,7 @@ if ($this->Session->consume('erro')) { ?>
 
 
 
-<div class="container jumbotron jumbotron-fluid col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-4 ">
+<div class="container jumbotron jumbotron-fluid">
   <div class="form-group">
     <?php
     //echo $this->Form->input('username'); // No div, no label
@@ -58,7 +58,7 @@ if ($this->Session->consume('erro')) { ?>
 
   </div>
   <div class="form-group">
-    <input class="btn" id = "ss" type="submit" value="Entrar">
+    <input class="btn" id = "botaoEnviar" type="submit" value="Entrar">
     <i class="fa fa-lock"></i>
   </div>
 </div>

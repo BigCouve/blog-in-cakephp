@@ -1,22 +1,25 @@
+@import 'variables';
 
-body{
-    margin: 80px 0px;
-    background-color: brown;
-    // background-image: url('/app/webroot/img/backgroundBlog4.jfif');
+
+html{
+    background-image: url('/app/webroot/img/backgroundBlog4.jfif');
     position: sticky;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: auto;
-    //color: black;
+    padding:0px 0px 25px;
     nav{
-        padding: 0px 100px;   
+        padding: 0px 100px; 
     }
-    .subBackground{
-        margin: 120px 0px;
-        width: 80vw;
-        height: 80vh;
-        background-color: brown;
+    body{
+        margin: 80px auto 0px;
+        padding: 15px;
+        width: 90vw;
+        height: 75%;
+        min-height: 80vh;
+        background-color: $segunda;
         background-repeat: no-repeat;
+        border-radius: 1vh;
     }
 }
 

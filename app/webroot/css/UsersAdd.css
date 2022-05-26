@@ -1,14 +1,26 @@
-.bgAddUser {
-  padding: 50px 75px;
+body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #71CA6C;
-  width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bgAddUser {
+  padding: 30px 50px 30px;
+  background-color: #A674F2;
+  max-width: 30vw;
   text-align: center;
   border-radius: 5px;
-  display: inline-block;
-  margin-top: 13vh;
+  margin: auto;
 }
 
 .bgAddUser form fieldset legend {
@@ -37,9 +49,8 @@
 
 #submitAddUser {
   margin-top: 20px;
-  color: gray;
+  color: #262014;
   border: none;
-  background: -webkit-gradient(linear, left top, right top, from(#FFF2DA), to(#FEBC43));
-  background: linear-gradient(90deg, #FFF2DA 0%, #FEBC43 100%);
+  background: #A5F2B6;
 }
 /*# sourceMappingURL=UsersAdd.css.map */
