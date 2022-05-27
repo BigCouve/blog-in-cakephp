@@ -11,11 +11,14 @@ class PostsController extends AppController {
         
     }
     public function list() {
-        // debug($this->Post->find('all'));
         $this->set('list', $this->Post->find('all', array('order' => 'Post.id ASC')));
         $this->set('userId', $this->Auth->user('id'));
         $this->set('userRole', $this->Auth->user('role'));
+        $this->set('asc', $this->Auth->user('role'));
+        $this->set('desc', $this->Auth->user('role'));
 
+        debug($this->request->data);
+        // $this->orderTable();
     }
                 
 
@@ -70,6 +73,18 @@ class PostsController extends AppController {
         // debug(gettype($userLogged));
         // $this->set('postsOwned', $this->Post->query("SELECT * FROM posts WHERE username = " . $this->Session->read('username')));
     }
+
+    // public function orderTable($asc, $desc)
+    // {
+    //     if ($asc) {
+    //         $this->set('asc', $this->Post->query("SELECT * FROM posts ORDER BY ASC"));
+    //     }
+    //     else if ($desc) {
+    //         $this->set('desc', $this->Post->query("SELECT * FROM posts ORDER BY DESC"));
+    //     }
+    // }
+
+
 
 
 

@@ -1,3 +1,7 @@
+.container-fluid select .form-control {
+  background-color: red;
+}
+
 .table > tbody > tr:hover {
   background-color: #FFE8CA;
 }
