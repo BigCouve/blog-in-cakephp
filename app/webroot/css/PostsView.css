@@ -6,7 +6,7 @@
 
 .tituloPostView {
   margin-bottom: 3vh;
-  background-color: #F2F2F0;
+  background-color: #D9D05B;
   text-align: center;
   border-radius: 5px;
   color: #262014;
@@ -16,7 +16,7 @@
 }
 
 .corpoPostView {
-  background-color: #F2F2F0;
+  background-color: #D9D05B;
   text-align: justify;
   border-radius: 5px;
   height: auto;
@@ -27,7 +27,7 @@
 }
 
 .footerView {
-  background-color: #F2F2F0;
+  background-color: #D9D05B;
   color: #262014;
   padding: 10px 10px 0px 10px;
   margin-top: 2vh;

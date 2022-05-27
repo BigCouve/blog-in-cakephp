@@ -33,11 +33,11 @@ class UsersController extends AppController {
             if($queryA[0][0][0]['count'] === 0){
                 $this->User->create();            
                 if ($this->User->save($this->request->data)) {
-                    $this->Flash->success(__('The user has been saved'));
+                    $this->Session->write('userCreated', true);
                     return $this->redirect(array('action' => 'index'));
                 }         
             }
-            return $this->Session->write('erro', true);
+            return $this->Session->write('userNotCreated', true);
         }
     }
 

@@ -5,16 +5,17 @@
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: initial;
       -ms-flex-pack: initial;
           justify-content: initial;
+  margin: 0px;
 }
 
-.welcome {
+.container .welcome {
   background-color: #F8BB7C;
   opacity: 0.9;
   border-radius: 1vh;
@@ -27,7 +28,7 @@
   padding: 1vw;
 }
 
-.welcome h1.jumpLine {
+.container .welcome h1.jumpLine {
   margin-bottom: 5vh;
 }
 /*# sourceMappingURL=UsersIndex.css.map */

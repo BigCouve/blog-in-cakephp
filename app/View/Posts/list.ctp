@@ -44,6 +44,31 @@ as informações dos posts -->
             <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="true"></span>
             Adicionar Post
         </a>
+
+        <!-- <div id="filtro1" class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <div id="filtro2" class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div> -->
+
         <?php } ?>
         <tr id="cabecalho">
             <?php if ($this->Session->read('logged') === true && $userRole === 'admin') { ?>

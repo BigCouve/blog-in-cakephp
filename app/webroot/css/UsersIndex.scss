@@ -1,27 +1,29 @@
 @import 'variables';
 
+
+
 .container{
     display: flex;
     align-items: initial;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: initial;
-
-    
-}
-
-.welcome{
-    background-color: #F8BB7C;
-    opacity: 0.9;
-    border-radius: 1vh;
-    box-shadow: 10px 10px 3px;
-    text-align: left;
-    width: 35%;
-    min-width: 240px;
-    height: auto;
-    padding: 1vw;
-    
-    h1.jumpLine{
-        margin-bottom: 5vh;
+    margin: 0px;
+    .welcome{
+        background-color: #F8BB7C;
+        opacity: 0.9;
+        border-radius: 1vh;
+        box-shadow: 10px 10px 3px;
+        text-align: left;
+        width: 35%;
+        min-width: 240px;
+        height: auto;
+        padding: 1vw;
+        
+        h1.jumpLine{
+            margin-bottom: 5vh;
+        }
     }
 }
+
+
 

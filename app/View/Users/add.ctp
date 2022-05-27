@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersAdd.css" media="screen" />
 
 <?php 
-if($this->Session->consume('erro')){ ?>
+if($this->Session->consume('userNotCreated')){ ?>
     <div class="alert alert-danger text-center" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
@@ -12,6 +12,8 @@ if($this->Session->consume('erro')){ ?>
     <b>Nome de usuário já em uso, tente outro.</b>
   </div>
 <?php }; ?>
+
+
 
 
 <div class="bgAddUser">

@@ -4,7 +4,7 @@
 
 .container{
   h1{
-    background-color: $segunda;
+    background-color: $primeira;
     box-shadow: 5px 5px black;
     color: $terceira;
     display: inline-block;
@@ -19,7 +19,7 @@
 
   }
   #tituloEdit {
-    background-color: $segunda;
+    background-color: $primeira;
     color: $terceira;
     resize: none;
     margin-bottom: 20px;
@@ -27,7 +27,7 @@
   }
 
   #corpoEdit {
-    background-color: $segunda;
+    background-color: $primeira;
     color: $terceira;
     resize: none;
     margin-bottom: 20px;
