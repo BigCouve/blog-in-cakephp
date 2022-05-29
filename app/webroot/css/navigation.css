@@ -22,6 +22,9 @@ html body {
   padding: 15px;
   width: 90vw;
   min-height: 80vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-color: #F2F2F0;
   background-repeat: no-repeat;
   border-radius: 1vh;

@@ -2,40 +2,6 @@
 @import 'variables';
 
 
-.container-fluid{
-    select{
-        .form-control{
-            background-color: red;
-        }
-    }
-}
-
-
-.table > tbody > tr:hover{
-    background-color: #FFE8CA;
-    
-}
-
-#cabecalho th{
-    border: 3px solid #BABABA;    
-    font: sans-serif;
-    text-align: center;
-}
-
-#dateTimePost{
-    text-align: center;
-}
-
-.table-striped {
-    background-color: #BABABA;
-}
-
-#linePosts > td {
-    border-style: dotted;
-    text-align: center;
-}
-
-
 .mainTitle {
     display: flex;
     flex-direction: row;
@@ -56,17 +22,66 @@
     }
 }
 
-#addPost{
-    margin-left: 16vh;
-    margin-bottom: 5vh;
-    color: rgb(57, 159, 255);
+.container-fluid{
+    .table-striped {
+        background-color: #BABABA;
+    }
+    .table {
+        width: 900px;
+        margin: auto;
+        a {
+            #crossAddPost{
+                color: black; 
+            }
+        }
+        #addPost{
+            margin-left: 16vh;
+            margin-bottom: 5vh;
+            color: rgb(57, 159, 255);
+        }
+        .cabecalho {
+            th{
+                border: 3px solid #BABABA;    
+                font: sans-serif;
+                text-align: center;
+            }
+            #dateTimePost{
+                text-align: center;
+            }
+        }
+        tbody{
+            .linePosts {
+                td {
+                    border-style: dotted;
+                    text-align: center;
+                }
+            } 
+            tr:hover{
+                background-color: #FFE8CA;
+            }
+        }
+        form{
+            #filterOrderTable{
+                .form-control{
+                    background-color: red;
+                    width: 30px;
+                }
+            }
+        }
+    }
 }
 
-#crossAddPost{
-    color: black; 
-}
 
-.table {
-    width: 900px;
-    margin: auto;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+

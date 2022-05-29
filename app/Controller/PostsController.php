@@ -11,14 +11,16 @@ class PostsController extends AppController {
         
     }
     public function list() {
-        $this->set('list', $this->Post->find('all', array('order' => 'Post.id ASC')));
+        //passa para a variável list, um array com todos os posts
+        $this->set('list', $this->Post->query("SELECT * FROM posts ORDER BY id ASC"));
+        
+        //se for o caso de envio de dados, a variável será alterada de acordo com o filtro
+        if ($this->request->is('post')) {
+            $this->set('list', $this->orderTable($this->request->data['order']));
+            $this->request->data = '';
+        }
         $this->set('userId', $this->Auth->user('id'));
         $this->set('userRole', $this->Auth->user('role'));
-        $this->set('asc', $this->Auth->user('role'));
-        $this->set('desc', $this->Auth->user('role'));
-
-        debug($this->request->data);
-        // $this->orderTable();
     }
                 
 
@@ -74,15 +76,15 @@ class PostsController extends AppController {
         // $this->set('postsOwned', $this->Post->query("SELECT * FROM posts WHERE username = " . $this->Session->read('username')));
     }
 
-    // public function orderTable($asc, $desc)
-    // {
-    //     if ($asc) {
-    //         $this->set('asc', $this->Post->query("SELECT * FROM posts ORDER BY ASC"));
-    //     }
-    //     else if ($desc) {
-    //         $this->set('desc', $this->Post->query("SELECT * FROM posts ORDER BY DESC"));
-    //     }
-    // }
+    public function orderTable($data)
+    {
+        if ($data === "Crescente" || $data === "Ordem") {
+            return $this->Post->query("SELECT * FROM posts ORDER BY id ASC");
+        }
+        else if ($data === "Decrescente") {
+            return $this->Post->query("SELECT * FROM posts ORDER BY id DESC");
+        }
+    }
 
 
 

@@ -45,14 +45,7 @@ as informações dos posts -->
             Adicionar Post
         </a>
 
-        <form action="/guias">
-            <select id="filterOrderTable" class="form-control">
-                <option value="Ordem">Ordem</option>
-                <option value="Crescente">Crescente</option>
-                <option value="Decrescente">Decrescente</option>
-            </select>
-            <button type="submit" class="btn btn-primary">Filtrar</button>
-        </form>
+        
             
         
 
@@ -69,7 +62,18 @@ as informações dos posts -->
         </div> -->
 
         <?php } ?>
+
         
+        <form action="/guias" method="post">
+            <select class="form-control" name="order">
+                <option value="Ordem">Ordem</option>
+                <option value="Crescente">Crescente</option>
+                <option value="Decrescente">Decrescente</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+        </form>
+
+
         <tr id="cabecalho">
             <?php if ($this->Session->read('logged') === true && $userRole === 'admin') { ?>
                 <th>Id</th>
@@ -82,29 +86,30 @@ as informações dos posts -->
         </tr>
         <tbody>
             <?php
+            // debug($list);
             foreach ($list as $post):   ?>
-                <tr id = "linePosts">
+                <tr class = "linePosts">
                     <?php if ($this->Session->read('logged') === true && $userRole === 'admin') { ?>
-                        <td><?php echo $post['Post']['id']; ?></td>
+                        <td><?php echo $post[0]['id']; ?></td>
                     <?php } ?>
                     <td>
-                        <?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id']));?>
+                        <?php echo $this->Html->link($post[0]['title'], array('action' => 'view', $post[0]['id']));?>
                     </td>
-                    <?php if (($this->Session->read('logged') === true) && ($userId === $post['Post']['user_id'] || $userRole === 'admin')) { ?>
+                    <?php if (($this->Session->read('logged') === true) && ($userId === $post[0]['user_id'] || $userRole === 'admin')) { ?>
                         <td>
                             <?php echo $this->Form->postLink(
                                 'Deletar',
-                                array('action' => 'delete', $post['Post']['id']),
+                                array('action' => 'delete', $post[0]['id']),
                                 array('confirm' => 'Você tem certeza?')
                             )?>
-                            <?php echo $this->Html->link('Editar', array('action' => 'edit', $post['Post']['id']));?>
+                            <?php echo $this->Html->link('Editar', array('action' => 'edit', $post[0]['id']));?>
                         </td>
                     <?php }
                     else if (($this->Session->read('logged') === true)){ ?>
                         <td>-</td>
                     <?php } ?>    
                     <td><?php
-                    $date = date_create($post['Post']['created']);
+                    $date = date_create($post[0]['created']);
                     echo date_format($date, 'd/m/Y H:i:s');  ?></td>
                 </tr>
             <?php endforeach;
