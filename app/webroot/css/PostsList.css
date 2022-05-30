@@ -18,6 +18,7 @@
 
 .mainTitle h1 {
   margin: 0px;
+  padding: 5px;
   -webkit-box-shadow: 1vh 1vh 5px #3d2e1b;
           box-shadow: 1vh 1vh 5px #3d2e1b;
   text-shadow: 1px 1px #dfdfdf;
@@ -32,30 +33,34 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container-fluid form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 15px;
+  width: 900px;
 }
 
 .container-fluid form .filtros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .container-fluid form .filtros select {
+  margin: 10px;
   width: 130px;
 }
 
@@ -63,13 +68,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px 15px 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20%;
 }
 
 .container-fluid .table-striped {

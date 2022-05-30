@@ -48,6 +48,30 @@ as informações dos posts -->
             </select><select name="" id="" class="form-control">
                 <option value=""></option>
             </select>
+            <select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select>
+            <select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select>
         </div>
         <div class="envio">
             <button type="submit" class="btn btn-primary">Filtrar</button>
