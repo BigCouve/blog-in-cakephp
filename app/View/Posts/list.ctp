@@ -30,24 +30,41 @@
     <h1>Posts do Mãe Terra</h1>
 </div>
 
-
-
-
-
 <!-- Aqui é onde nós percorremos nossa matriz $posts, imprimindo
 as informações dos posts --> 
 
 <div class="container-fluid">
+    <form action="/guias" method="post">
+        <div class="filtros">
+            <select class="form-control" name="order">
+                <option value="Ordem">Ordem</option>
+                <option value="Crescente">Crescente</option>
+                <option value="Decrescente">Decrescente</option>
+            </select>
+            <select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select><select name="" id="" class="form-control">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="envio">
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+        </div>
+    </form>
+</div>
+    
+<div class="container-fluid">
+
+
     <table class = "table table-striped table-bordered table-responsive table-hover" >
         <?php if ($this->Session->read('logged') === true) { ?>
         <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">
             <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="true"></span>
             Adicionar Post
         </a>
-
-        
-            
-        
+   
 
         <!-- <div id="filtro2" class="btn-group">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,26 +80,15 @@ as informações dos posts -->
 
         <?php } ?>
 
-        
-        <form action="/guias" method="post">
-            <select class="form-control" name="order">
-                <option value="Ordem">Ordem</option>
-                <option value="Crescente">Crescente</option>
-                <option value="Decrescente">Decrescente</option>
-            </select>
-            <button type="submit" class="btn btn-primary">Filtrar</button>
-        </form>
-
-
         <tr id="cabecalho">
             <?php if ($this->Session->read('logged') === true && $userRole === 'admin') { ?>
                 <th>Id</th>
             <?php } ?>
-            <th id="titlePosts" >Título</th>
+            <th>Título</th>
             <?php if ($this->Session->read('logged') === true) { ?>
-                <th >Ações</th>
+                <th>Ações</th>
             <?php } ?>
-            <th id = "dateTimePost">Criado em</th>
+            <th>Criado em</th>
         </tr>
         <tbody>
             <?php

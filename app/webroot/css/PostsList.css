@@ -28,6 +28,50 @@
   border-radius: 1vh;
 }
 
+.container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-fluid form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+
+.container-fluid form .filtros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-fluid form .filtros select {
+  width: 130px;
+}
+
+.container-fluid form .envio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
 .container-fluid .table-striped {
   background-color: #BABABA;
 }
@@ -47,13 +91,9 @@
   color: #399fff;
 }
 
-.container-fluid .table .cabecalho th {
+.container-fluid .table #cabecalho th {
   border: 3px solid #BABABA;
   font: sans-serif;
-  text-align: center;
-}
-
-.container-fluid .table .cabecalho #dateTimePost {
   text-align: center;
 }
 
@@ -64,10 +104,5 @@
 
 .container-fluid .table tbody tr:hover {
   background-color: #FFE8CA;
-}
-
-.container-fluid .table form #filterOrderTable .form-control {
-  background-color: red;
-  width: 30px;
 }
 /*# sourceMappingURL=PostsList.css.map */
