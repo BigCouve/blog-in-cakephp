@@ -23,49 +23,59 @@
 }
 
 
+ 
 
 .container-fluid{
-    display: flex;
-    justify-content: center;
-    form{
+    
+    .formulario-filtros{
         display: flex;
-        justify-content: space-around;
-        padding: 15px;
-        width: 900px;
-        .filtros{
+        justify-content: center;
+        align-items: center;
+        form{
             display: flex;
-            flex-wrap: wrap;
-            justify-content: left;
-            select{
-                margin: 10px;
-                width: 130px;
+            justify-content: space-around;
+            padding: 15px;
+            width: 900px;
+            .filtros{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: left;
+                select{
+                    margin: 10px;
+                    width: 130px;
+                }
+            }
+
+            .envio{
+                display: flex;
+                padding: 0px 15px 0px;
+                justify-content: center;
+                align-items: center;
             }
         }
+    }
 
-        .envio{
-            display: flex;
-            padding: 0px 15px 0px;
-            justify-content: center;
-            align-items: center;
+    a {
+        &#addPost{
+            color: rgb(57, 159, 255);
+            margin-left: 30px ;
         }
-    }
-    .table-striped {
-        background-color: #BABABA;
-    }
-    .table {
-        
-        width: 900px;
-        margin: auto;
-        a {
-            #crossAddPost{
+        span{
+            &#crossAddPost{
                 color: black; 
             }
         }
-        #addPost{
-            margin-left: 16vh;
-            margin-bottom: 5vh;
-            color: rgb(57, 159, 255);
-        }
+    }   
+
+    .table-striped {
+        background-color: #BABABA;
+    }
+    table {
+        
+        width: 900px;
+        margin: auto;
+        
+        
         #cabecalho {
             th{
                 border: 3px solid #BABABA;    
@@ -83,8 +93,7 @@
             tr:hover{
                 background-color: #FFE8CA;
             }
-        }
-        
+        }  
     }
 }
 

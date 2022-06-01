@@ -1,7 +1,9 @@
 <!-- File: /app/View/Posts/index.ctp  (links para edição adicionados) -->
 
 <!-- Arquivos CSS importados -->
-<link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/app/webroot/css/PostsList.css" media="screen" >
+
+
 
 <div class="noticia">
     <?php 
@@ -34,75 +36,43 @@
 as informações dos posts --> 
 
 <div class="container-fluid">
-    <form action="/guias" method="post">
-        <div class="filtros">
-            <select class="form-control" name="order">
-                <option value="Ordem">Ordem</option>
-                <option value="Crescente">Crescente</option>
-                <option value="Decrescente">Decrescente</option>
-            </select>
-            <select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select>
-            <select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select>
-            <select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select><select name="" id="" class="form-control">
-                <option value=""></option>
-            </select>
-        </div>
-        <div class="envio">
-            <button type="submit" class="btn btn-primary">Filtrar</button>
-        </div>
-    </form>
+    <div class="formulario-filtros">
+        <form action="/guias" method="post">
+            <div class="filtros">
+                <select class="form-control" name="order">
+                    <option value="Ordem">Ordem</option>
+                    <option value="Crescente">Crescente</option>
+                    <option value="Decrescente">Decrescente</option>
+                </select>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select><select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select><select name="" id="" class="form-control">
+                    <option value=""></option>
+               
+                </select>
+            </div>
+            <div class="envio">
+                <button type="submit" class="btn btn-primary">Filtrar</button>
+            </div>
+        </form>
+        
+    </div>
+    
 </div>
     
 <div class="container-fluid">
+    <?php if ($this->Session->read('logged') === true) { ?>
 
+    <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">
+        <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="false"></span>
+        Adicionar Post
+    </a>
 
+    <?php } ?>
     <table class = "table table-striped table-bordered table-responsive table-hover" >
-        <?php if ($this->Session->read('logged') === true) { ?>
-        <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">
-            <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-            Adicionar Post
-        </a>
-   
-
-        <!-- <div id="filtro2" class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Action <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Separated link</a></li>
-            </ul>
-        </div> -->
-
-        <?php } ?>
+        
 
         <tr id="cabecalho">
             <?php if ($this->Session->read('logged') === true && $userRole === 'admin') { ?>

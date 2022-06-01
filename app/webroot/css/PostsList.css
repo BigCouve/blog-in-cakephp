@@ -29,16 +29,19 @@
   border-radius: 1vh;
 }
 
-.container-fluid {
+.container-fluid .formulario-filtros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container-fluid form {
+.container-fluid .formulario-filtros form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +51,7 @@
   width: 900px;
 }
 
-.container-fluid form .filtros {
+.container-fluid .formulario-filtros form .filtros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,12 +62,12 @@
           justify-content: left;
 }
 
-.container-fluid form .filtros select {
+.container-fluid .formulario-filtros form .filtros select {
   margin: 10px;
   width: 130px;
 }
 
-.container-fluid form .envio {
+.container-fluid .formulario-filtros form .envio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,37 +80,36 @@
           align-items: center;
 }
 
+.container-fluid a#addPost {
+  color: #399fff;
+  margin-left: 30px;
+}
+
+.container-fluid a span#crossAddPost {
+  color: black;
+}
+
 .container-fluid .table-striped {
   background-color: #BABABA;
 }
 
-.container-fluid .table {
+.container-fluid table {
   width: 900px;
   margin: auto;
 }
 
-.container-fluid .table a #crossAddPost {
-  color: black;
-}
-
-.container-fluid .table #addPost {
-  margin-left: 16vh;
-  margin-bottom: 5vh;
-  color: #399fff;
-}
-
-.container-fluid .table #cabecalho th {
+.container-fluid table #cabecalho th {
   border: 3px solid #BABABA;
   font: sans-serif;
   text-align: center;
 }
 
-.container-fluid .table tbody .linePosts td {
+.container-fluid table tbody .linePosts td {
   border-style: dotted;
   text-align: center;
 }
 
-.container-fluid .table tbody tr:hover {
+.container-fluid table tbody tr:hover {
   background-color: #FFE8CA;
 }
 /*# sourceMappingURL=PostsList.css.map */
