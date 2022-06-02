@@ -25,5 +25,19 @@
     }
 }
 
-
+.secondlineThumbs{
+    margin-top: 25px;
+    .row{
+        .col-sm-6{
+            .thumbnail{
+                img{
+                    width: 280px;
+                    max-height: 280px;
+                    min-width: min-content;
+                    min-height: min-content;
+                }
+            }
+        }
+    }
+}
 

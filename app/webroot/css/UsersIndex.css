@@ -31,4 +31,19 @@
 .container .welcome h1.jumpLine {
   margin-bottom: 5vh;
 }
+
+.secondlineThumbs {
+  margin-top: 25px;
+}
+
+.secondlineThumbs .row .col-sm-6 .thumbnail img {
+  width: 280px;
+  max-height: 280px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
 /*# sourceMappingURL=UsersIndex.css.map */

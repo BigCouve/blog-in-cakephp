@@ -22,3 +22,41 @@ if($this->Session->consume('userCreated')){ ?>
     <h4>Por favor, clique em algum dos campos acima.</h4>
 </div>
 
+
+
+<div class="secondlineThumbs">
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="app\webroot\img\tomate.png" alt="...">
+        <div class="caption">
+          <h3>Thumbnail Label</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, corrupti!</p>
+          <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="app\webroot\img\cebola.png" alt="...">
+        <div class="caption">
+          <h3>Thumbnail Label</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores exercitationem itaque nobis amet! Deserunt rerum amet minus aspernatur eaque repellendus, error id saepe, magnam dolorem temporibus, corporis impedit neque voluptatem.</p>
+          <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="app\webroot\img\beringela.png" alt="...">
+        <div class="caption">
+          <h3>Thumbnail Label</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eaque a incidunt praesentium commodi impedit! Pariatur, amet vitae!</p>
+          <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
