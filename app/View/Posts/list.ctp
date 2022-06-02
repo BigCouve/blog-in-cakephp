@@ -62,15 +62,10 @@ as informações dos posts -->
     
 </div>
     
+
+
 <div class="container-fluid">
-    <?php if ($this->Session->read('logged') === true) { ?>
-
-    <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">
-        <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="false"></span>
-        Adicionar Post
-    </a>
-
-    <?php } ?>
+    
     <table class = "table table-striped table-bordered table-responsive table-hover" >
         
 
@@ -118,4 +113,13 @@ as informações dos posts -->
     </table>
 </div>
 
+<div class="botaoAdicionarPost">
+    <?php if ($this->Session->read('logged') === true) { ?>
 
+    <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">
+        <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="false"></span>
+        Adicionar Post
+    </a>
+
+    <?php } ?>
+</div>

@@ -87,9 +87,6 @@ class PostsController extends AppController {
     }
 
 
-
-
-
     public function isAuthorized($user) {
         // Todos os usuários registrados podem criar posts e edita-los/deleta-los
 

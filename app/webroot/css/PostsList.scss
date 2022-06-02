@@ -23,7 +23,7 @@
 }
 
 
- 
+
 
 .container-fluid{
     
@@ -55,19 +55,7 @@
         }
     }
 
-    a {
-        
-        &#addPost{
-            color: rgb(57, 159, 255);
-            margin-left: 30px ;
-        }
-        span{
-            &#crossAddPost{
-
-                color: black; 
-            }
-        }
-    }   
+    
 
     .table-striped {
         background-color: #BABABA;
@@ -113,3 +101,18 @@
 
 
 
+
+.botaoAdicionarPost{
+    display: flex;
+    justify-content: center;
+    a {
+        &#addPost{
+            color: rgb(57, 159, 255);
+        }
+        span{
+            &#crossAddPost{
+                color: black; 
+            }
+        }
+    }
+}

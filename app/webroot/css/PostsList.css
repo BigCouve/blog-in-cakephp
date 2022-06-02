@@ -80,15 +80,6 @@
           align-items: center;
 }
 
-.container-fluid a#addPost {
-  color: #399fff;
-  margin-left: 30px;
-}
-
-.container-fluid a span#crossAddPost {
-  color: black;
-}
-
 .container-fluid .table-striped {
   background-color: #BABABA;
 }
@@ -111,5 +102,13 @@
 
 .container-fluid table tbody tr:hover {
   background-color: #FFE8CA;
+}
+
+a#addPost {
+  color: #399fff;
+}
+
+a span#crossAddPost {
+  color: black;
 }
 /*# sourceMappingURL=PostsList.css.map */
