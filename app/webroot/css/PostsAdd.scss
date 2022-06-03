@@ -1,53 +1,63 @@
-.add_titulo{
-    h1{
-        background-color: darkkhaki;
-        width: 45vh;
-        height: auto;
-        text-align: center;
-        color: #191911;
-        box-shadow: 3px 2px 3px darkred;
-        border-radius: 1vh;
-    }
-
-}
-.add_titulo_corpo {
-    #titleLogin{
-        background-color: darkkhaki; 
-        width: 100vh;
-        height: 40px;
-        resize: none;
-        margin-top: 30px;
-        ::placeholder{
-            padding-top: 1px;
-            color: #FCE9B1;
-            font-size: 16px;
+@import 'variables';
+.corpoAdd{       
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    // align-items: center;
+    // flex-flow: row wrap; 
+    // flex-direction: column;
+    // *{
+    //     flex: 1 100%;
+    // }
+    .add_titulo{
+        h1{
+            padding: 10px;
+            max-width: 310px;
+            background-color: $primeira;
+            text-align: center;
+            box-shadow: 3px 2px 3px $sombraCaixas;
+            border-radius: 1vh;
         }
     }
-    
-}
+    .add_titulo_corpo {
+        #titleLogin{
+            background-color: $primeira; 
+            height: 40px;
+            max-width: 700px;
+            resize: none;
+            margin-top: 30px;
+            ::placeholder{
+                padding-top: 1px;
+                color: $segunda;
+                font-size: 16px;
+            }
+        }
+        
+    }
 
-.add_corpo{
-    #titleLogin{
-        background-color: darkkhaki;
-        width: 100vh;
-        height: 30vh;
-        resize: none;
-        ::placeholder{
-            color: #FCE9B1;
-            font-size: 16px;
+    .add_corpo{
+        #titleLogin{
+            background-color: $primeira;
+            height: 30vh;
+            max-width: 700px;
+            resize: none;
+            ::placeholder{
+                color: #FCE9B1;
+                font-size: 16px;
+            }
         }
     }
-}
 
-.add_corpo {
-    .submitButton {
-        margin-top: 15px;
-        padding: 8px 16px;
-        background-color: greenyellow;
-        box-shadow: 1px 1px saddlebrown;
-        display: inline-block;
-        border: none;
-        text-decoration: none;
-        border-radius: 5px;
+    .send_form {
+        .submitButton {
+            margin-top: 15px;
+            padding: 8px 16px;
+            max-width: 700px;
+            background-color: $botoes;
+            box-shadow: 1px 1px $terceira;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+        }
     }
 }

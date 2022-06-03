@@ -1,5 +1,20 @@
 @import 'variables';
 
+.botaoAdicionarPost{
+    display: flex;
+    justify-content: right;
+    margin: 30px 0px;
+    a {
+        &#addPost{
+            color: rgb(57, 159, 255);
+        }
+        span{
+            &#crossAddPost{
+                color: black; 
+            }
+        }
+    }
+}
 
 .mainTitle {
     display: flex;
@@ -39,7 +54,7 @@
             .filtros{
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: left;
+                justify-content: flex-start;
                 select{
                     margin: 10px;
                     width: 130px;
@@ -102,17 +117,3 @@
 
 
 
-.botaoAdicionarPost{
-    display: flex;
-    justify-content: center;
-    a {
-        &#addPost{
-            color: rgb(57, 159, 255);
-        }
-        span{
-            &#crossAddPost{
-                color: black; 
-            }
-        }
-    }
-}

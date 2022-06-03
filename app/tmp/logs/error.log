@@ -29007,3 +29007,61 @@ Request URL: /...
 Stack Trace:
 #0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2022-06-02 22:37:27 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /add
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-06-02 22:37:35 Error: [MissingControllerException] Controller class AddPostController could not be found.
+Exception Attributes: array (
+  'class' => 'AddPostController',
+  'plugin' => NULL,
+)
+Request URL: /addPost
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-06-02 22:38:13 Error: [MissingControllerException] Controller class AddPostController could not be found.
+Exception Attributes: array (
+  'class' => 'AddPostController',
+  'plugin' => NULL,
+)
+Request URL: /addPost
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-06-02 22:38:14 Error: [MissingControllerException] Controller class AddPostController could not be found.
+Exception Attributes: array (
+  'class' => 'AddPostController',
+  'plugin' => NULL,
+)
+Request URL: /addPost
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-06-02 23:26:34 Error: [MissingActionException] Action UsersController::list() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'list',
+)
+Request URL: /users/list
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-02 23:26:52 Error: [MissingActionException] Action UsersController::list() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'list',
+)
+Request URL: /users/list
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

@@ -1,80 +1,92 @@
-.add_titulo h1 {
-  background-color: darkkhaki;
-  width: 45vh;
-  height: auto;
+.corpoAdd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.corpoAdd .add_titulo h1 {
+  padding: 10px;
+  max-width: 310px;
+  background-color: #D9D05B;
   text-align: center;
-  color: #191911;
-  -webkit-box-shadow: 3px 2px 3px darkred;
-          box-shadow: 3px 2px 3px darkred;
+  -webkit-box-shadow: 3px 2px 3px #7658A6;
+          box-shadow: 3px 2px 3px #7658A6;
   border-radius: 1vh;
 }
 
-.add_titulo_corpo #titleLogin {
-  background-color: darkkhaki;
-  width: 100vh;
+.corpoAdd .add_titulo_corpo #titleLogin {
+  background-color: #D9D05B;
   height: 40px;
+  max-width: 700px;
   resize: none;
   margin-top: 30px;
 }
 
-.add_titulo_corpo #titleLogin ::-webkit-input-placeholder {
+.corpoAdd .add_titulo_corpo #titleLogin ::-webkit-input-placeholder {
   padding-top: 1px;
-  color: #FCE9B1;
+  color: #F2F2F0;
   font-size: 16px;
 }
 
-.add_titulo_corpo #titleLogin :-ms-input-placeholder {
+.corpoAdd .add_titulo_corpo #titleLogin :-ms-input-placeholder {
   padding-top: 1px;
-  color: #FCE9B1;
+  color: #F2F2F0;
   font-size: 16px;
 }
 
-.add_titulo_corpo #titleLogin ::-ms-input-placeholder {
+.corpoAdd .add_titulo_corpo #titleLogin ::-ms-input-placeholder {
   padding-top: 1px;
-  color: #FCE9B1;
+  color: #F2F2F0;
   font-size: 16px;
 }
 
-.add_titulo_corpo #titleLogin ::placeholder {
+.corpoAdd .add_titulo_corpo #titleLogin ::placeholder {
   padding-top: 1px;
-  color: #FCE9B1;
+  color: #F2F2F0;
   font-size: 16px;
 }
 
-.add_corpo #titleLogin {
-  background-color: darkkhaki;
-  width: 100vh;
+.corpoAdd .add_corpo #titleLogin {
+  background-color: #D9D05B;
   height: 30vh;
+  max-width: 700px;
   resize: none;
 }
 
-.add_corpo #titleLogin ::-webkit-input-placeholder {
+.corpoAdd .add_corpo #titleLogin ::-webkit-input-placeholder {
   color: #FCE9B1;
   font-size: 16px;
 }
 
-.add_corpo #titleLogin :-ms-input-placeholder {
+.corpoAdd .add_corpo #titleLogin :-ms-input-placeholder {
   color: #FCE9B1;
   font-size: 16px;
 }
 
-.add_corpo #titleLogin ::-ms-input-placeholder {
+.corpoAdd .add_corpo #titleLogin ::-ms-input-placeholder {
   color: #FCE9B1;
   font-size: 16px;
 }
 
-.add_corpo #titleLogin ::placeholder {
+.corpoAdd .add_corpo #titleLogin ::placeholder {
   color: #FCE9B1;
   font-size: 16px;
 }
 
-.add_corpo .submitButton {
+.corpoAdd .send_form .submitButton {
   margin-top: 15px;
   padding: 8px 16px;
-  background-color: greenyellow;
-  -webkit-box-shadow: 1px 1px saddlebrown;
-          box-shadow: 1px 1px saddlebrown;
-  display: inline-block;
+  max-width: 700px;
+  background-color: #A5F2B6;
+  -webkit-box-shadow: 1px 1px #262014;
+          box-shadow: 1px 1px #262014;
   border: none;
   text-decoration: none;
   border-radius: 5px;

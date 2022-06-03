@@ -5,6 +5,7 @@
 
 
 
+
 <div class="noticia">
     <?php 
     
@@ -30,6 +31,17 @@
 
 <div class="mainTitle">
     <h1>Posts do Mãe Terra</h1>
+</div>
+
+<div class="botaoAdicionarPost">
+    <?php if ($this->Session->read('logged') === true) { ?>
+
+    <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">
+        <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="false"></span>
+        Novo Post
+    </a>
+
+    <?php } ?>
 </div>
 
 <!-- Aqui é onde nós percorremos nossa matriz $posts, imprimindo
@@ -113,13 +125,3 @@ as informações dos posts -->
     </table>
 </div>
 
-<div class="botaoAdicionarPost">
-    <?php if ($this->Session->read('logged') === true) { ?>
-
-    <a id="addPost" class = "btn btn-default" href="http://localhost:8888/posts/add">
-        <span id = "crossAddPost" class="glyphicon glyphicon-plus" aria-hidden="false"></span>
-        Adicionar Post
-    </a>
-
-    <?php } ?>
-</div>

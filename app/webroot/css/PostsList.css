@@ -1,3 +1,21 @@
+.botaoAdicionarPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin: 30px 0px;
+}
+
+.botaoAdicionarPost a#addPost {
+  color: #399fff;
+}
+
+.botaoAdicionarPost a span#crossAddPost {
+  color: black;
+}
+
 .mainTitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,9 +75,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .container-fluid .formulario-filtros form .filtros select {
@@ -102,13 +120,5 @@
 
 .container-fluid table tbody tr:hover {
   background-color: #FFE8CA;
-}
-
-a#addPost {
-  color: #399fff;
-}
-
-a span#crossAddPost {
-  color: black;
 }
 /*# sourceMappingURL=PostsList.css.map */
