@@ -29065,3 +29065,49 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2022-06-03 19:41:21 Error: [MissingControllerException] Controller class ViewController could not be found.
+Exception Attributes: array (
+  'class' => 'ViewController',
+  'plugin' => NULL,
+)
+Request URL: /view
+Stack Trace:
+#0 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-06-05 11:20:59 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] FATAL:  the database system is starting up
+FATAL:  the database system is starting up',
+  'enabled' => true,
+)
+Request URL: /addpost
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(278): Postgres->connect()
+#1 /app/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /app/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /app/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /app/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#5 /app/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#6 /app/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /app/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('Post', 'fields')
+#8 /app/app/View/Posts/add.ctp(12): FormHelper->create('Post')
+#9 /app/lib/Cake/View/View.php(971): include('/app/app/View/P...')
+#10 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/P...', Array)
+#11 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/P...')
+#12 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#13 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#15 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2022-06-05 11:54:00 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/altonoticiasdentario.jpg
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

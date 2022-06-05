@@ -60,13 +60,13 @@
     ?>
 
 
-    <div class="container">
+    <!-- <div class="container"> -->
 
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
 
-    </div><!-- /.container -->
+    <!-- </div> -->
 
   </body>
 </html>

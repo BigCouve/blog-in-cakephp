@@ -1,4 +1,5 @@
 <!-- Arquivos CSS importados -->
+<link rel="stylesheet" href="app\webroot\css\UsersIndex.css">
 <?php 
 
 if($this->Session->consume('userCreated')){ ?>
@@ -10,7 +11,14 @@ if($this->Session->consume('userCreated')){ ?>
   </div>
 <?php }; ?>
 
-<link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersIndex.css" media="screen" />
+<div class="anuncios">
+  <ul>
+    <li><a href="#"><img src="app\webroot\img\altonoticias.jpg" alt=""></a></li>
+    <li><a href="#"><img src="app\webroot\img\altonoticiasdentario.jpg" alt=""></a></li>
+  </ul>
+</div>
+
+<!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/UsersIndex.css" media="screen" />
 <div class="welcome">
     <h1 class="jumpLine">
         Bem vindo<b><?php 
@@ -21,7 +29,7 @@ if($this->Session->consume('userCreated')){ ?>
     </h1>
     <h4>Por favor, clique em algum dos campos acima.</h4>
 </div>
-
+ -->
 
 
 <div class="secondlineThumbs">

@@ -1,21 +1,11 @@
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: initial;
-      -ms-flex-pack: initial;
-          justify-content: initial;
-  margin: 0px;
+body {
+  border-radius: 0px !important;
+  margin-top: 50px !important;
+  padding: 30px !important;
+  max-width: 930px !important;
 }
 
-.container .welcome {
+.welcome {
   background-color: #F8BB7C;
   opacity: 0.9;
   border-radius: 1vh;
@@ -28,8 +18,39 @@
   padding: 1vw;
 }
 
-.container .welcome h1.jumpLine {
+.welcome h1.jumpLine {
   margin-bottom: 5vh;
+}
+
+div.anuncios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.anuncios ul {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.anuncios ul li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+div.anuncios ul li a img {
+  width: 100%;
+  height: auto;
+  min-height: 120px;
 }
 
 .secondlineThumbs {
