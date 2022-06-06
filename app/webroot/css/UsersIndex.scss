@@ -8,12 +8,7 @@ body{
     max-width: 930px !important;
 }
 
-// div.container{
-//     display: flex;
-//     align-items: initial;
-//     flex-direction: column;
-//     justify-content: initial;
-//     margin: 0px;
+
 .welcome{
     background-color: #F8BB7C;
     opacity: 0.9;
@@ -54,13 +49,26 @@ div.anuncios{
 .secondlineThumbs{
     margin-top: 25px;
     .row{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
         .col-sm-6{
             .thumbnail{
+                max-height: 450px;
                 img{
-                    width: 280px;
-                    max-height: 280px;
-                    min-width: min-content;
-                    min-height: min-content;
+                    width: 100%;
+                    height: auto;
+                    
+                }
+                .caption{
+                    p{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-width: 500px;
+                        // display: flex;
+                        // flex-direction: column;
+                    }
                 }
             }
         }

@@ -1,7 +1,6 @@
 <!-- Arquivos CSS importados -->
 <link rel="stylesheet" href="app\webroot\css\UsersIndex.css">
 <?php 
-
 if($this->Session->consume('userCreated')){ ?>
     <div id = "userCreated" class="alert alert-success text-center" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -34,37 +33,19 @@ if($this->Session->consume('userCreated')){ ?>
 
 <div class="secondlineThumbs">
   <div class="row">
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="app\webroot\img\tomate.png" alt="...">
-        <div class="caption">
-          <h3>Thumbnail Label</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, corrupti!</p>
-          <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
+    <?php
+    foreach ($listarPosts as $post) {
+      // debug($post[0]['image']);?>    
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="app\webroot\img\<?php echo $post[0]['image'];?>" alt="...">
+          <div class="caption">
+            <h3><?php echo $post[0]['title']?></h3>
+            <p><?php echo $post[0]['body']?></p>
+            <p><a href="http://localhost:8888/posts/view/<?php echo $post[0]['id']?>" class="btn btn-primary">Ver Mais</a> <a href="#" class="btn btn-default">Button</a></p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="app\webroot\img\cebola.png" alt="...">
-        <div class="caption">
-          <h3>Thumbnail Label</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores exercitationem itaque nobis amet! Deserunt rerum amet minus aspernatur eaque repellendus, error id saepe, magnam dolorem temporibus, corporis impedit neque voluptatem.</p>
-          <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="app\webroot\img\beringela.png" alt="...">
-        <div class="caption">
-          <h3>Thumbnail Label</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eaque a incidunt praesentium commodi impedit! Pariatur, amet vitae!</p>
-          <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
-        </div>
-      </div>
-    </div>
+    <?php } ?>
   </div>
 </div>

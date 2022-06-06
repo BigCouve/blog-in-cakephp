@@ -3,8 +3,10 @@
 // app/Controller/UsersController.php
 App::uses('AppController', 'Controller');
 
+
 class UsersController extends AppController {
     public $name = 'Users';
+
 
     public function beforeFilter() {
         parent::beforeFilter();
@@ -14,6 +16,8 @@ class UsersController extends AppController {
     public function index() {
         $this->User->recursive = 0;
         $this->set('user', $this->paginate());
+        $this->set('listarPosts', $this->User->query("SELECT * FROM posts ORDER BY id ASC"));
+
     }
 
     public function view($id = null) {

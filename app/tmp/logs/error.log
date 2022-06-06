@@ -29111,3 +29111,450 @@ Stack Trace:
 #1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2022-06-05 16:04:29 Error: [Error] Access to undeclared static property: CakeObject::$image
+Request URL: /
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(971): include()
+#1 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#2 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#3 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-06-05 16:07:08 Error: [Error] Call to a member function query() on null
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-06-05 16:08:28 Error: [Error] Call to a member function query() on null
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-06-05 16:08:30 Error: [Error] Call to a member function query() on null
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-06-05 16:08:59 Error: [Error] Call to a member function query() on null
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-06-05 16:09:07 Error: [Error] Call to a member function query() on null
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-06-05 16:10:35 Error: [MissingActionException] Action ImagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ImagesController',
+  'action' => 'index',
+)
+Request URL: /images/index
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 16:11:02 Error: [MissingActionException] Action ImagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ImagesController',
+  'action' => 'index',
+)
+Request URL: /images/index
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 16:11:58 Error: Fatal Error (64): Cannot declare class Category, because the name is already in use in [/app/app/Model/Image.php, line 0]
+2022-06-05 16:11:58 Error: [FatalErrorException] Cannot declare class Category, because the name is already in use
+Request URL: /images/showImage
+Stack Trace:
+#0 /app/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot declare ...', '/app/app/Model/...', 0)
+#1 /app/lib/Cake/Core/App.php(970): ErrorHandler::handleError(64, 'Cannot declare ...', '/app/app/Model/...', 0, Array)
+#2 /app/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-06-05 16:12:30 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column "image_id" does not exist
+LINE 1: SELECT image_id FROM images WHERE id = 1
+               ^
+Request URL: /images/showImage
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /app/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT image_id...', Array)
+#2 /app/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT image_id...', Array, Array)
+#3 /app/lib/Cake/Model/Datasource/DboSource.php(641): DboSource->fetchAll('SELECT image_id...', Array)
+#4 /app/lib/Cake/Model/Model.php(3489): DboSource->query('SELECT image_id...', false)
+#5 /app/app/Controller/ImagesController.php(8): Model->query('SELECT image_id...')
+#6 [internal function]: ImagesController->showImage()
+#7 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#8 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#10 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2022-06-05 16:13:16 Error: [MissingViewException] View file "Images/show_image.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Images/show_image.ctp',
+)
+Request URL: /images/showImage
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(470): View->_getViewFileName('Images/show_ima...')
+#1 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-06-05 16:13:44 Error: [MissingViewException] View file "Images/show_image.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Images/show_image.ctp',
+)
+Request URL: /images/showImage
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(470): View->_getViewFileName('Images/show_ima...')
+#1 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-06-05 16:14:23 Error: [MissingViewException] View file "Images/show_image.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Images/show_image.ctp',
+)
+Request URL: /images/showImage
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(470): View->_getViewFileName('Images/show_ima...')
+#1 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-06-05 23:08:37 Error: [MissingHelperException] Helper class PostHelper could not be found.
+Exception Attributes: array (
+  'class' => 'PostHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /app/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Post')
+#1 /app/lib/Cake/View/View.php(858): HelperCollection->__isset('Post')
+#2 /app/app/View/Users/index.ctp(37): View->__get('Post')
+#3 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#4 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#5 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#6 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#7 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2022-06-05 23:13:03 Error: [MissingControllerException] Controller class SadasController could not be found.
+Exception Attributes: array (
+  'class' => 'SadasController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /app/lib/Cake/Core/CakeObject.php(104): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 /app/app/View/Users/index.ctp(37): CakeObject->requestAction('sadas')
+#2 /app/lib/Cake/View/View.php(971): include('/app/app/View/U...')
+#3 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#4 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#5 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#6 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#7 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2022-06-05 23:31:36 Error: [ParseError] syntax error, unexpected ';', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /app/lib/Cake/View/View.php(933): View->_evaluate('/app/app/View/U...', Array)
+#1 /app/lib/Cake/View/View.php(473): View->_render('/app/app/View/U...')
+#2 /app/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#3 /app/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-06-05 23:45:28 Error: [Error] Call to a member function query() on null
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-06-05 23:49:40 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3C?php%24post%5B0%5D=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:50:06 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3C?php%24post%5B0%5D=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:51:40 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:51:53 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:52:28 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:52:46 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:52:48 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:52:49 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:52:51 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:52:54 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:52:55 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:52:56 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:52:57 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:53:11 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:53:13 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:53:16 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:53:19 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:53:20 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:53:22 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:53:55 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:54:22 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:54:59 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3Cpre%20class=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-06-05 23:56:35 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/img/%3C?php%24post%5B0%5D%5B%27image%27%5D=
+Stack Trace:
+#0 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
