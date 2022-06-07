@@ -32,20 +32,19 @@ if($this->Session->consume('userCreated')){ ?>
 
 
 <div class="secondlineThumbs">
-  <div class="row">
-    <?php
-    foreach ($listarPosts as $post) {
-      // debug($post[0]['image']);?>    
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="app\webroot\img\<?php echo $post[0]['image'];?>" alt="...">
-          <div class="caption">
-            <h3><?php echo $post[0]['title']?></h3>
-            <p><?php echo $post[0]['body']?></p>
-            <p><a href="http://localhost:8888/posts/view/<?php echo $post[0]['id']?>" class="btn btn-primary">Ver Mais</a> <a href="#" class="btn btn-default">Button</a></p>
-          </div>
-        </div>
+  <?php
+  foreach ($listarPosts as $post) {
+    // debug($post[0]['image']);?>    
+    <div class="thumbnail">
+      <img src="app\webroot\img\<?php echo $post[0]['image'];
+        ?>" alt="...">
+      <div class="caption">
+        <h3><?php echo $post[0]['title']?></h3>
+        <p><?php echo $post[0]['body']?></p>
+        <p>
+          <a href="http://localhost:8888/posts/view/<?php echo $post[0]['id']?>" class="btn btn-primary">Ver Mais</a> 
+        </p>
       </div>
-    <?php } ?>
-  </div>
+    </div>
+  <?php } ?>
 </div>

@@ -41,38 +41,50 @@ div.anuncios{
                     height: auto;
                     min-height: 120px;
                 }
+                
             }
         }
     }
 }
 
 .secondlineThumbs{
-    margin-top: 25px;
-    .row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px 60px;
+
+    .thumbnail{
+        width: 250px;
+        height: 430px;
         display: flex;
-        justify-content: flex-start;
         flex-wrap: wrap;
-        .col-sm-6{
-            .thumbnail{
-                max-height: 450px;
-                img{
-                    width: 100%;
-                    height: auto;
-                    
-                }
-                .caption{
-                    p{
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        max-width: 500px;
-                        // display: flex;
-                        // flex-direction: column;
-                    }
-                }
+        align-items: flex-end;
+        justify-content: center;
+        img{
+            margin: 0;
+            height: auto;
+            width: fit-content;            
+        }
+        
+        .caption{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: stretch;
+            width: 100%;
+            height: 50%;
+            p{
+                width: fit-content;
+                display: flex;
+                flex-wrap: wrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 250px;
+                max-height: 40px;
             }
         }
-    }
+    } 
 }
 
 
