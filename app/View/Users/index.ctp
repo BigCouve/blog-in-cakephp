@@ -36,11 +36,14 @@ if($this->Session->consume('userCreated')){ ?>
   foreach ($listarPosts as $post) {
     // debug($post[0]['image']);?>    
     <div class="thumbnail">
-      <img src="app\webroot\img\<?php echo $post[0]['image'];
-        ?>" alt="...">
+      <div class="skeleton">
+        <img src="app\webroot\img\<?php echo $post[0]['image'];
+          ?>" alt="..." >
+      </div>
+
       <div class="caption">
         <h3><?php echo $post[0]['title']?></h3>
-        <p><?php echo $post[0]['body']?></p>
+        <p class="pBody"><?php echo $post[0]['body']?></p>
         <p>
           <a href="http://localhost:8888/posts/view/<?php echo $post[0]['id']?>" class="btn btn-primary">Ver Mais</a> 
         </p>
@@ -48,3 +51,5 @@ if($this->Session->consume('userCreated')){ ?>
     </div>
   <?php } ?>
 </div>
+
+
