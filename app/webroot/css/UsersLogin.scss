@@ -6,6 +6,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .jumbotron-fluid{
@@ -14,13 +15,18 @@ body{
     border-color: #DAE6FB;
     color: $segunda;
     min-width: 250px;
-
-    max-width: 25vw;
+    max-width: 335px;
+    padding: 25px;
+    border-radius: 5px;
 }
 
-.container > .form-group {
-    text-align: center;
-}
+.container{
+    .form-group {
+        text-align: center;
+    }
+    transform: scale(1.5);
+} 
+    
 
 #botaoEnviar {
     font-weight: 60px;

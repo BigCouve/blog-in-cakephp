@@ -29631,3 +29631,28 @@ Stack Trace:
 #9 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #10 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2022-06-09 15:38:56 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Postgres',
+  'message' => 'SQLSTATE[08006] [7] FATAL:  the database system is starting up
+FATAL:  the database system is starting up',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /app/lib/Cake/Model/Datasource/DboSource.php(278): Postgres->connect()
+#1 /app/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /app/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /app/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /app/lib/Cake/Model/Model.php(3686): Model->setSource('users')
+#5 /app/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /app/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /app/lib/Cake/Controller/Component/PaginatorComponent.php(212): Model->find('all', Array)
+#8 /app/lib/Cake/Controller/Controller.php(1107): PaginatorComponent->paginate(Object(User), Array, Array)
+#9 /app/app/Controller/UsersController.php(18): Controller->paginate()
+#10 [internal function]: UsersController->index()
+#11 /app/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /app/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /app/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /app/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}

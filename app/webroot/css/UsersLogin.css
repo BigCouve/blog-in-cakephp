@@ -19,10 +19,17 @@ body {
   border-color: #DAE6FB;
   color: #F2F2F0;
   min-width: 250px;
-  max-width: 25vw;
+  max-width: 335px;
+  padding: 25px;
+  border-radius: 5px;
 }
 
-.container > .form-group {
+.container {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.container .form-group {
   text-align: center;
 }
 

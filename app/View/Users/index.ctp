@@ -36,9 +36,15 @@ if($this->Session->consume('userCreated')){ ?>
   foreach ($listarPosts as $post) {
     // debug($post[0]['image']);?>    
     <div class="thumbnail">
-      <div class="skeleton">
-        <img src="app\webroot\img\<?php echo $post[0]['image'];
-          ?>" alt="..." >
+      <img src="app\webroot\img\<?php echo $post[0]['image'];
+        ?>" alt="..." <?php if ($post[0]['image'] == null) { ?>
+          style="display: none;"
+        <?php } ?>
+      >
+      <div class="skeleton" <?php if ($post[0]['image'] == null) { ?>
+        style="display: flex;"
+        <?php } ?>>
+          
       </div>
 
       <div class="caption">

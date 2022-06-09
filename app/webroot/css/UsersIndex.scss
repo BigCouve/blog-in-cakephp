@@ -5,7 +5,10 @@ body{
     border-radius: 0px !important;
     margin-top: 50px !important;
     padding: 30px !important;
-    max-width: 930px !important;
+    max-width: 70% !important;
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+
 }
 
 
@@ -50,7 +53,8 @@ div.anuncios{
 .secondlineThumbs{
     margin-top: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    justify-items: flex-start;
     flex-wrap: wrap;
     gap: 10px 20px;
 
@@ -63,23 +67,23 @@ div.anuncios{
         align-items: flex-end;
         justify-content: center;
         .skeleton{
+            display: none;
+            width: 400px; 
+            height: 400px;
             animation: skeleton-loading 5s infinite alternate;
-            img{
-                display: flex;
-                margin: 0;
-                width: 400px; 
-                height: inherit;          
-            }
+        }
+        img{
+            display: flex;
+            margin: 0;
+            width: 400px; 
         }
         
         .caption{
             display: flex;
-            align-content: flex-end;
-            align-items: stretch; 
             flex-direction: column;
-            justify-content: stretch;
+            // justify-content: baseline;
             width: 100%;
-            height: auto;
+            height: 30%;
             
             p{
                 white-space: nowrap;
