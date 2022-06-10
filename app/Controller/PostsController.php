@@ -12,11 +12,12 @@ class PostsController extends AppController {
     }
     public function list() {
         //passa para a variável list, um array com todos os posts
-        $this->set('list', $this->Post->query("SELECT * FROM posts ORDER BY id ASC"));
+        debug($this->request->data);
+        $this->set('list', $this->Post->query("SELECT * FROM posts"));
         
         //se for o caso de envio de dados, a variável será alterada de acordo com o filtro
         if ($this->request->is('post')) {
-            $this->set('list', $this->orderTable($this->request->data['order']));
+            $this->set('list', $this->orderTable($this->request->data));
             $this->request->data = '';
         }
         $this->set('userId', $this->Auth->user('id'));
@@ -76,14 +77,32 @@ class PostsController extends AppController {
         // $this->set('postsOwned', $this->Post->query("SELECT * FROM posts WHERE username = " . $this->Session->read('username')));
     }
 
-    public function orderTable($data)
+    public function orderTable($filter)
     {
-        if ($data === "Crescente" || $data === "Ordem") {
-            return $this->Post->query("SELECT * FROM posts ORDER BY id ASC");
+        $query = '';
+        
+        if ($filter['dateStart'] != '') {
+            $query = "WHERE created >= '" . $filter['dateStart'] . "' ";
+            if ($filter['dateEnd'] != '') {
+                $query .= "AND created <= '" . $filter['dateEnd'] . "' ";
+            }
         }
-        else if ($data === "Decrescente") {
-            return $this->Post->query("SELECT * FROM posts ORDER BY id DESC");
+        else if ($filter['dateEnd'] != '') {
+            if ($filter['dateStart'] != '') {
+                $query = "WHERE created >= '" . $filter['dateStart'] . "' AND ." ;
+            }
+            $query = "WHERE created <= '" . $filter['dateEnd'] . "' ";
+            
         }
+
+        if ($filter['order'] === "Crescente") {
+            $query .=  "ORDER BY id ASC";
+        }
+        else if ($filter['order'] === "Decrescente") {
+            $query .= "ORDER BY id DESC";
+        }
+        debug($query);
+        return $this->Post->query("SELECT * FROM posts " . $query);
     }
 
 

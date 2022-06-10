@@ -51,19 +51,16 @@ as informações dos posts -->
     <div class="formulario-filtros">
         <form action="/guias" method="post">
             <div class="filtros">
-                <select class="form-control" name="order">
-                    <option value="Ordem">Ordem</option>
+                <select class="form-control" name="order" placeholder="Ordis">
+                    <option value="-">-</option>
                     <option value="Crescente">Crescente</option>
                     <option value="Decrescente">Decrescente</option>
                 </select>
-                <select name="" id="" class="form-control">
-                    <option value=""></option>
-                </select><select name="" id="" class="form-control">
-                    <option value=""></option>
-                </select><select name="" id="" class="form-control">
-                    <option value=""></option>
-               
-                </select>
+                <input name="dateStart" type="date" id="dateStart" class="form-control" > 
+                </input>
+                <input name="dateEnd" type="date" id="dateEnd" class="form-control" >
+                </input>
+            
             </div>
             <div class="envio">
                 <button type="submit" class="btn btn-primary">Filtrar</button>

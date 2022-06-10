@@ -80,7 +80,7 @@
           justify-content: flex-start;
 }
 
-.container-fluid .formulario-filtros form .filtros select {
+.container-fluid .formulario-filtros form .filtros select, .container-fluid .formulario-filtros form .filtros input {
   margin: 10px;
   width: 130px;
 }
