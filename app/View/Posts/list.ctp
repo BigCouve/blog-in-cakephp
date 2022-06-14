@@ -52,7 +52,7 @@ as informações dos posts -->
         <form action="/guias" method="post">
             <div class="filtros">
                 <select class="form-control" name="order" placeholder="Ordis">
-                    <option value="-">-</option>
+                    <option value="Order">-</option>
                     <option value="Crescente">Crescente</option>
                     <option value="Decrescente">Decrescente</option>
                 </select>
