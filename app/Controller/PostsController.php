@@ -77,34 +77,55 @@ class PostsController extends AppController {
         // $this->set('postsOwned', $this->Post->query("SELECT * FROM posts WHERE username = " . $this->Session->read('username')));
     }
 
+
     public function orderTable($filter)
     {
         $query = '';
         
-        if ($filter['dateStart'] != '') {
-            $query = "WHERE created >= '" . $filter['dateStart'] . "' ";
-            if ($filter['dateEnd'] != '') {
-                $query .= "AND created <= '" . $filter['dateEnd'] . "' ";
-            }
-        }
-        else if ($filter['dateEnd'] != '') {
-            if ($filter['dateStart'] != '') {
-                $query = "WHERE created >= '" . $filter['dateStart'] . "' AND ." ;
-            }
-            $query = "WHERE created <= '" . $filter['dateEnd'] . "' ";
-            
-        }
+        // if ($filter['dateStart'] != '') {
+        //     $query = "WHERE created > '" . $filter['dateStart'] . "' ";
+        //     if ($filter['dateEnd'] != '') {
+        //         $query .= "AND created < '" . $filter['dateEnd'] . "' ";
+        //     }
+        // }
+        // else if ($filter['dateEnd'] != '') {
+        //     if ($filter['dateStart'] != '') {
+        //         $query = "WHERE created > '" . $filter['dateStart'] . "' AND ." ;
+        //     }
+        //     $query = "WHERE created < '" . $filter['dateEnd'] . "' ";
+        // }
 
-        if ($filter['order'] === "Crescente") {
-            $query .=  "ORDER BY id ASC";
+        if (($filter['dateStart'] || $filter['dateEnd'])  != ''){
+            if ($filter['dateEnd']  == ''){
+                $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']);
+                if ($filter['dateEnd']  != ''){
+                    $query .= "AND created < " . parent::exibeEmString($filter('dateEnd'));
+                }
+            }
+            else if ($filter['dateStart']  == ''){
+                $query = "WHERE created < " . parent::exibeEmString($filter['dateEnd']);
+                if ($filter['dateEnd']  != ''){
+                    $query .= "AND created < " . parent::exibeEmString($filter('dateEnd'));
+                }
+            }
+            if ($filter['dateStart'] == $filter['dateEnd'] ) {
+                $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']) . " AND created < " . parent::exibeEmString("SELECT " . $filter['dateStart'] . " + INTERVAL '1 day' ") ;
+            } 
+           
+            // else if ($filter['dateEnd'] == $filter['dateStart']) {
+            //     $query = "WHERE created == '" . $filter['dateEnd'] . "'";
+            // } 
+
+            if ($filter['order'] === "Crescente") {
+                $query .=  "ORDER BY id ASC";
+            }
+            else if ($filter['order'] === "Decrescente") {
+                $query .= "ORDER BY id DESC";
+            }
+            debug($query);
+            return $this->Post->query("SELECT * FROM posts " . $query);
         }
-        else if ($filter['order'] === "Decrescente") {
-            $query .= "ORDER BY id DESC";
-        }
-        debug($query);
-        return $this->Post->query("SELECT * FROM posts " . $query);
     }
-
 
     public function isAuthorized($user) {
         // Todos os usuários registrados podem criar posts e edita-los/deleta-los
