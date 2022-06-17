@@ -12,13 +12,12 @@ class PostsController extends AppController {
     }
     public function list() {
         //passa para a variável list, um array com todos os posts
-        debug($this->request->data);
-        $this->set('list', $this->Post->query("SELECT * FROM posts"));
+        $this->set('list', $this->Post->query("SELECT * FROM posts ORDER BY created DESC"));
         
         //se for o caso de envio de dados, a variável será alterada de acordo com o filtro
         if ($this->request->is('post')) {
             $this->set('list', $this->orderTable($this->request->data));
-            $this->request->data = '';
+            // $this->request->data = '';
         }
         $this->set('userId', $this->Auth->user('id'));
         $this->set('userRole', $this->Auth->user('role'));
@@ -81,40 +80,34 @@ class PostsController extends AppController {
     public function orderTable($filter){
         $query = '';
         
+
+
+
         if ($filter['dateStart'] != '') {
             $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']);
             if ($filter['dateEnd'] != '') {
-                $query .= "AND created < " . parent::exibeEmString($filter('dateEnd'));
+                $query .= " AND created < " . parent::exibeEmString($filter['dateEnd']);
             }
+
         }
         else if ($filter['dateEnd'] != '') {
             if ($filter['dateStart'] != '') {
                 $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']);
+                $query .= " AND created < " . parent::exibeEmString($filter['dateEnd']);
             }
-            $query .= "AND created < " . parent::exibeEmString($filter('dateEnd'));
+            else {
+                $query = "WHERE created < " . parent::exibeEmString($filter['dateEnd']);
+            }
+            debug("Consulta dentro da condição: " . $query);
+
+
+        }
+            
+        else if (($filter['dateEnd'] == $filter['dateStart']) && ($filter['dateEnd']) != ''){
+            $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']) . " AND created < DATE " . parent::exibeEmString($filter['dateEnd']) . " + time '23:59' ";
         }
 
-        // if (($filter['dateStart'] || $filter['dateEnd'] || $filter['order'])  != ''){
-        //     if ($filter['dateStart'] == $filter['dateEnd'] && $filter['dateEnd'] != '') {
-        //         //$queryPlusOneDay = $this->Post->query("SELECT " . parent::exibeEmString($filter['dateStart']) . " + INTERVAL '1 day' "); 
-        //         $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']) . " AND created < date " . parent::exibeEmString($filter['dateEnd']) . " + integer '1' ";
-        //     } 
-        //     else if ($filter['dateEnd']  == ''){
-        //         $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']);
-        //         if ($filter['dateEnd']  != ''){
-        //             $query .= "AND created < " . parent::exibeEmString($filter('dateEnd'));
-        //         }
-        //     }
-        //     else if ($filter['dateStart']  == ''){
-        //         $query = "WHERE created < " . parent::exibeEmString($filter['dateEnd']);
-        //         if ($filter['dateEnd']  != ''){
-        //             $query .= "AND created < " . parent::exibeEmString($filter('dateEnd'));
-        //         }
-        //     }
-            
-        else if (($filter['dateEnd'] == $filter['dateStart']) && ($filter['dateEnd']) != '') {
-            $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']) . " AND created < date " . parent::exibeEmString($filter['dateEnd']) . " + integer '1' ";
-        } 
+
 
         if ($filter['order'] === "Crescente") {
             $query .=  " ORDER BY created ASC";
@@ -123,6 +116,7 @@ class PostsController extends AppController {
             $query .= " ORDER BY created DESC";
         }
         debug($query);
+
         return $this->Post->query("SELECT * FROM posts " . $query);
     }
 
