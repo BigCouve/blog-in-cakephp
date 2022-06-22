@@ -17,7 +17,6 @@ class PostsController extends AppController {
         //se for o caso de envio de dados, a variável será alterada de acordo com o filtro
         if ($this->request->is('post')) {
             $this->set('list', $this->orderTable($this->request->data));
-            // $this->request->data = '';
         }
         $this->set('userId', $this->Auth->user('id'));
         $this->set('userRole', $this->Auth->user('role'));
@@ -69,11 +68,15 @@ class PostsController extends AppController {
 
     public function myList(){
         $this->Session->write('userId', $this->Auth->user('id')); 
-        $this->set('listPostsOwned', $this->Post->query("SELECT * FROM posts WHERE user_id = " .  parent::exibeEmString($this->Session->read('userId')). " ORDER BY 1"));
         $this->set('userRole', $this->Auth->user('role'));
-        
-        // debug(gettype($userLogged));
-        // $this->set('postsOwned', $this->Post->query("SELECT * FROM posts WHERE username = " . $this->Session->read('username')));
+
+        if($this->request->data == null){
+            $this->set('listPostsOwned', $this->Post->query("SELECT * FROM posts WHERE user_id = " .  parent::exibeEmString($this->Session->read('userId')). " ORDER BY 1"));
+        }
+
+        if ($this->request->is('post')) {
+            $this->set('listPostsOwned', $this->orderTable($this->request->data));
+        }   
     }
 
 
@@ -109,7 +112,7 @@ class PostsController extends AppController {
         else if ($filter['order'] === "Decrescente") {
             $query .= " ORDER BY created DESC";
         }
-
+        debug($query);
         $postsOrdenados = $this->Post->query("SELECT * FROM posts " . $query);
         return $postsOrdenados;
     }
