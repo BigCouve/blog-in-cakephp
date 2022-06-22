@@ -79,11 +79,11 @@ class PostsController extends AppController {
 
     public function orderTable($filter){
         $query = '';
-        
 
-
-
-        if ($filter['dateStart'] != '') {
+        if (($filter['dateEnd'] == $filter['dateStart']) && ($filter['dateEnd']) != ''){
+            $query = "WHERE created > DATE " .  parent::exibeEmString($filter['dateStart']) . " + time '00:00' AND created < DATE " . parent::exibeEmString($filter['dateEnd']) . " + time '23:59'";
+        }
+        else if ($filter['dateStart'] != '') {
             $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']);
             if ($filter['dateEnd'] != '') {
                 $query .= " AND created < " . parent::exibeEmString($filter['dateEnd']);
@@ -98,16 +98,10 @@ class PostsController extends AppController {
             else {
                 $query = "WHERE created < " . parent::exibeEmString($filter['dateEnd']);
             }
-            debug("Consulta dentro da condição: " . $query);
 
 
         }
             
-        else if (($filter['dateEnd'] == $filter['dateStart']) && ($filter['dateEnd']) != ''){
-            $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']) . " AND created < DATE " . parent::exibeEmString($filter['dateEnd']) . " + time '23:59' ";
-        }
-
-
 
         if ($filter['order'] === "Crescente") {
             $query .=  " ORDER BY created ASC";
@@ -115,9 +109,9 @@ class PostsController extends AppController {
         else if ($filter['order'] === "Decrescente") {
             $query .= " ORDER BY created DESC";
         }
-        debug($query);
 
-        return $this->Post->query("SELECT * FROM posts " . $query);
+        $postsOrdenados = $this->Post->query("SELECT * FROM posts " . $query);
+        return $postsOrdenados;
     }
 
     public function isAuthorized($user) {

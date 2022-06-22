@@ -28,7 +28,8 @@
 
 </div>
 
-
+<!-- <?php echo $this->element('sql_dump'); ?>
+<? debug($sql) ?> -->
 <div class="mainTitle">
     <h1>Posts do Mãe Terra</h1>
 </div>
@@ -44,8 +45,8 @@
     <?php } ?>
 </div>
 
-<!-- Aqui é onde nós percorremos nossa matriz $posts, imprimindo
-as informações dos posts --> 
+
+<!-- Filtros da tabela de posts -->
 
 <div class="container-fluid">
     <div class="formulario-filtros">
@@ -72,6 +73,8 @@ as informações dos posts -->
 </div>
     
 
+<!-- Aqui é onde nós percorremos nossa matriz $posts, imprimindo
+as informações dos posts --> 
 
 <div class="container-fluid">
     
