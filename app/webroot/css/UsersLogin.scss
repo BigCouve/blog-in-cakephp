@@ -4,13 +4,12 @@
 body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: stretch;
     
 }
 
 .jumbotron-fluid{
-
     background-color: $bgColorAcesso;
     border-color: #DAE6FB;
     color: $segunda;

@@ -84,7 +84,7 @@ class PostsController extends AppController {
         $query = '';
 
         if (($filter['dateEnd'] == $filter['dateStart']) && ($filter['dateEnd']) != ''){
-            $query = "WHERE created > DATE " .  parent::exibeEmString($filter['dateStart']) . " + time '00:00' AND created < DATE " . parent::exibeEmString($filter['dateEnd']) . " + time '23:59'";
+            $query = "WHERE created >= DATE " .  parent::exibeEmString($filter['dateStart']) . " + time '00:00' AND created <= DATE " . parent::exibeEmString($filter['dateEnd']) . " + time '23:59'";
         }
         else if ($filter['dateStart'] != '') {
             $query = "WHERE created > " . parent::exibeEmString($filter['dateStart']);
@@ -112,7 +112,6 @@ class PostsController extends AppController {
         else if ($filter['order'] === "Decrescente") {
             $query .= " ORDER BY created DESC";
         }
-        debug($query);
         $postsOrdenados = $this->Post->query("SELECT * FROM posts " . $query);
         return $postsOrdenados;
     }

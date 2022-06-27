@@ -5,8 +5,7 @@
 
 <?php 
 
-echo $this->Flash->render('auth');
-echo $this->Form->create('User');
+
 
 if ($this->Session->consume('erro')) { ?>
   <div class="alert alert-danger text-center col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3" role="alert">
@@ -18,7 +17,12 @@ if ($this->Session->consume('erro')) { ?>
 <?php } ?>
 
 
+<?php 
 
+echo $this->Flash->render('auth');
+echo $this->Form->create('User');
+
+?>
 
 
 <div class="container jumbotron jumbotron-fluid">
