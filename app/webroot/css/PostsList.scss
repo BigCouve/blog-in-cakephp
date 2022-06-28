@@ -1,5 +1,17 @@
 @import 'variables';
 
+body{
+    .success{
+        &#flashMessage{
+            max-width: 600px;
+            margin: 16px auto;
+            padding: 12px 20px;
+            background-color: #D4EDDA;
+            border-radius: 0.25rem;
+            
+        }
+    }
+}
 .botaoAdicionarPost{
     display: flex;
     justify-content: right;

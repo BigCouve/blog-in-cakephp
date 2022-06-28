@@ -1,5 +1,5 @@
 .container h1 {
-  background-color: #D9D05B;
+  background-color: white;
   -webkit-box-shadow: 5px 5px black;
           box-shadow: 5px 5px black;
   color: #262014;
@@ -12,7 +12,7 @@
 }
 
 .container #tituloEdit {
-  background-color: #D9D05B;
+  background-color: white;
   color: #262014;
   resize: none;
   margin-bottom: 20px;
@@ -20,7 +20,7 @@
 }
 
 .container #corpoEdit {
-  background-color: #D9D05B;
+  background-color: white;
   color: #262014;
   resize: none;
   margin-bottom: 20px;

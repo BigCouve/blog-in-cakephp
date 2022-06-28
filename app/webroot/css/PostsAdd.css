@@ -14,7 +14,7 @@
 .corpoAdd .add_titulo h1 {
   padding: 10px;
   max-width: 310px;
-  background-color: #D9D05B;
+  background-color: white;
   text-align: center;
   -webkit-box-shadow: 3px 2px 3px #7658A6;
           box-shadow: 3px 2px 3px #7658A6;
@@ -22,7 +22,7 @@
 }
 
 .corpoAdd .add_titulo_corpo #titleLogin {
-  background-color: #D9D05B;
+  background-color: white;
   height: 40px;
   max-width: 700px;
   resize: none;
@@ -54,7 +54,7 @@
 }
 
 .corpoAdd .add_corpo #titleLogin {
-  background-color: #D9D05B;
+  background-color: white;
   height: 30vh;
   max-width: 700px;
   resize: none;

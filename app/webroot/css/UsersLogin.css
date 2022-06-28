@@ -15,9 +15,9 @@ body {
 }
 
 .jumbotron-fluid {
-  background-color: #A674F2;
+  background-color: white;
   border-color: #DAE6FB;
-  color: #F2F2F0;
+  color: black;
   min-width: 250px;
   max-width: 335px;
   padding: 25px;

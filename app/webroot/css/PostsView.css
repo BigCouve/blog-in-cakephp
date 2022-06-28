@@ -1,22 +1,21 @@
 .allView {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  overflow-wrap: break-word;
 }
 
 .tituloPostView {
   margin-bottom: 3vh;
-  background-color: #D9D05B;
+  background-color: white;
   text-align: center;
   border-radius: 5px;
   color: #262014;
+  padding: 0px 5vh;
   height: auto;
   width: 60%;
   margin-left: 20%;
 }
 
 .corpoPostView {
-  background-color: #D9D05B;
+  background-color: white;
   text-align: justify;
   border-radius: 5px;
   height: auto;
@@ -27,7 +26,7 @@
 }
 
 .footerView {
-  background-color: #D9D05B;
+  background-color: white;
   color: #262014;
   padding: 10px 10px 0px 10px;
   margin-top: 2vh;
